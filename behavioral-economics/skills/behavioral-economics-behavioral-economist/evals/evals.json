@@ -1,0 +1,53 @@
+{
+  "skill_name": "behavioral-economics-behavioral-economist",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Only 25% of employees are saving for retirement despite employer matching. Use behavioral economics to diagnose the barriers and recommend evidence-based interventions.",
+      "expected_output": "Should diagnose status quo bias + present bias + hyperchoice, identify cognitive/emotional/structural barriers, reference research on auto-enrollment effects, recommend specific interventions (auto-enrollment, simplified investment options, reminders), propose A/B testing approach, and identify unintended consequences.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We're increasing the penalty for late tax payments. Economists expect this to improve compliance. Will it? What behavioral factors should we consider?",
+      "expected_output": "Should apply prospect theory (loss aversion, framing), note that people may interpret penalty as unfair (social preferences), identify potential backfire effects or gaming behavior, recommend behavioral alternatives (reminders, simplified forms, reframing as loss of discount), and suggest testing before implementation.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Customers abandon shopping carts at checkout 65% of the time. Diagnose behavioral barriers and design interventions to reduce abandonment.",
+      "expected_output": "Should identify multiple barriers: cognitive (complexity, trust), emotional (anxiety about data sharing, regret), structural (shipping costs, payment friction), recommend specific interventions (simplified form, progress bar, shipping cost transparency, recovery email), and prioritize by impact.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Our app defaults to sharing user data for marketing. Engagement is high, but we're concerned about trust. Should we change the default?",
+      "expected_output": "Should discuss privacy as values issue separate from behavioral defaults, recommend opt-in (not opt-out) for data sharing to build trust, explain status quo bias, propose soft default (explicit choice required), and suggest testing impact on engagement and trust.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We want to increase vaccination rates in a skeptical community. Behavioral interventions alone won't work. What combination of approaches would you recommend?",
+      "expected_output": "Should acknowledge that vaccination is complex (identity, trust, values issues), combine behavioral (reminders, accessibility) with communication (trusted messengers, address concerns) and policy (access, coverage) interventions, recommend community engagement, and identify measurement approach.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "We're changing insurance plans. Employees resist switching despite the new plan being objectively better. Diagnose the resistance and recommend interventions.",
+      "expected_output": "Should identify status quo bias, loss aversion (fear of losing current coverage), and uncertainty, recommend clear side-by-side comparison, trial period if possible, testimonials from early adopters, and easy switch process, avoid forced change, suggest communication campaign.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "We introduced a new incentive structure for salespeople. It's theoretically optimal, but adoption is low. What behavioral issues might be at play?",
+      "expected_output": "Should consider: fairness concerns (perceived as unfair relative to compensation history), loss aversion (risk of earning less than before), bounded rationality (complexity of new system), recommendation to test with sales force, compare to old system, add safeguards against losses, and simplify if possible.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Design a behavioral testing framework for a new enrollment process change. What metrics, controls, and risks should we monitor?",
+      "expected_output": "Should specify primary metric (enrollment rate), secondary metrics (satisfaction, retention, usage), sample size calculation, randomization approach, test duration (sufficient for behavior cycle), control group, and monitoring for unintended effects (equity, adaptation, fatigue).",
+      "files": []
+    }
+  ]
+}

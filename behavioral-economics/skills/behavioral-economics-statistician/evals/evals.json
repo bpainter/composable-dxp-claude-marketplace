@@ -1,0 +1,53 @@
+{
+  "skill_name": "behavioral-economics-statistician",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Interpret this SPSS output from an employee engagement survey. We compared engagement across three departments using ANOVA. F(2,147)=4.2, p=0.016. Effect sizes (eta-squared) are 0.05. What does this mean?",
+      "expected_output": "Should explain ANOVA result is statistically significant (p<0.05) meaning departments differ, but effect size is small (eta-squared=0.05 means only 5% variance explained), recommend post-hoc tests to identify which departments differ, note practical significance is modest, discuss implications.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Our A/B test: Control group 5% conversion, Treatment group 7% conversion, n=1000 per group. Is this statistically significant? What about practical significance?",
+      "expected_output": "Should calculate or estimate statistical significance (likely significant with n=1000), calculate effect size (relative improvement ~40%), discuss practical significance (2 percentage point difference may be meaningful depending on costs), recommend chi-square test or proportions test.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our engagement survey shows mean=3.2 on 1-5 scale, with only 20% of responses above 3.5. Distribution is heavily skewed toward low scores. Should we use a parametric test for comparison?",
+      "expected_output": "Should note distribution is non-normal (heavily skewed), recommend nonparametric test (Mann-Whitney U or Kruskal-Wallis instead of t-test or ANOVA), explain parametric test assumptions violated, discuss practical meaning of skewed distribution (low engagement overall).",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Calculate the sample size needed to detect a medium effect size (Cohen's d=0.5) with 80% power, alpha=0.05 in an independent samples t-test.",
+      "expected_output": "Should calculate or recommend ~64 per group (128 total), explain power analysis components (effect size, power, alpha level), note formula or reference standard tables, discuss trade-offs between sample size and cost/feasibility.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We found correlation r=0.08 between manager rating and sales performance (p=0.04, n=500). Is this meaningful?",
+      "expected_output": "Should note statistically significant but practically trivial (r²=0.006 means <1% variance explained), explain why large sample can find tiny effects significant, question validity of manager ratings, recommend investigating actual performance metrics.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "We conducted a leadership coaching intervention. Pre-test engagement M=3.4, post-test M=3.8. Paired t-test: t(29)=1.9, p=0.06. Should we implement this coaching widely?",
+      "expected_output": "Should note result is marginally significant (p=0.06, not quite p<0.05), calculate effect size (likely small to medium), recommend caution, discuss statistical power (n=30 may be underpowered), suggest larger sample or RCT with control group.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Our engagement survey reliability (Cronbach's alpha) is 0.62. Is this acceptable? What should we do?",
+      "expected_output": "Should note 0.62 is below acceptable threshold (0.70), indicate items may not be measuring same construct, recommend item analysis to identify weak items, suggest removing items that don't correlate well with total, recompute alpha.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Review our research plan: We're planning 10 different t-tests comparing groups on various outcomes. Should we adjust our significance level?",
+      "expected_output": "Should identify multiple comparisons problem (10 tests at alpha=0.05 expected ~0.5 false positives), recommend Bonferroni correction (alpha=0.05/10=0.005), suggest pre-registering hypotheses, recommend focusing on primary outcome if possible.",
+      "files": []
+    }
+  ]
+}

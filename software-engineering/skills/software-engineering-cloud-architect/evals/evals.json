@@ -1,0 +1,53 @@
+{
+  "skill_name": "software-engineering-cloud-architect",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Design a cloud-native SaaS platform for 10 million users across 3 regions with <100ms latency and 99.99% uptime requirement. Sketch the architecture, service choices, and replication strategy.",
+      "expected_output": "Should recommend multi-region active-active design, recommend managed services (RDS with read replicas, CDN for edge), explain load balancing across regions, discuss database replication and conflict handling, cost estimation",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We're migrating a monolithic app from on-prem to cloud. The app is 10 years old, runs on Linux/Java, talks to 20 databases. Compare lift-and-shift vs. containerize vs. refactor to microservices. What's the 3-year roadmap?",
+      "expected_output": "Should outline phased approach, compare strategies on cost/time/risk, recommend containerization as intermediate step, define microservices breakup over time, discuss team capability building, estimate timeline and cost",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Design a landing zone for a 500-person company deploying across multiple AWS accounts with cost governance, compliance requirements (SOC 2), and least-privilege IAM. What's the account structure?",
+      "expected_output": "Should outline account strategy (organization vs. centralized logging), IAM hierarchy (SAML/SSO integration), cost allocation tags, compliance monitoring, network architecture (shared vs. isolated VPCs)",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Compare EKS vs. Fargate vs. Lambda for an IoT platform that ingests 1 million events/second, processes them in real-time, and stores to time-series DB. What are the operational trade-offs?",
+      "expected_output": "Should recommend Fargate for streaming workloads, explain EKS complexity for this use case, discuss Lambda cold start implications, recommend architecture pattern, operational overhead per choice",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Our app needs 1-hour RTO and 15-minute RPO for disaster recovery. Design active-passive multi-region failover with estimated costs and time to recover.",
+      "expected_output": "Should design standby region architecture, explain automated health checks and DNS failover, calculate infrastructure costs for standby, outline backup/replication strategy, recovery playbooks",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Our AWS bill is 3x industry average. Where would you look for waste? Identify 5 common cost drivers and propose automated optimizations.",
+      "expected_output": "Should analyze oversized instances, unused resources, data transfer costs, reserved instance gaps, recommend FinOps tools, show tagging strategy, automated rightsizing, cost anomaly detection",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Design an API platform that external partners can call with rate limiting, quota management, usage-based billing, and audit logging. Architecture?",
+      "expected_output": "Should recommend API Gateway + rate limiting + quota service, billing integration with meter readings, API key management, monitoring/alerting, developer portal, audit trail design",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "We need to process healthcare data (HIPAA-compliant) in the cloud. Design a secure, compliant architecture with encryption, audit logs, and access controls.",
+      "expected_output": "Should outline HIPAA requirements, recommend encryption at rest/in transit, discuss isolated VPC, CloudHSM for key management, audit logging with CloudTrail, compliance monitoring tools, BAA requirements",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "bynder",
+  "version": "0.1.0",
+  "description": "Twelve specialist skills for implementing and optimizing Bynder DAM-based composable platforms — asset modeling and metaproperties, Brand Guidelines, derivative templates, the bynder-js-sdk, Universal Compact View embedding, Bynder + Contentful pairing, portal and account architecture, permissions and workflow, webhooks and asset events, marketplace connectors, migrations into Bynder, and optimization audits for existing implementations. Production-grade guidance for Slalom's Composable DXP practice.",
+  "author": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bynder",
+    "dam",
+    "digital-asset-management",
+    "composable",
+    "dxp",
+    "contentful",
+    "compact-view",
+    "brand-guidelines",
+    "marketplace-connectors",
+    "metaproperties",
+    "derivatives",
+    "optimization"
+  ]
+}

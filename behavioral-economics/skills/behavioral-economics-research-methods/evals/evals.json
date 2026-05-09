@@ -1,0 +1,53 @@
+{
+  "skill_name": "behavioral-economics-research-methods",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Design a study to understand why customers abandon shopping carts. What combination of methods would you use and why?",
+      "expected_output": "Should recommend exploratory sequential: interviews to understand reasons, survey to measure prevalence and identify patterns. Provide research questions, interview guide outline, survey design approach, sample sizes, and integration plan.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Our NPS is declining but we don't know why. Design a research approach to diagnose the problem.",
+      "expected_output": "Should recommend starting with qualitative (why is satisfaction declining), probe deeper with interviews of detractors, follow with quantitative survey to measure prevalence of identified barriers, provide sample size estimate, and interpretation framework.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Should we target SMBs or enterprises? Design research that would inform this decision.",
+      "expected_output": "Should specify decision question (market size, competitive dynamics, product-market fit), recommend market research approach (secondary research + primary interviews + sizing survey), identify segments to research, sample strategy, and analysis to compare segments.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Design a survey to measure employee engagement in our organization. Include methodology justification, sampling strategy, item design approach, and analysis plan.",
+      "expected_output": "Should recommend population definition, sample size calculation with confidence/power specs, Likert-scale items for engagement dimensions, explain scale choices, discuss online survey platform, and specify descriptive and segment analysis approaches.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We want to test if this new messaging resonates with Gen Z. How would you research this?",
+      "expected_output": "Should recommend concept testing approach (focus groups or online survey testing message variants), specify sample (Gen Z, target market), measure resonance (likability, trust, purchase intent), comparison to alternative messaging, and provide testing framework.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Our product has high adoption but low engagement. Design research to understand barriers to continued use.",
+      "expected_output": "Should diagnose need for behavioral research (qualitative: why do people disengage), sample users who adopted then disengaged, explore motivations and barriers, follow with survey to measure prevalence, and identify improvement priorities.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Design a focus group guide to understand customer motivations for switching to our competitor. What questions would you ask?",
+      "expected_output": "Should include opening/warm-up, questions about current product experience, exploration of competitor discovery/evaluation, reasons for preference, barriers to staying, feature/messaging preferences, and closing. Explain facilitation approach to manage group dynamics.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Review this survey design for validity threats. It has 30 items, uses leading language in some questions, and targets convenience sample. What would you recommend?",
+      "expected_output": "Should identify threats: question wording bias, lengthy survey (completion issues), convenience sample (low generalizability), suggest improvements: clarify language, reduce items or group into scales, random/stratified sampling, test validity/reliability, calculate appropriate sample size.",
+      "files": []
+    }
+  ]
+}

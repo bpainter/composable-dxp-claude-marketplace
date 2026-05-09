@@ -1,0 +1,53 @@
+{
+  "skill_name": "cx-personalization-strategist",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Design a personalization strategy to increase qualified pipeline for a B2B SaaS company targeting both SMB and Enterprise segments on their homepage. We have 50k monthly visitors, 2% baseline demo conversion, and Demandbase reverse-IP + HubSpot installed.",
+      "expected_output": "A personalized strategy including: (1) Segment definitions for SMB vs. Enterprise with behavior/intent signals, (2) Hero messaging frameworks for each segment, (3) CTA strategy differentiation, (4) Phased rollout plan, (5) Success metrics and test duration, (6) Technical implementation approach using Demandbase + HubSpot",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We're testing 3 hero message variants for our pricing page targeting high-intent visitors: (A) Control - 'Flexible Pricing', (B) Enterprise message - 'Security, Scale, Support', (C) SMB message - 'Simple Pricing, Quick Setup'. We have 8k monthly pricing page visitors. What's the minimum sample size and duration needed for statistical validity?",
+      "expected_output": "Sample size calculation showing visitors needed per variant for 80% statistical power, recommended test duration (minimum 1-2 weeks), significance threshold (p < 0.05), guardrail metrics to monitor, and expected lift ranges based on typical personalization benchmarks",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our personalization initiative has been live for 3 months with new segment-specific content on the homepage and pricing page. We're seeing 18% more demos from Enterprise visitors but no improvement from SMB. Help me diagnose what's happening.",
+      "expected_output": "Diagnostic questions and framework including: (1) Check if SMB segment is accurately defined and reached, (2) Analyze SMB-specific messaging fit and competitive positioning, (3) Review form friction and call-to-action clarity, (4) Evaluate channel quality and intent level of SMB traffic, (5) Recommended A/B tests to improve SMB conversion",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Build a Contentful content model for a homepage that needs to support personalized experiences for 5 segments (Enterprise, Mid-Market, SMB, Competitor Switchers, Free Trial Users) using the Contentful Personalization platform. What fields and variant logic do we need?",
+      "expected_output": "Content model architecture showing: (1) Core content structure (entry types for hero, benefits, CTA), (2) Variant fields and enum options, (3) Audience/campaign definitions in Contentful, (4) Fallback/default content logic for unmatched visitors, (5) Integration points with Experience API and frontend framework, (6) SEO and accessibility considerations",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We're implementing multi-touch attribution for our personalization program. We need to track: website interactions → demo requests → CRM deal → closed-won. Currently using GA4 and Salesforce. Design the event tracking and attribution model.",
+      "expected_output": "Attribution design including: (1) Event taxonomy (page_view, personalization_exposure, cta_click, form_submission, demo_booked, deal_closed), (2) Time-decay or position-based attribution model rationale, (3) GA4 event structure and custom properties, (4) Salesforce integration points for closed-won mapping, (5) Dashboard metrics showing revenue influenced by personalization, (6) Reporting frequency and stakeholder breakdown",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "We're integrating Demandbase reverse-IP with HubSpot for account-based personalization. Map out the data flow: how does company identification flow from website → Demandbase → HubSpot → personalization activation on homepage?",
+      "expected_output": "Technical architecture diagram and step-by-step flow showing: (1) Demandbase JavaScript tag initialization and IP lookup, (2) Company profile enrichment from Demandbase, (3) HubSpot contact creation/update with company attributes, (4) Smart content rule setup in HubSpot, (5) Fallback logic for unmatched visitors, (6) Privacy/consent considerations, (7) Troubleshooting common integration issues",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "We have 100k monthly homepage visitors split: 60% SMB, 30% Mid-Market, 10% Enterprise. Our demo conversion baseline is 1.5%. What personalization priorities should we tackle first, and why?",
+      "expected_output": "Prioritization framework showing: (1) Segment-by-revenue-impact analysis (which segment drives most pipeline value), (2) Conversion opportunity sizing (current vs. potential uplift), (3) Data readiness assessment (which segments we can accurately target), (4) Recommended phased rollout (Phase 1: Enterprise + Mid-Market, Phase 2: SMB), (5) 90-day roadmap with test sequencing",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Create a brief for a 3-week A/B test on our solution pages. We have 4 industry verticals (Finance, Healthcare, Tech, Manufacturing) and want to test if industry-specific case studies improve form submissions. We have 800 monthly visitors per vertical, 3% baseline form submission rate.",
+      "expected_output": "Test brief including: (1) Hypothesis statement, (2) Sample size calculation and minimum duration, (3) Control and variant definitions (industry-specific case study selection), (4) Success metrics beyond form submissions (page engagement, downstream conversion), (5) Statistical significance threshold, (6) Risk mitigation (brand safety, UX consistency), (7) Readiness checklist and success criteria",
+      "files": []
+    }
+  ]
+}

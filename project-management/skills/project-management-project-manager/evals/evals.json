@@ -1,0 +1,53 @@
+{
+  "skill_name": "project-management-project-manager",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Break down a digital platform redesign (12-month project, $2M budget) into a WBS with epics, features, and user stories. Include 3 major epics with 2-3 features each, and 2-3 stories per feature with acceptance criteria.",
+      "expected_output": "Complete WBS showing: (1) Epic layer (3 major areas: Discovery, Design System, Front-end Build), (2) Features under each epic (3-5 stories each), (3) User stories in standard format with acceptance criteria and definition of done, (4) Story point estimates (1-8 point range), (5) Dependencies between stories/features, (6) Timeline estimates per epic/feature",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Build a 12-month hybrid delivery plan for a Contentful CMS migration. Map phases (Discovery → Design → Migration → Go-live), identify what's Waterfall vs. Agile, and create a detailed timeline with milestones and gates.",
+      "expected_output": "Hybrid delivery plan including: (1) Phase breakdown (weeks per phase), (2) Discovery phase (Waterfall: requirements, current state assessment), (3) Migration phase (Waterfall with Agile testing), (4) Go-live phase (phased rollout), (5) Gate criteria per phase, (6) Resource plan and capacity, (7) Stakeholder cadence (weekly standups, monthly reviews, phase gates), (8) Risk register and mitigation",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "We're 3 months into a 6-month project and 30% behind schedule. The team overestimated velocity, there's scope creep, and stakeholders want everything. Help me recover this project.",
+      "expected_output": "Recovery plan including: (1) Root cause analysis (why behind: scope creep? skill gaps? unrealistic estimates?), (2) Options analysis (extend timeline, reduce scope, add resources, hybrid approach), (3) Recommendation with trade-offs, (4) Updated roadmap and phase plan, (5) Stakeholder communication strategy (realistic expectations), (6) Change control process for future scope requests, (7) New estimation and velocity plan",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Design a work story for 'Build shopping cart with add/remove/update/total calculation'. Write full story definition with acceptance criteria, definition of done, subtasks, and test plan.",
+      "expected_output": "Full user story specification including: (1) Story ID and narrative format, (2) 5-8 detailed acceptance criteria (functional, UX, performance, accessibility, mobile), (3) Definition of done checklist, (4) 6-8 subtasks with owners, (5) Dependencies (what must be done first?), (6) Story points and timeline estimate, (7) Unit/integration/UAT test approach, (8) Risk notes",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Create a critical path analysis for a digital platform project. Identify which tasks/features are on the critical path, where there's slack, and what risks could delay the whole project.",
+      "expected_output": "Critical path analysis including: (1) Dependency map showing parallel vs. sequential work, (2) Critical path identified (longest sequence without slack), (3) Slack calculation (which activities can slip without impacting overall timeline?), (4) Risk on critical path (what's most likely to slip?), (5) Mitigation for critical path (dedicated resources, early testing, escalation path), (6) Alternative paths and contingencies",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Estimate this complex feature: 'Build end-to-end checkout flow with payment processing, order confirmation, email notification, and inventory updates.' Break it down and size it.",
+      "expected_output": "Estimation breakdown including: (1) Feature decomposition (which stories?), (2) Story list with narratives, (3) Planning poker estimates per story (1-13 points), (4) Subtasks and effort estimates, (5) Team composition needed, (6) Timeline estimate (weeks), (7) Risk areas (payment integration, email delivery, inventory sync), (8) Assumptions and dependencies",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Design a quality assurance and testing strategy for a platform go-live. What testing phases do we need? When should each phase happen? What are the go-live gates?",
+      "expected_output": "Testing and go-live strategy including: (1) Testing phases (unit → integration → system → UAT → performance/security), (2) Timeline for each phase, (3) Testing team and roles, (4) Test plan and test cases overview, (5) Go-live readiness gates (all tests passed? UAT approved? Monitoring ready?), (6) Phased rollout approach (10% → 50% → 100%), (7) Incident response and rollback plan, (8) Post-launch support (24/7 monitoring, quick fixes)",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Build a stakeholder communication and governance plan for a 12-month platform redesign. Include meeting cadence, audience, and content for each meeting type. How do we make decisions? Who decides what?",
+      "expected_output": "Communication and governance plan including: (1) Stakeholder map (product, engineering, operations, finance, executive), (2) Meeting cadence (daily standups, weekly demos, bi-weekly exec updates, phase gates), (3) Decision-making framework (who decides features? timeline trade-offs? scope changes?), (4) Communication content templates (weekly status, monthly report, phase gate decision), (5) Risk escalation path, (6) Change control process (scope change requests), (7) Approval and sign-off requirements per phase",
+      "files": []
+    }
+  ]
+}

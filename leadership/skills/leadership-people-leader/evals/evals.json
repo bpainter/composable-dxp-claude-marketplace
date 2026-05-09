@@ -1,0 +1,53 @@
+{
+  "skill_name": "leadership-people-leader",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need to have a performance conversation with someone who's been underperforming for 2 months. They're nice, but they're not delivering on their core responsibilities. How should I approach this?",
+      "expected_output": "Should provide a structure for the conversation (opening frame, specific behavior/impact, curiosity about barriers, clear expectation going forward). Use SBI model. Offer exact phrasing. Include follow-up plan (frequency of check-ins, what success looks like, consequences if no improvement). Avoid harsh tone while being direct.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I have a high performer who's clearly burned out and disengaged. How do I understand what's happening and get them back on track without losing them?",
+      "expected_output": "Should provide approach for understanding (curiosity, not judgment). Offer questions to ask in 1:1 (what's pushing hardest, what would energize them, is it workload/scope/personal/growth?). Suggest concrete actions (reduce scope, adjust timeline, increase support). Include prevention plan to avoid future burnout.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I'm about to promote someone into their first leadership role. What should I clarify in the conversation, and how do I set them up for success in their first 90 days?",
+      "expected_output": "Should provide conversation structure (celebration, clarity on new role/expectations, decisions they own, support they'll get). Outline first 90 days with milestones (first month: learn team and priorities; month 2-3: ramp into full ownership). Suggest coaching support and check-in frequency.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "My team is misaligned on priorities and it's causing friction. Some think we should move fast; others think we should focus on quality. Design me a working session to get everyone aligned.",
+      "expected_output": "Should provide 90-minute agenda including: opening (frame the purpose), divergence (everyone shares their priorities), discussion (what's the actual trade-off?), decision-making (voting or trade-off framework), and closing (who owns what, next steps). Include specific discussion prompts.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "I have someone I need to let go of fairly. Walk me through how to prepare, have the conversation, and handle afterward professionally and with dignity.",
+      "expected_output": "Should provide step-by-step preparation (consult HR, documentation, logistics, severance). Conversation script (brief, clear, compassionate). What to do/say; what not to do. Logistics (final paycheck, benefits, off-boarding). How to communicate to team. Emphasis on dignity and fairness throughout.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "My 1:1s feel awkward. We don't have much to talk about and it feels like we're both just waiting for it to end. How do I make it more valuable?",
+      "expected_output": "Should diagnose possible causes (lack of trust, unclear what to discuss, status-meeting mindset, unclear why it matters). Provide new structure emphasizing their agenda first. Offer conversation starter questions (wins, challenges, growth, blockers). Suggest splitting time (their topics + your feedback). Include how to open the 1:1 differently.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "I'm managing two people who have conflict with each other. It's affecting team morale. How do I handle this?",
+      "expected_output": "Should address conflict separately with each person first (understand their perspective, separate person from behavior). Then decide: is it a working relationship issue (they need to collaborate) or interpersonal conflict (deeper trust issue)? Provide conversation approach for each. Include team communication (how to address with broader team).",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "I need to give feedback to someone that they come across as arrogant in meetings, but they're a strong performer. How do I phrase this so they'll hear it and change?",
+      "expected_output": "Should use SBI model to be specific (what exact behaviors show arrogance?). Avoid character judgment. Provide exact phrasing that's direct but caring. Include their perspective (are they aware? Is this defensive masking?). Suggest concrete behavioral alternatives. Offer to coach them on presence/communication.",
+      "files": []
+    }
+  ]
+}

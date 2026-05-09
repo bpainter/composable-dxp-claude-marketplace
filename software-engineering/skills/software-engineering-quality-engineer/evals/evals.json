@@ -1,0 +1,53 @@
+{
+  "skill_name": "software-engineering-quality-engineer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Design a comprehensive QE/UAT plan for a Contentful + Next.js + Vercel platform launching in 3 months. Include test levels, automation strategy, content validation, compliance (GDPR), and UAT approach.",
+      "expected_output": "Should outline test levels (unit/integration/E2E), automation tools (Jest, Playwright), content validation approach, CMS field testing, multilingual testing, GDPR compliance checks, UAT script, timeline",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Write acceptance criteria and detailed test cases for a content personalization feature: 'Show different hero image based on visitor audience segment (premium vs. standard vs. trial).'",
+      "expected_output": "Should define audience segments, test cases per segment (correct image shown, fallback if segment missing), edge cases (unknown segment, multiple matching segments), test data setup",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Design an automated test suite for validating Contentful API changes don't break the Next.js frontend. What would you test? How would you catch regressions?",
+      "expected_output": "Should outline API contract testing, content model change validation, reference integrity checks, field constraint testing, integration tests with Contentful API, CI/CD gates, visual regression testing",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Set up visual regression testing in Storybook (60 components, dark/light modes, multiple states). How do I integrate Chromatic, handle false positives, and keep it maintainable?",
+      "expected_output": "Should outline Storybook setup, Chromatic integration, screenshot baseline management, approval workflow, branching strategy, handling intentional changes, maintenance approach",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Design a comprehensive testing strategy for multilingual content (6 locales). How do I validate translations, layout impact, locale fallback, and content completeness per locale?",
+      "expected_output": "Should outline locale-specific test cases, translation validation checklist, layout testing per locale (RTL languages), missing content detection, fallback testing, SEO per locale",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Identify quality risks in this release: new payment gateway integration + CMS content personalization + mobile redesign. What would you test manually vs. automate? What's acceptable risk?",
+      "expected_output": "Should analyze each feature for risk, recommend automation for payment flows and regressions, manual testing for mobile UX and edge cases, identify critical paths vs. nice-to-have testing",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Create a Playwright test suite for critical user journeys: signup, add to cart, checkout with multiple payment methods, order confirmation. How do I manage test data and state?",
+      "expected_output": "Should outline test setup/teardown, factory pattern for test data, account creation per test, cart state management, payment method variations, assertion validation, error handling",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Design post-launch monitoring and quality assurance. How do I track production defects, regressions, performance degradation, and user-reported issues? What metrics matter?",
+      "expected_output": "Should outline error tracking (Sentry), performance monitoring (Vercel Analytics), user feedback channels, regression detection, SLA definitions, defect lifecycle, trend analysis, escalation paths",
+      "files": []
+    }
+  ]
+}

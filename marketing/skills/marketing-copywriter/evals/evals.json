@@ -1,0 +1,53 @@
+{
+  "skill_name": "marketing-copywriter",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our B2B SaaS landing page headline is 'Enterprise-Grade Analytics Platform.' Our bounce rate is 60%. Rewrite the headline and subheading to be more compelling. Consider our audience: finance managers who spend 3+ hours per week on manual reporting.",
+      "expected_output": "Recommend 3 headline alternatives that address the specific pain point (manual reporting). Provide subheadings that support each. Example: 'Stop Spending 15 Hours/Week on Excel Reports. Get insights in minutes.' Explain why each works and A/B test recommendations.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Our free trial signup form has 8 fields and a 5% completion rate. Simplify the form copy and structure. What fields should we keep vs. remove? What helper text and placeholder text would improve completion?",
+      "expected_output": "Recommend reducing to 3-4 essential fields. For each field: provide clear label, helpful placeholder text, and inline help copy. Show why each field matters. Recommend CTA button label change (from 'Submit' to 'Start free trial'). Explain expected completion rate improvement.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Write an email sequence for a new SaaS user: welcome email (day 0), engagement email (day 3), and upgrade email (day 10). The goal is to drive free trial to paid conversion. Include subject lines, body copy, and CTAs.",
+      "expected_output": "Write full welcome email that sets expectations and starts onboarding. Write engagement email that highlights a key feature and drives a specific action. Write upgrade email that shows ROI and makes case for paid. Each should have compelling subject line and benefit-focused CTA.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Our pricing page lists 12 features per tier. It's confusing and not converting. Rewrite the pricing page copy to be clearer. How should we structure it to address buyer objections and make the value of each tier obvious?",
+      "expected_output": "Recommend tier positioning (e.g., 'For teams,' 'For enterprises'). Rewrite tier descriptions with clear benefits. Select top 5-6 features per tier. Provide copy for common objections (ROI, implementation, support). Suggest CTA copy and reassurance copy (money-back guarantee).",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Our product's password field just says 'Password.' We want to encourage strong passwords. Write the label, helper text, placeholder text, and error message guidance for a better password creation experience.",
+      "expected_output": "Recommend label like 'Create a strong password.' Provide helper text explaining requirements (length, characters). Write error messages for common mistakes: 'Too short,' 'Missing number,' 'Contains your name.' Show success state. Include tone that's encouraging, not condescending.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "We're launching a new product feature. Write a landing page including: headline, subheading, problem statement, solution explanation, benefits, social proof section, and CTA. The feature is for product managers and solves silos between product and engineering.",
+      "expected_output": "Create full landing page arc from problem → solution → proof → CTA. Start with compelling headline addressing the silo problem. Use specific language relevant to product/engineering tension. Include example benefits and 2-3 believable proof points (customer testimonials, case metric). Strong CTA with no risk (free trial, demo).",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Our error messages are confusing users. We have 'Error 404,' 'Invalid input,' and 'Something went wrong.' Rewrite these to be helpful, specific, and guide users to solutions.",
+      "expected_output": "Provide error message rewrite for each. Show pattern: name the problem → explain why → show solution. Example: '404: That page doesn't exist. Check the URL or try searching.' Make empathetic and actionable.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "We're expanding our target audience from SMBs to enterprises. Our homepage copy is too casual. Rewrite our value prop and key messaging to appeal to enterprise buyers while keeping the brand voice authentic. How do we balance professionalism with personality?",
+      "expected_output": "Recommend tone shift: from 'Hey, we make life easy' to 'We eliminate the complexity.' Keep approachable but add credibility signals (team size, data, integrations, compliance). Rewrite hero copy and 3-5 feature benefits for enterprise perspective. Show how to avoid sounding stiff or corporate.",
+      "files": []
+    }
+  ]
+}

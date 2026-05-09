@@ -1,0 +1,121 @@
+{
+  "name": "second-brain",
+  "owner": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "metadata": {
+    "description": "Personal marketplace of Claude plugins. Each plugin is a self-contained bundle of skills (advice-style and orchestrator-style), agents, and slash commands, organized by domain. Plugin sources live at the marketplace root; built .plugin artifacts live in Plugins/. See INSTALL.md for installation instructions.",
+    "version": "0.4.0"
+  },
+  "plugins": [
+    {
+      "name": "obsidian",
+      "source": "./obsidian",
+      "version": "0.4.0",
+      "description": "Opinionated toolkit for Obsidian vault organization. 12 skills (9 advice + 3 orchestrator-shaped) covering tag taxonomy, frontmatter schemas, folder architecture, filename conventions, Maps of Content, and vault audits. One agent (obsidian-agent) and four slash commands (/audit, /sweep, /cleanup-tags, /bootstrap)."
+    },
+    {
+      "name": "claude",
+      "source": "./claude",
+      "version": "0.2.0",
+      "description": "Claude tooling skills for Claude Desktop (Cowork) and Claude Code. Two skills: claude-plugin-creator scaffolds new plugins (folder structure, manifest, .plugin build, install via Settings \u2192 Customize \u2192 Personal Plugins, references Anthropic's official plugins as exemplars) and claude-orchestrator designs the orchestration layer for new Cowork projects (CLAUDE.md project-level routing, multi-phase commands, parallel agent teams). One slash command (/plugin-help). Will grow with skills for hooks, MCP servers, status line, and other Claude-specific workflows."
+    },
+    {
+      "name": "behavioral-economics",
+      "source": "./behavioral-economics",
+      "version": "0.3.0",
+      "description": "Seven behavioral-economics specialists grounded in canonical sources \u2014 Kahneman's *Thinking Fast and Slow*, Thaler & Sunstein's *Nudge*, Ariely's *Predictably Irrational*, Wendel's *Designing for Behavior Change* \u2014 plus Slalom's 6-stage Behavioral Design Model. Six ready-to-use templates: Behavioral Profile, Choice Architecture, Nudges/Biases, Intervention Design, Use-Case Scoring, Use-Case Validation. One agent (behavioral-economics-agent) sequences them. Cross-referenced with The Decision Lab biases index and BeSci tactics catalog for broader coverage."
+    },
+    {
+      "name": "brand",
+      "source": "./brand",
+      "version": "0.3.0",
+      "description": "Two brand specialists: brand strategy (positioning, narrative, voice, audience) and brand design (naming, identity systems, guidelines, visual execution). Outputs feed the design plugin and marketing plugin. One agent (brand-agent) sequences them."
+    },
+    {
+      "name": "consulting",
+      "source": "./consulting",
+      "version": "0.4.0",
+      "description": "Eight management-consulting and digital-strategy advisors grounded in canonical sources \u2014 Block's *Flawless Consulting*, Kubr's *Management Consulting*, Burtonshaw-Gunn's *Essential Tools*, Mabee's *Consulting Discipline*, Robbins & Judge's *Essentials of OB*, Voss's *Never Split the Difference*, and Dixon & Adamson's *Challenger Sale*. Four ready-to-use templates: Engagement Scoping, Negotiation Prep, Challenger Sale Pursuit, Change Readiness & Discovery. One agent (consulting-agent) sequences them. Innovation work moved to its own dedicated `innovation` plugin (formerly consulting-innovation-strategist). DT books cross-referenced from there. Companion Solution Brief at /40_Library/Solution_Briefs/2026-05_Consulting-Engagement-Lifecycle.md."
+    },
+    {
+      "name": "innovation",
+      "source": "./innovation",
+      "version": "0.2.0",
+      "description": "Eleven innovation specialists grounded in canonical sources \u2014 Christensen's *Innovator's Dilemma*, Dyer/Gregersen/Christensen's *Innovator's DNA*, Furr & Dyer's *Innovator's Method*, Doblin's *Ten Types of Innovation*, Ramanujam & Tacke's *Monetizing Innovation*, *Innovation Lab Excellence*, Kelley's *Ten Faces of Innovation*, Catmull's *Creativity, Inc.*, Dyer/Furr/Lefrandt's *Innovation Capital*, Rogers's *Driving Digital Strategy*, *Why Digital Transformations Fail*, Kane et al.'s *Technology Fallacy*, plus *HBR's 10 Must-Reads on Innovation* and *Design a Better Business*. Skills cover strategy, portfolio governance, value engineering across horizons (NPV/EV/real options), JTBD discovery, lean validation, ten-types diagnosis, willingness-to-pay monetization, lab design, disruption analysis, creative leadership/political capital, and digital transformation. Six templates: Three Horizons canvas, Ambition Matrix, JTBD Interview Guide, Ten Types Diagnostic, Value Engineering Canvas, Innovation Charter. One agent (innovation-agent) sequences them. Eight slash commands (audit, strategy, portfolio, discover, validate, value-case, charter, disruption-test) provide high-leverage recurring operations. DT books shared with `consulting-digital-strategist`. Companion Solution Brief at /40_Library/Solution_Briefs/2026-05_Innovation-Operating-System.md."
+    },
+    {
+      "name": "facilitation",
+      "source": "./facilitation",
+      "version": "0.4.0",
+      "description": "Ten facilitation skills grounded in canonical sources \u2014 Rob Evans' *Collaboration Code* (Patterns, Tools, Models, Casebook \u2014 the EY/MG Taylor wavespace tradition), Klein & Newman's *Facilitating Collaboration* (Value Web), Lewrick et al.'s *Design Thinking Playbook*, Hoffman's *Meeting Design*, van der Pijl/Lokitz/Solomon's *Design a Better Business*, and Gray/Brown/Macanufo's *Gamestorming*. A senior facilitator persona plus nine specialists: meeting architect, multi-day workshop designer, collaboration pattern librarian, design thinking coach, strategic visualizer (canvases), decision architect, group dynamics coach, virtual/hybrid specialist, and gamestorming coach. Nine templates and six slash commands (/scope, /design-session, /pick-game, /triage-meeting, /decision-rule, /recap). One agent sequences them."
+    },
+    {
+      "name": "cx",
+      "source": "./cx",
+      "version": "0.2.0",
+      "description": "Nine customer-experience specialists: customer research, JTBD, persona development, journey mapping, service design, information architecture, product trend research, customer-feedback synthesis, and personalization strategy. IA outputs feed the engineering plugin's content modeling. One agent (cx-agent) sequences them."
+    },
+    {
+      "name": "design",
+      "source": "./design",
+      "version": "0.4.0",
+      "description": "Eight UI/UX/web/mobile design specialists plus operational task workflows: product design, web design, motion + interaction, accessibility, design audits, dev-ready handoff, design-process discipline, and screen composition. Consumes brand outputs; feeds engineering. One agent (design-agent) sequences them."
+    },
+    {
+      "name": "leadership",
+      "source": "./leadership",
+      "version": "0.3.0",
+      "description": "Seven leadership specialists grounded in canonical texts (Hire With Your Head, The First 90 Days, Radical Focus, Drive, Good to Great, The Coaching Habit, A Guide to the Good Life, Peopleware, Scaling Teams, Radical Candor, and others). Executive coaching for neurodivergent leaders, everyday people-leadership, performance-based hiring, meeting and cadence architecture, onboarding and transitions, goals/OKRs, and stoic perspective. One orchestrating agent (leadership-agent)."
+    },
+    {
+      "name": "marketing",
+      "source": "./marketing",
+      "version": "0.2.0",
+      "description": "Eight marketing and content specialists: copywriting, SEO/GEO/AEO strategy, growth hacking, web analytics (GA4, GTM), social media (LinkedIn, Instagram), event organization, plus task-focused skills for SEO briefs and AI-extractable GEO content. One agent (marketing-agent) sequences them."
+    },
+    {
+      "name": "project-management",
+      "source": "./project-management",
+      "version": "0.4.0",
+      "description": "Nine project-management and delivery skills grounded in canonical sources \u2014 Reinertsen's *Principles of Product Development Flow*, Gothelf's *Lean vs Agile vs Design Thinking*, and Josephs & Rubenstein's *Risk Up Front*. The senior PM persona plus task-focused workflows (RAID, requirements, user stories, sprint planning, retros, facilitation), plus two specialists: flow-engineer (CoD, queue theory, WIP) and methodology-advisor (DT vs Lean vs Agile). Three templates (Flow Metrics, Methodology Selector, Risk Up Front)."
+    },
+    {
+      "name": "product-management",
+      "source": "./product-management",
+      "version": "0.1.0",
+      "description": "Product management as a distinct discipline from project management. One skill grounded in Melissa Perri's *Escaping the Build Trap*: strategy cascade (Vision \u2192 Strategic Intents \u2192 Product Initiatives \u2192 Options), the Product Kata, outcomes vs. outputs, product discovery, and the four product roles. Cross-references Reinertsen's flow economics and Gothelf's methodology choice. One template (Product Strategy Cascade). Will grow with skills for product discovery, product analytics, product operations, and product leadership."
+    },
+    {
+      "name": "software-engineering",
+      "source": "./software-engineering",
+      "version": "0.3.1",
+      "description": "Twenty-eight engineering specialists: architecture personas (composable, cloud, backend), build personas (frontend, mobile, design systems, DevOps, QA), AI/ML/data/security/writing, Next.js 16 deep dives (routing, server/client, cache, actions, errors, performance, config), plus task-focused workflows for shadcn + Tailwind. One agent (software-engineering-agent). Contentful platform-implementation work has moved to the adjacent `contentful` plugin; Vercel platform-implementation work has moved to the adjacent `vercel` plugin."
+    },
+    {
+      "name": "contentful",
+      "source": "./contentful",
+      "version": "0.1.0",
+      "description": "Twelve specialists for implementing Contentful-based composable platforms \u2014 content modeling (Topics & Assemblies), React/Next.js wiring (preview vs. delivery, GraphQL, on-demand revalidation), space and environment architecture (aliases, deployment pipeline, cross-space refs), reproducible CMA migrations via CLI, GraphQL Content API patterns, signed webhooks, delivery + image optimization, App Framework custom UI extensions, Personalization (former Ninetailed), rich text rendering, localization, and the Contentful MCP / CLI workflows that drive agent-led delivery. One agent (contentful-agent) sequences them. Includes a live reference of the Slalom Demo 2.0 space's 44 content types and a curated map of the Contentful Marketplace."
+    },
+    {
+      "name": "algolia",
+      "source": "./algolia",
+      "version": "0.1.0",
+      "description": "Twelve specialists for implementing Algolia-powered search experiences in composable platforms \u2014 index design (records, attributes, replicas, virtual replicas), relevance tuning (ranking, custom ranking, synonyms, query rules, typo, A/B, NeuralSearch hybrid), React InstantSearch / Next.js Hooks, the Autocomplete UI library, direct search-client usage (RSC, edge, multi-index), indexing pipelines (Marketplace app vs. Ingestion vs. custom Vercel-Function indexer), API-key strategy and secured keys for multi-tenant filtering, the Recommend API (Related Items, FBT, Trending, Looking Similar), AI surface (Personalization, NeuralSearch, Query Categorization, Dynamic Re-Ranking), Insights events and A/B testing, the Contentful \u2194 Algolia integration we ship by default on Composable DXP engagements, and Algolia MCP / CLI workflows for agent-led delivery. One agent (algolia-agent) sequences them. Five slash commands (/algolia-bootstrap, /algolia-audit, /algolia-relevance-review, /algolia-reindex, /algolia-keys-rotate) cover the canonical engagement lifecycle. Pairs tightly with the contentful plugin."
+    },
+    {
+      "name": "vercel",
+      "source": "./vercel",
+      "version": "0.1.0",
+      "description": "Eleven specialists for shipping on Vercel \u2014 deploy pipeline (Production / Preview / Development environments, domains, Deployment Protection), Fluid Compute and runtimes (Node + concurrency, Edge for low-latency paths, function configuration), Edge Network and CDN (caching layers, ISR / PPR, image optimization, bandwidth guardrails), Vercel-managed storage (Blob, KV, Postgres, Edge Config), observability (Speed Insights, Web Analytics, Logs, Drains, OTEL), security (WAF, BotID, Bot Management, Deployment Protection, Trusted IPs, headers), the AI surface (Vercel AI SDK and AI Gateway), v0 design-to-code, the agentic infrastructure (Sandbox, Vercel Agent, Workflows), and the Vercel REST API for programmatic ops. One agent (vercel-agent) sequences them. Adjacent to the software-engineering plugin's Next.js skills \u2014 software-engineering owns the framework, vercel owns the platform."
+    },
+    {
+      "name": "bynder",
+      "source": "./bynder",
+      "version": "0.1.0",
+      "description": "Twelve specialist skills for implementing and optimizing Bynder DAM-based composable platforms \u2014 asset modeling and metaproperties, Brand Guidelines, derivative templates, the bynder-js-sdk, Universal Compact View embedding, Bynder + Contentful pairing, portal and account architecture, permissions and workflow, webhooks and asset events, marketplace connectors, migrations into Bynder, and optimization audits for existing implementations. Production-grade guidance for Slalom's Composable DXP practice."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "skill_name": "marketing-seo-geo-strategist",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our website has 50 pages but ranks for only 20 keywords. Our competitors rank for 300+. Conduct an SEO audit framework for our site. What are the likely issues and how do we systematically improve our keyword coverage?",
+      "expected_output": "Walk through SEO audit framework: technical (Core Web Vitals, crawlability), on-page (title/meta quality, content depth), content gaps (missing topics competitor covers). Identify likely root cause: thin content, poor site structure, low domain authority, or missing topic clusters. Recommend roadmap: content gap analysis, content depth expansion, internal linking strategy, backlink building.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We're creating content for a new SaaS product targeting enterprise companies. We want to optimize for both traditional SEO AND get cited by LLMs (GEO). Outline a content strategy for our first 5 pillar pages that works for both channels.",
+      "expected_output": "Recommend 5 pillar topics (education/research-focused, not sales-focused). For each, show: structure for AEO (Q&A format, lists, scannable), depth for GEO (2500+ words, original research/framework). Include schema markup recommendations. Show how same content serves both channels without duplication.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our blog article on '[topic]' has 50K monthly searches, ranks #8, and gets 200 clicks/month. We want to boost ranking and get featured in Google's AI Overview. What specific optimizations should we make?",
+      "expected_output": "Recommend: 1) Expand content depth (aim for 3000+ words), 2) Add original research or frameworks, 3) Restructure with Q&A format and schema markup, 4) Improve on-page signals (title/meta clarity), 5) Build backlinks. Show expected outcomes: rank improvement to #3-5, AI Overview inclusion, CTR increase to 500+ clicks/month.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "We're launching a website on Next.js and Vercel. What SEO setup should we bake in from the start? Include: technical foundations, content architecture, internal linking strategy, and schema markup approach.",
+      "expected_output": "Recommend: 1) Dynamic meta tag management with next/head, 2) Structured URL hierarchy (category/topic/slug), 3) Image optimization with next/image, 4) JSON-LD injection for schema, 5) Sitemap generation, 6) Core Web Vitals optimization (ISR for static performance). Provide code patterns or guidance.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Our new domain (launched 6 months ago) has 20 pages but almost no backlinks and poor domain authority. What's the fastest way to build authority and start ranking? What's realistic for the next 6 months?",
+      "expected_output": "Acknowledge domain age is a factor but not insurmountable. Recommend: 1) Create exceptional content (original research, frameworks), 2) Target low-competition long-tail keywords, 3) Aggressive backlink strategy (partnerships, guest posts, HARO), 4) Niche authority building. Realistic goals: 50+ keywords ranked, 2000+ monthly visits in 6 months with strong execution.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "How do we measure GEO success? Our LLM citations aren't visible like traditional rankings. What metrics should we track and how do I demonstrate ROI from GEO investment?",
+      "expected_output": "Recommend tracking: 1) Manual citation tracking (search ChatGPT, Perplexity for your domain), 2) GSC referral traffic from Perplexity/ChatGPT, 3) Brand search volume increases, 4) Content depth and research metrics (citations per article, original frameworks created). Frame ROI: citations = brand authority signals + high-intent referral traffic.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "We're planning a major content refresh for 50 articles. Should we: A) Rewrite in-place, B) Create new articles and redirect old, or C) Create new and keep old. What's the SEO impact of each?",
+      "expected_output": "Compare approaches: A) Rewrite preserves URL history and link equity (recommend if improving same topic). B) Redirect passes value but risks lag time (recommend if pivoting to new angle). C) Keep both risks cannibalization (not recommended). Recommend A with strategic consolidation for related topics. Explain link equity preservation.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "We just hired our first content writer. Create a style guide for SEO-optimized content. Include: structure, keyword usage, header hierarchy, internal linking, image optimization, and schema markup requirements.",
+      "expected_output": "Create actionable guide including: 1) Content structure template (H1-H3 hierarchy), 2) Keyword placement (title, intro, headers, 1-2% density), 3) Header guidelines, 4) Internal linking rules (contextual links, anchor text), 5) Image optimization (compression, alt text, captions), 6) Schema markup checklist. Make it concrete with examples.",
+      "files": []
+    }
+  ]
+}

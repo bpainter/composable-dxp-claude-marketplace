@@ -1,0 +1,53 @@
+{
+  "skill_name": "marketing-event-organizer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Help me plan a 2-day regional tech conference. We're targeting 300 in-person attendees, want keynotes and breakout sessions, and need a sponsorship strategy. What's the timeline and budget?",
+      "expected_output": "Complete event plan including: timeline (4-month planning window), budget breakdown ($50-100K range with line items), sponsorship tiers and benefits, target 4 keynotes and 12-16 breakout sessions, venue requirements (1500+ sq ft, breakout rooms), speaker recruitment strategy, marketing channels, and success metrics.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We want to go hybrid (150 in-person, 500 virtual). How do I design the experience so both groups feel engaged? What technology and logistics do I need?",
+      "expected_output": "Hybrid event architecture including: dual A/V setup for capturing presentations, virtual platform selection (Hopin, Luma, Brella), virtual-specific features (Q&A, breakout rooms, networking), staffing for both audiences, tech specs (dual cameras, lighting, sound), virtual attendee engagement tactics, and differences in attendee experience.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Design sponsorship tiers and ROI calculations for a tech conference. What benefits should each tier include, and how do we track sponsor success?",
+      "expected_output": "Sponsorship framework with: Platinum/Gold/Silver/Bronze tiers ($25K-$5K pricing), benefits for each tier (booth, speaking slots, branding, hospitality), ROI metrics (impressions, leads, visibility), sponsor activation ideas, reporting template, and post-event measurement.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "How do I build and grow a monthly tech meetup from 50 to 500 members over 6 months? Design a community engagement and growth strategy.",
+      "expected_output": "Growth roadmap including: messaging and value prop, venue progression (small → larger venues), speaker recruitment and topics, ambassador program setup, referral strategy, social media and email tactics, retention strategies (post-event follow-up, community channels, tiered engagement), and monthly milestones/targets.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Create a run-of-show for a 1-day conference with 2 keynotes, 4 breakout sessions, and 2 networking blocks. Include timing, speaker notes, and contingencies.",
+      "expected_output": "Minute-by-minute schedule (e.g., 8am registration, 9am keynote, 10:15 breakout, etc.) with speaker names and session titles, speaker introduction scripts, transition notes, contingency plans (speaker no-show, AV failure), timing buffers, staff assignments, and backup speakers.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Design a CFP (Call for Proposals) and speaker recruitment strategy. How do I ensure diverse voices and high-quality content?",
+      "expected_output": "CFP framework including: submission form fields (bio, topic, audience level, diversity demographics), review committee process, diversity metrics tracked, outreach targets for underrepresented speakers, speaker timeline (submission → acceptance → logistics), speaker prep materials, and how you'll evaluate proposals.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Create a marketing calendar and messaging strategy for an event launching in 8 weeks. What channels should we prioritize?",
+      "expected_output": "Marketing plan including: channel strategy (email, social, partnerships, PR), 8-week content calendar (what message each week), email sequences (7-8 emails), social media content calendar (post types and frequency), early bird messaging, speaker announcements, registrations target, and metrics to track.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Review this event concept and tell me what risks I should prepare for and what might be missing from my plan.",
+      "expected_output": "Event audit identifying: planning gaps (timeline, budget, speaker/sponsor strategy, marketing), operational risks (venue issues, AV failure, no-shows), community risks (low registration, poor engagement, bad feedback), financial risks (overspend, low sponsor revenue), mitigation strategies, and contingency plans.",
+      "files": []
+    }
+  ]
+}

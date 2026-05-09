@@ -1,0 +1,53 @@
+{
+  "skill_name": "software-engineering-backend-architect",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Design a backend for an e-commerce marketplace with millions of products, sellers, and users. Handle 10k QPS peak. How do you structure services, handle search/catalog, manage inventory, and scale?",
+      "expected_output": "Should outline service boundaries (product/search/inventory/order services), recommend database per service, discuss search infrastructure (Elasticsearch), caching strategy, eventual consistency model, scaling approach",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We're 20 engineers shipping an MVP in 6 months. Should we build a monolith or microservices? Justify your recommendation based on our constraints.",
+      "expected_output": "Should recommend monolith for speed/simplicity, outline team structure, discuss modular architecture, explain when to extract microservices later, show migration path",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Design the data model and API for a financial system handling payments, refunds, and transactions. How do I ensure strong consistency and prevent double-charging?",
+      "expected_output": "Should outline idempotency key strategy, transaction ledger design, double-charge prevention with unique constraint, audit trail for compliance, API contract for payments",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Our API has cascading failures. Service A calls B calls C. If C is slow, A fails. Design resilience patterns: timeouts, circuit breakers, bulkheads, graceful degradation.",
+      "expected_output": "Should outline timeout strategy, circuit breaker state machine, thread pool isolation per service, graceful degradation without cascading errors, monitoring/alerting for each pattern",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Design a real-time notification system for 100 million users. How do I deliver notifications reliably, handle failures, and scale to millions of concurrent connections?",
+      "expected_output": "Should outline queue-based architecture (Kafka for reliability), connection pooling per platform (FCM, APNs), retry/backoff strategy, deduplication, delivery guarantees (at-least-once), monitoring",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Create a GraphQL API that efficiently queries multiple backend REST services. How do I prevent n+1 queries, handle authentication, and manage errors across services?",
+      "expected_output": "Should outline GraphQL resolver batching, data loader pattern for n+1 prevention, authentication at gateway, error aggregation, service versioning, query complexity limits",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Our monolith is 2M lines of code and slows down shipping. When should we extract a microservice and how do I do it safely without downtime?",
+      "expected_output": "Should outline extraction criteria (clear bounds, independent scaling, separate deployment), strangler pattern for safe migration, dual-write during transition, backwards compatibility, rollback strategy",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Design a system that handles distributed transactions across multiple services (e.g., booking hotel + flight + car). How do I handle failures and ensure consistency?",
+      "expected_output": "Should explain Saga pattern (orchestrated or choreographed), compensating transactions for rollback, retry strategy, eventual consistency, idempotency requirements, monitoring failures",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "facilitation",
+  "version": "0.4.0",
+  "description": "Ten facilitation skills grounded in canonical sources: Rob Evans' Collaboration Code (Patterns, Tools, Models, Casebook — the EY/MG Taylor wavespace tradition), Klein & Newman's Facilitating Collaboration (Value Web), Lewrick et al.'s The Design Thinking Playbook, Hoffman's Meeting Design, van der Pijl/Lokitz/Solomon's Design a Better Business, and Gray/Brown/Macanufo's Gamestorming. A senior facilitator persona plus nine specialists: meeting architect, multi-day workshop designer, collaboration pattern librarian, design thinking coach, strategic visualizer (canvases), decision architect, group dynamics coach, virtual/hybrid specialist, and gamestorming coach. Nine ready-to-use templates. One agent (facilitation-agent) sequences them. Six slash commands cover the lifecycle: /scope, /design-session, /pick-game, /triage-meeting, /decision-rule, /recap. v0.3 added the gamestorming coach skill with a 123-game catalog. v0.2 added deep per-pattern (91), per-tool (~110), per-model (33), and per-case (19) catalogs from the Collaboration Code series — the skills carry the depth so you don't have to crack the source PDFs.",
+  "author": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "facilitation",
+    "workshop-design",
+    "meeting-design",
+    "collaboration",
+    "design-thinking",
+    "wavespace",
+    "mg-taylor",
+    "scan-focus-act",
+    "business-model-canvas",
+    "group-dynamics",
+    "psychological-safety",
+    "decision-making",
+    "virtual-facilitation",
+    "hybrid-meetings",
+    "value-web",
+    "rob-evans",
+    "lewrick",
+    "hoffman",
+    "klein-newman",
+    "design-a-better-business"
+  ]
+}

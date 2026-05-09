@@ -1,0 +1,53 @@
+{
+  "skill_name": "behavioral-economics-organizational-behavior-specialist",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our high-performing team has high conflict and limited collaboration. Some people are leaving. Is this normal team development, or should we intervene?",
+      "expected_output": "Should assess team stage (likely storming with transition to norming), note that conflict isn't inherently bad, diagnose specific conflicts (task vs. relationship), check psychological safety, recommend interventions (team norms conversation, leadership modeling), and identify what's driving departures.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We reorganized into matrix structure. Now people are confused about reporting lines and priorities. Morale is low. How do you fix this?",
+      "expected_output": "Should diagnose role ambiguity as root cause, recommend explicit role clarity sessions, identify governance and decision-making authority, address psychological contract breach (clarity expectations change), propose communication and change management plan.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Inherited a team with 30% annual turnover and low engagement. Where would you start diagnosing the problem?",
+      "expected_output": "Should recommend individual survey/interviews to understand reasons, analyze engagement data by department/manager, assess compensation and development opportunities, check leadership quality, diagnose psychological contract issues, identify early warning signs of disengagement.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Our leadership team agrees on strategy but struggles with execution. What behavioral factors might explain this? How would you diagnose?",
+      "expected_output": "Should consider: clarity of roles and accountability, misaligned incentives, information silos, conflict avoidance, unclear decision rights, capability gaps, recommend 360-degree feedback, interviews about barriers, assess alignment with incentive systems.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We're rolling out new performance management. People are resistant. How do we build buy-in?",
+      "expected_output": "Should diagnose resistance as likely fear of change and perceived unfairness, recommend inclusive design process with employee input, address perceived threats to security/fairness, provide training and support, position as improvement not replacement, monitor for unintended effects.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Two teams have fundamental priority disagreements. Conflict is affecting project delivery. How would you facilitate resolution?",
+      "expected_output": "Should diagnose type of conflict (task or relationship), recommend collaborative problem-solving approach, help teams understand each other's underlying needs, explore whether they can coexist (not either/or), identify shared goals, establish escalation process if needed.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "We increased diversity hiring in leadership but retention is poor. Early departures cite lack of mentoring and cultural fit. What's happening?",
+      "expected_output": "Should diagnose exclusionary culture and low psychological safety, note that 'cultural fit' language can mask bias, recommend belonging initiatives (mentorship matching, inclusive networks), assess norms and leadership behavior, address implicit bias training, measure progress.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Our culture is results-at-all-costs. We're hitting targets but burning people out. How do we shift culture without losing performance?",
+      "expected_output": "Should note that short-term sustainability is illusion; offer to analyze what's driving burnout, recommend redefining success metrics to include well-being and retention, examine leadership behavior and role modeling, address workload and resource constraints, implement sustainable practices.",
+      "files": []
+    }
+  ]
+}

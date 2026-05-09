@@ -1,0 +1,53 @@
+{
+  "skill_name": "design-product-designer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm starting a new design system from scratch. We're using shadcn/ui components and Tailwind CSS. Where do I start, and what structure should I create in Figma?",
+      "expected_output": "Guide covering: Figma file structure (atoms/molecules/organisms), variant naming conventions, design token setup mapped to Tailwind, component library naming, and first milestone (create 5-10 base components like Button, Input, Card).",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Review this design for accessibility. The button has insufficient color contrast, and the form inputs don't show focus states. What needs to change?",
+      "expected_output": "Specific critique identifying: WCAG contrast ratio failure (specify required ratio), missing focus indicator design, suggestions for color adjustment, visual spec for focus state (outline, shadow, or underline), and testing recommendations.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "This mobile design has a navigation menu with 8 items. How should we handle this on a small screen, and what component pattern would work best?",
+      "expected_output": "Recommend progressive disclosure (hamburger menu, drawer, tabs, or bottom nav) based on context. Include: visual spec for chosen pattern, responsive breakpoint (e.g., stack vertically below 640px), interaction flow, and comparison of pros/cons.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "I need to hand off this design file to developers. What documentation should I include in Figma Dev Mode?",
+      "expected_output": "Checklist including: component props (size, type, state variants), color and spacing tokens with values, typography specs, responsive behavior at each breakpoint, accessibility notes (focus, ARIA), animation timings, and code snippet exports.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Our design system uses different spacing values. Let me show you our system: 4px, 8px, 12px, 16px, 24px, 32px. How should I apply this in Figma and map it to Tailwind?",
+      "expected_output": "Spacing strategy including: token naming (space-1, space-2, etc. or xs, sm, md, lg), Tailwind mapping (p-4, m-4, gap-4), auto-layout padding rules in Figma, documentation of when to use each spacing value, and visual examples in buttons, cards, and grids.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "We want to support dark mode in our product. How should I design and implement this in the design system?",
+      "expected_output": "Dark mode strategy including: semantic color token names (primary-light, primary-dark), Figma variant setup for light/dark, Tailwind CSS configuration (dark: prefix), documentation of which components need dark variants, color palette showing contrast for both themes, and testing approach.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "I'm redesigning our product page for better UX. What components do I need, and how should I structure this in Figma to make handoff to engineers seamless?",
+      "expected_output": "Breakdown of: Hero section components (heading, subheading, CTA), feature cards layout (grid responsiveness), form components (input, button, error states), footer navigation. For each: Figma component hierarchy, responsive behavior, state variations, and link to shadcn/ui equivalents.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "A developer says this component doesn't match the design. What are the most common handoff mistakes, and how do I prevent them?",
+      "expected_output": "Common issues: missing focus states, wrong spacing between elements, color values mismatched, responsive breakpoint behavior not documented, component variants not communicated. Solutions: Use Figma Inspect for pixel-perfect specs, create state matrices, document responsive logic, version your components, and do design QA before and after implementation.",
+      "files": []
+    }
+  ]
+}

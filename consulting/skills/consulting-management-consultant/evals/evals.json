@@ -1,0 +1,53 @@
+{
+  "skill_name": "consulting-management-consultant",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our client is requesting 'a digital transformation strategy' but that's too vague. Help me define a crisp problem statement and scope for a 10-week engagement with a fixed budget of $200k.",
+      "expected_output": "Engagement scoping including: (1) Questions to ask client to sharpen problem (what's broken? what's the KPI impact?), (2) Refined problem statement (specific, measurable), (3) Proposed scope (what's in/out), (4) Phased approach for 10 weeks, (5) Resource plan for $200k budget, (6) Success criteria (how will we know we succeeded?), (7) Key risks and assumptions, (8) Draft SOW outline",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Review this SOW I've drafted for a transformation engagement. Is the scope too broad? Is the timeline realistic? What's missing?",
+      "expected_output": "SOW review including: (1) Scope assessment (is it clear and achievable in 12 weeks?), (2) Timeline feedback (realistic deliverable dates?), (3) Detailed feedback (what's vague? what's missing?), (4) Resource adequacy (do we have right team?), (5) Risk identification (what could go wrong?), (6) Recommendations for SOW strengthening, (7) Negotiation talking points (where to push back with client?)",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "We're diagnosing why a major digital transformation initiative stalled after 6 months. The client blames IT, IT blames the business, and the sponsor has lost momentum. Where do we start the diagnosis?",
+      "expected_output": "Diagnostic framework including: (1) Root cause hypotheses (project governance breakdown? scope creep? skill gaps? misaligned incentives? leadership change?), (2) Interview plan (who should we talk to? what questions?), (3) Data to gather (timeline, budget, resource allocation, decision velocity), (4) Stakeholder assessment (who's aligned? who's resisting?), (5) Initial problem reframe hypothesis, (6) Quick diagnostic plan (1-week intensive discovery)",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Map stakeholders for a transformation initiative and build an alignment strategy. We have executive sponsor (CEO), operations VP (resistant), CIO (overloaded), frontline teams (anxious about change). Design engagement plan for each.",
+      "expected_output": "Stakeholder strategy including: (1) Power-Interest grid placement for each stakeholder, (2) Perspective/concern analysis for each (VAIN framework), (3) Tailored engagement approach per stakeholder, (4) Communication cadence and content, (5) Resistance navigation plan (esp. Operations VP), (6) Sponsorship strategy (how to leverage CEO), (7) Working group structure and governance, (8) Early wins strategy to build momentum",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Our client's executive team has three different views on the problem and solution. How do we facilitate alignment without solving the problem for them?",
+      "expected_output": "Facilitation strategy including: (1) Pre-work (individual stakeholder interviews to understand each perspective), (2) Alignment workshop structure (how to surface perspectives and create shared understanding), (3) Decision framework (how do we move from debate to decision?), (4) Facilitation questions (how to guide without directing), (5) Trade-off clarity (what are the implicit values/assumptions in each view?), (6) Follow-up plan (decision memo, commitment confirmation)",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Design a change readiness assessment and adoption plan for rolling out a new operating model to 5,000 employees over 6 months. What do we need to assess? How do we plan adoption?",
+      "expected_output": "Change readiness and adoption plan including: (1) Readiness assessment dimensions (sponsorship, urgency, vision clarity, capability, incentives, communication, culture), (2) Assessment methodology (surveys, interviews, observations), (3) Readiness score and risk identification, (4) Adoption phasing (Awareness → Engagement → Adoption → Internalization), (5) Communication strategy per phase, (6) Training and capability building plan, (7) Incentive design, (8) Metrics to track adoption (% aware, % engaged, % using new process), (9) Risk mitigation for adoption barriers",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "One of our key stakeholders is resisting and creating friction. How do we navigate this difficult conversation and address root concerns?",
+      "expected_output": "Resistance navigation strategy including: (1) Analysis of surface vs. root concerns (surface: 'this won't work' → functional: 'we lack skills' → emotional: 'I'm losing authority'), (2) Preparation for difficult conversation (what's our hypothesis about root concern?), (3) Conversation structure (open, listen, probe, validate, problem-solve, commit), (4) Questions to uncover root concern, (5) Problem-solving options to address concern, (6) Follow-up and accountability, (7) Escalation path if individual doesn't move",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "We're 4 weeks into a 12-week engagement. The client is asking us to expand scope significantly. How do we handle this scope creep?",
+      "expected_output": "Scope management strategy including: (1) Why scope creep happens (ambiguous requirements, stakeholder requests, changing context), (2) Evaluation of scope change request (is it legitimate? how does it impact timeline and budget?), (3) Change control process (documented request, impact assessment, steering approval), (4) Decision options (add scope, extend timeline, reduce existing scope, add resources), (5) Communication to client (transparent about trade-offs), (6) Contract amendment or change order, (7) Prevention for future requests (clearer upfront scope definition)",
+      "files": []
+    }
+  ]
+}

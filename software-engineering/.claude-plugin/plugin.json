@@ -1,0 +1,31 @@
+{
+  "name": "software-engineering",
+  "version": "0.3.1",
+  "description": "Thirty technology and engineering specialists spanning architecture (composable, cloud, backend), engineering (frontend, mobile, design systems, DevOps, QA), AI/ML (AI engineering, agentic workflows), data (data engineering), security, technical writing, and content modeling — plus task-focused workflows for Next.js scaffolds, shadcn components, Tailwind tokens, accessibility audits, design implementation, component specs, and shadcn registry authoring — plus seven Next.js 16 deep dives (routing, server/client, cache + Suspense, server actions, errors/loading, performance/Web Vitals, config/security). One agent (software-engineering-agent) for general framework-level orchestration, with handoffs to vercel-agent and contentful-agent in adjacent plugins for platform-specific work. Four slash commands wire the Next.js skills into repeatable workflows: /nextjs-bootstrap, /nextjs-feature, /nextjs-upgrade, /nextjs-audit. Plugin-shared references include modern-javascript-essentials (ES2026, Temporal, iterator helpers, Set methods) and architecture-patterns-2026 (the ten patterns + MACH overlay).",
+  "author": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "engineering",
+    "architecture",
+    "cloud",
+    "ai",
+    "ml",
+    "frontend",
+    "backend",
+    "devops",
+    "security",
+    "data-engineering",
+    "composable",
+    "agentic",
+    "nextjs",
+    "nextjs-16",
+    "vercel",
+    "typescript",
+    "react",
+    "ecmascript-2026",
+    "slash-commands"
+  ]
+}

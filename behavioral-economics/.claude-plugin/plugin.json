@@ -1,0 +1,24 @@
+{
+  "name": "behavioral-economics",
+  "version": "0.3.0",
+  "description": "Seven behavioral-economics specialists grounded in canonical sources — Kahneman's Thinking Fast and Slow, Thaler & Sunstein's Nudge, Ariely's Predictably Irrational, and Wendel's Designing for Behavior Change — plus Slalom's 6-stage Behavioral Design Model. Six ready-to-use templates: Behavioral Profile, Choice Architecture, Nudges/Biases, Intervention Design, Use-Case Scoring, Use-Case Validation. Specialists cover decision-making, choice architecture, persuasive communication, organizational behavior, pricing strategy, research methods, and inferential statistics.",
+  "author": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "behavioral-economics",
+    "decision-making",
+    "choice-architecture",
+    "prospect-theory",
+    "nudge",
+    "kahneman",
+    "thaler",
+    "ariely",
+    "wendel",
+    "research-methods",
+    "statistics",
+    "pricing"
+  ]
+}

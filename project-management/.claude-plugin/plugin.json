@@ -1,0 +1,30 @@
+{
+  "name": "project-management",
+  "version": "0.4.0",
+  "description": "Nine project-management and delivery skills grounded in canonical sources: Reinertsen's Principles of Product Development Flow, Gothelf's Lean vs Agile vs Design Thinking, and Josephs & Rubenstein's Risk Up Front. The senior PM persona plus task-focused workflows (RAID, requirements, user stories, sprint planning, retros, facilitation) plus two new specialists: flow-engineer (Cost of Delay, queue theory, batch sizing, WIP) and methodology-advisor (DT vs Lean vs Agile choice). Three ready-to-use templates: Flow Metrics, Methodology Selector, Risk Up Front. One agent (project-management-agent) sequences them.",
+  "author": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "project-management",
+    "delivery",
+    "agile",
+    "scrum",
+    "kanban",
+    "lean",
+    "design-thinking",
+    "raid",
+    "risk-up-front",
+    "user-story",
+    "sprint-planning",
+    "retro",
+    "requirements",
+    "facilitation",
+    "flow",
+    "cost-of-delay",
+    "reinertsen",
+    "gothelf"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "brand",
+  "version": "0.3.0",
+  "description": "Six brand specialists: strategy (positioning, narrative, voice, audience), naming (five-category framework, six-step process), identity-system (logo direction, color, type, photography, iconography), voice-tone (attributes with not-X pairings, tone register matrix, filler-words bans), guidelines-composer (9-chapter deliverable, sized to brand context), and audit (drift detection across identity, voice, surface application, governance). Outputs feed the design plugin and marketing plugin.",
+  "author": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "brand",
+    "branding",
+    "brand-strategy",
+    "naming",
+    "identity",
+    "logo",
+    "wordmark",
+    "color-system",
+    "typography-system",
+    "brand-voice",
+    "tone",
+    "brand-guidelines",
+    "brand-audit",
+    "visual-identity"
+  ]
+}

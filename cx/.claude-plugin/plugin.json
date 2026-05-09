@@ -1,0 +1,21 @@
+{
+  "name": "cx",
+  "version": "0.2.0",
+  "description": "Nine customer-experience specialists: customer research, jobs-to-be-done, persona development, journey mapping, service design, information architecture, product trend research, customer-feedback synthesis, and personalization strategy. Information architecture outputs feed directly into the engineering plugin's content modeling.",
+  "author": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "customer-experience",
+    "cx",
+    "service-design",
+    "research",
+    "persona",
+    "journey-map",
+    "jtbd",
+    "information-architecture",
+    "usability"
+  ]
+}

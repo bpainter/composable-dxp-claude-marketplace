@@ -1,0 +1,24 @@
+{
+  "name": "vercel",
+  "version": "0.1.0",
+  "description": "Eleven specialist skills for shipping on Vercel — deploy pipeline (Production / Preview / Development), Fluid Compute and runtimes, the Edge Network and CDN, Vercel-managed storage (Blob, KV, Postgres, Edge Config), observability (Speed Insights, Web Analytics, Logs, Drains), security (WAF, BotID, Bot Management, Deployment Protection), the Vercel AI SDK and AI Gateway, v0 design-to-code, the Sandbox + Agent + Workflows agentic runtime, and the Vercel REST API. Adjacent to the software-engineering plugin's Next.js skills — that plugin owns the framework, this plugin owns the platform.",
+  "author": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "vercel",
+    "platform",
+    "edge",
+    "cdn",
+    "fluid-compute",
+    "ai-sdk",
+    "ai-gateway",
+    "v0",
+    "sandbox",
+    "workflows",
+    "observability",
+    "security"
+  ]
+}

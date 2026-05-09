@@ -1,0 +1,53 @@
+{
+  "skill_name": "project-management-facilitator",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Design a 2-hour product strategy session for 12 people (mix of PM, design, engineering, leadership). We need to prioritize Q2 work and align on resource trade-offs. Provide the full agenda with timing, activities, and decision-making approach.",
+      "expected_output": "Should provide detailed agenda with: opening (purpose + constraints), silent generation of initiatives (10 min), share-out and grouping (10 min), discussion of top 3-5 (30 min), voting/prioritization (15 min), trade-off clarity (20 min), owner assignment (10 min), close (5 min). Include specific discussion prompts and decision rules. Show how to handle conflict or disagreement.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I'm facilitating a design critique for 15 people. Some give great feedback; others stay silent or feedback gets personal. Design a 60-minute critique session that avoids defensiveness and gets actionable feedback.",
+      "expected_output": "Should structure critique as: opening (frame: feedback is about work, not person), silent reflection (10 min: everyone writes feedback), share-out (organized by topic, not person), discussion (clarify intent of design, trade-offs), questions for designer. Include language that redirects personal feedback to behavioral feedback. Show how to manage both silence and dominance.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "My team is deeply misaligned on a major decision. There's real disagreement, not just lack of clarity. Design a 90-minute working session to surface the disagreement, understand it, and make a decision.",
+      "expected_output": "Should provide agenda that: opens with naming disagreement as valuable, allows each perspective to be fully stated (15 min each), explores underlying concerns and trade-offs (30 min), tests decision options (what if we chose A? B?), votes or decides (10 min). Include conflict navigation language. Show how to ensure dissenters feel heard even if they didn't win.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Create a service design workshop agenda for reimagining our customer onboarding experience. 6 hours, 25 people (mix of employees and 5-6 customers). Goal: surface pain points, identify opportunities, and leave with a direction.",
+      "expected_output": "Should provide full-day structure: morning (context-setting, customer perspectives, current journey mapping), midday (problem identification, themes), afternoon (opportunity ideation, voting on priorities), close (next steps, ownership). Include specific service design tools (journey map, stakeholder map, prototype sketching). Show how to balance employee and customer perspectives.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "I'm new to facilitation. One person dominates every meeting. Another person never speaks. How do I manage both without being controlling or awkward?",
+      "expected_output": "Should provide specific techniques: use silent generation (sticky notes, writing) before discussion; use round-robin format (each person speaks in turn); set norms at the opening ('I want to hear from everyone'); invite quiet voices directly ('Sarah, what are you thinking?'); interrupt dominance kindly ('Thanks Mark, let's hear from others'). Include exact phrasing for each intervention.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Design a 2-hour team alignment workshop. We're moving to a new operating model and people are anxious about what it means. Need to surface concerns, clarify how it'll work, and get commitment.",
+      "expected_output": "Should open with acknowledging anxiety (validates their concern). Provide structure: current state clarity, new model explanation, Q&A (surface real concerns), small group discussion (what's scary, what's hopeful), full-group commitment (what needs to happen for you to be on board?). Include parking lot for issues that need offline follow-up.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "I'm running a quarterly planning session with leadership. It's 4 hours and we need to: review metrics, discuss strategy, set goals, and align on priorities. Design the agenda and facilitation approach.",
+      "expected_output": "Should allocate time: metrics review (30 min), strategy discussion (45 min), goal-setting (60 min), prioritization and trade-off (45 min). Include how to prevent endless debate and move to decision. Provide decision framework (impact vs. effort, strategic fit). Show how to document decisions clearly with owners.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Design a retro for an agile team (8 people, 60 minutes). Make it more engaging than the standard 'what went well, what didn't.' We want real reflection and commitment to experiments.",
+      "expected_output": "Should provide structure beyond traditional format: opening (celebrate one win), explore themes (not just list good/bad), root cause discussion (why did good things happen?), voting on experiments (what will we try next?), commitment (specific experiment, how we'll measure, review date). Include engagement techniques (visual grouping, voting, small-group discussion).",
+      "files": []
+    }
+  ]
+}

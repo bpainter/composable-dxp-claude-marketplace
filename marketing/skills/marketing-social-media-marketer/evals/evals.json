@@ -1,0 +1,53 @@
+{
+  "skill_name": "marketing-social-media-marketer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're a B2B SaaS company with 8K LinkedIn followers. We post 2x/week but our engagement rate is stuck at 0.5% and we're generating fewer than 2 leads/month from LinkedIn. What's our problem and how do we fix it?",
+      "expected_output": "Diagnose the issue by asking about: content type, posting time, engagement strategy, and DM follow-up. Likely problems: not enough hook, not responding to comments, external link shares, no DM strategy. Recommend: switch to native content (carousels, text), test posting times, 24-hour comment response, personalized DM outreach to engaged accounts.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Create a 4-week LinkedIn content calendar for our DevOps SaaS company. We want a mix that balances thought leadership, educational content, customer stories, and lead generation. Define content pillars and provide sample post hooks.",
+      "expected_output": "Define 4-5 content pillars (e.g., industry trends, how-to guides, customer wins, founder insights). Provide weekly theme-based breakdown with 2-3 sample posts per week including hooks, content type (carousel vs. text), and expected engagement patterns. Include posting days/times and any paid amplification.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "We're launching a DTC fashion brand on Instagram. Our target audience is women 25-40 who value sustainability and minimalism. Design an Instagram content strategy including: content pillars, posting cadence, Reels strategy, hashtag approach, and how we drive traffic to our shop.",
+      "expected_output": "Recommend 4-5 content pillars (e.g., product showcase, lifestyle, behind-the-scenes, education, customer stories). Define posting cadence (feed + Stories). Outline Reels strategy (trending audio, value-driven, personality). Provide hashtag categories (20-30 total). Suggest link-in-bio tools and CTAs for shop conversion.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Our CEO wants to build a personal brand on LinkedIn to establish thought leadership and generate leads for our B2B consulting firm. We have 6 months. Create a 6-month roadmap including: positioning, content strategy, engagement plan, and expected outcomes.",
+      "expected_output": "Outline CEO positioning (e.g., 'expert in [domain] for [audience]'). Define content themes (personal stories, industry insights, tips, behind-the-scenes). Propose posting cadence (3-5x/week). Include engagement tactics (commenting, DM outreach). Set milestones: month 2 (500 followers), month 4 (2K followers, 10+ DM conversations), month 6 (5K followers, 30+ qualified leads).",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We're allocating $5K/month to LinkedIn ads to generate leads for our enterprise software company. How should we structure campaigns (awareness/consideration/conversion)? What audience should we target? How do we optimize for lead quality not just volume?",
+      "expected_output": "Recommend campaign structure: awareness budget ($1500) for brand building, consideration ($2000) for engagement/webinar signups, conversion ($1500) for lead forms. Suggest audience targeting: job titles (CTOs, CIOs), company size, industry vertical. Advise A/B testing: creative, CTAs, landing pages. Track by lead quality score, not just lead volume.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Our Instagram engagement dropped 40% YoY. We've been posting 3x/week with a mix of carousels and static posts, but our reach is declining. What could be going wrong and how do I diagnose this?",
+      "expected_output": "Check: 1) Content quality/relevance shift, 2) Posting time changes, 3) Hashtag strategy effectiveness, 4) Stories/Reels frequency, 5) Engagement response time. Recommend: Pull 90 days of analytics, identify top 5 posts by type and format, test new hooks, increase Stories/Reels frequency, engage with 20+ accounts daily to rebuild visibility.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "We want to launch a user-generated content (UGC) campaign on Instagram to increase social proof and community engagement. Design the campaign including: incentive structure, hashtags, content guidelines, and how we amplify customer content.",
+      "expected_output": "Define incentive (monthly feature, discount, free product, contest). Create branded hashtag for easy discovery. Provide content guidelines (what makes good UGC). Outline amplification: Stories, Reels, posts featuring best UGC. Suggest rules to prevent brand misalignment. Include measurement: UGC volume, reach, conversions from featured posts.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Should we use employee advocacy or rely only on our company LinkedIn page? What are the pros/cons, and how do I set up an employee advocacy program that doesn't feel forced or spammy?",
+      "expected_output": "Show employee advocacy gets 8x more engagement than company page. Recommend starting with small pilot (5-10 employees). Provide weekly content for them to share (don't mandate). Celebrate/recognize top sharers. Show how this avoids spam: curated content, not mass DMs. Recommend tools (LinkedIn, Hootsuite). Track results: reach multiplier, lead attribution from employee shares.",
+      "files": []
+    }
+  ]
+}

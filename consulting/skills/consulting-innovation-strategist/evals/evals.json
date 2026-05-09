@@ -1,0 +1,53 @@
+{
+  "skill_name": "consulting-innovation-strategist",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Design an innovation strategy for a legacy enterprise (100+ years, $5B revenue) entering digital-first markets. We're competing with startups and need to balance defending our core business while building disruptive capabilities. What does our portfolio allocation look like, and how do we govern it?",
+      "expected_output": "Portfolio strategy including: (1) Three Horizons allocation (H1/H2/H3 split with rationale), (2) Innovation Ambition Matrix mapping for 3-5 current/proposed initiatives, (3) Stage-gate governance model with decision criteria, (4) Quarterly steering review structure, (5) Sponsorship and political capital strategy, (6) Organizational design recommendations (separate innovation unit or embedded?), (7) 18-month roadmap with funding phasing",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We have 12 innovation pilots in various stages. Some have been running for 18+ months with no clear path to scale. Help me diagnose why pilots stall and design a scale-up pathway.",
+      "expected_output": "Diagnostic framework and recommendations including: (1) Why pilots fail to scale (funding ambiguity, unclear success criteria, misaligned incentives, ops readiness gaps), (2) Assessment questions for each pilot (learning goals achieved?, unit economics viable?, go-to-market ready?), (3) Kill/pivot/scale decision matrix, (4) Scale-up requirements (funding, team, leadership, ops integration), (5) New pilot funding gate criteria to prevent future stalling",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Conduct a Jobs-to-be-Done discovery for the SaaS HR tech space. We're looking for adjacent innovation opportunities beyond core payroll/HRIS. Map customer jobs, unmet needs, and opportunity areas.",
+      "expected_output": "JTBD discovery output including: (1) 5-8 job stories in circumstance-based format for HR buyer personas, (2) Competing solutions map (current tools, workarounds, doing nothing), (3) Unmet needs ranked by value and competitive gap, (4) Opportunity scorecard showing which needs are biggest (market size, implementation difficulty, differentiation potential), (5) 2-3 recommended innovation directions with business case sketches",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Our innovation efforts feel fragmented—we have projects scattered across three divisions, no clear portfolio view, and no shared governance. Where do we start to build systematic innovation capability?",
+      "expected_output": "Capability-building roadmap including: (1) Current state assessment (portfolio fragmentation, governance gaps, skills deficits, culture/incentive misalignment), (2) Stakeholder alignment plan (C-suite, division leaders, innovation team), (3) Governance design (which model: stage-gate, steering committees, portfolio reviews?), (4) Operating rhythm (monthly, quarterly, annual planning cadence), (5) Metrics and dashboards (learning velocity, portfolio health), (6) Quick wins (0-30 days) to build momentum, (7) 90-180 day roadmap for capability buildup",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Design an experimentation system for this early-stage company (40 people, $2M ARR, SaaS). We want to test 3-4 significant ideas/quarter but lack rigor. What does an innovation operating model look like at this scale?",
+      "expected_output": "Scaled operating model including: (1) Portfolio allocation (given small org, focus on H1+H2, light H3), (2) Simplified stage-gate (discovery → alpha → beta gates, 2-week cycles), (3) Assumption testing framework (5-8 critical assumptions per idea, weekly tests), (4) Learning metrics dashboard (# experiments/week, assumption validation rate, idea-to-scale timeline), (5) Weekly ops rhythm (30-min stand-up, bi-weekly gate reviews), (6) Spreadsheet-based tracking templates, (7) Team roles and responsibilities",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "We're building an innovation lab for this enterprise. Design the organizational structure, governance, funding model, and success metrics. How do we prevent it from becoming innovation theater?",
+      "expected_output": "Innovation lab blueprint including: (1) Org structure (dedicated team size, reporting line, relationship to business units), (2) Portfolio governance (how lab interacts with core business review cadence), (3) Funding model (fixed budget, performance gates, milestone-based advancement), (4) Initiative selection process (ideation funnel, gate criteria), (5) Success metrics (learning velocity, validation rate, ideas advanced to scale, revenue impact timeline), (6) Key roles (lab director, experimentation lead, business lead), (7) Safeguards against theater (rigor requirements, kill discipline, real resource commitment from core business)",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Our portfolio has too many H1 (core) projects and we're stuck in optimization mode. How do we build organizational appetite and capability for H2/H3 innovation?",
+      "expected_output": "Roadmap for shifting culture including: (1) Diagnosis of why H3 is underfunded (risk aversion, incentive misalignment, lack of experience, unclear ROI), (2) Leadership education (frameworks, case studies, success stories), (3) Cultural interventions (explicit failure tolerance, celebration of learning, risk-taking incentives), (4) Safe-to-fail experimentation pilots (small budget, protected time, explicit permission to fail), (5) Success story amplification (internal communications highlighting learning from experiments), (6) Talent and skill building (hiring innovation roles, training in experimentation), (7) 12-month roadmap with quick wins and longer-term culture shifts",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Create a 3-month discovery plan to validate whether our company should enter a new market (new geography, new customer segment, or new use case). What should we test, how many customers should we talk to, and what gates do we need to pass?",
+      "expected_output": "Market validation blueprint including: (1) Key assumptions to test (problem validation, market size, competitive landscape, go-to-market feasibility), (2) Job discovery plan (how many customer interviews, segments to interview, scenarios to explore), (3) Competitive analysis approach (who else is addressing this job, how are they solving it), (4) MVC definition (simplest way to test demand), (5) Success gate criteria (# of customers validating need, pricing willingness, TAM estimate confidence level), (6) Weekly experimentation cadence (Week 1-4: discovery, Week 5-8: concept testing, Week 9-12: business case validation), (7) Deliverables (validated problem statement, TAM estimate, go/no-go recommendation)",
+      "files": []
+    }
+  ]
+}

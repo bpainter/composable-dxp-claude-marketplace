@@ -1,0 +1,53 @@
+{
+  "skill_name": "behavioral-economics-choice-architect",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our retirement savings plan has only 35% enrollment despite employer matching. Employees report that the 45-question enrollment form is overwhelming. How would you redesign this process to increase adoption?",
+      "expected_output": "Should diagnose cognitive friction, recommend progressive disclosure or tiered choice architecture, suggest soft defaults (pre-filled common values), provide specific form redesign with reduced steps, and propose A/B testing metrics to validate changes.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We want to increase organ donation registration through our state DMV system. Currently, opt-in registration is 8%. Should we switch to opt-out? What are the ethical considerations?",
+      "expected_output": "Should explain the default effect and choice of opt-in vs. opt-out, discuss ethical implications of each approach, recommend opt-out with explicit education and easy opt-out process, and address potential equity concerns across demographics.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our healthcare app has 18 customizable settings for notifications, privacy, and data sharing. 95% of users never change defaults. Is this a problem, and how would you redesign it?",
+      "expected_output": "Should assess whether defaults align with user preferences and regulatory requirements, diagnose hyperchoice and decision paralysis, recommend grouping settings by priority, suggest simplified 'quick setup' flow with expert mode, and identify any privacy defaults that may be unintentionally permissive.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "We're redesigning our investment platform to help novice investors choose between 300+ funds. Most users give up and leave their money in cash. What would you do?",
+      "expected_output": "Should identify hyperchoice as root cause, recommend decision tree or screening questionnaire to narrow options, suggest target-date fund default, propose simplified option sets (e.g., 5-7 core funds + expert mode), and include education on benefits of diversification.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We want to nudge employees toward healthier lunch choices in our cafeteria. How would you apply choice architecture to influence behavior without mandating choice?",
+      "expected_output": "Should recommend defaults like salad bar positioning or pre-ordered healthy options, discuss salience (visual prominence of healthier choices), mention social proof and norms, address equity (ensure healthy options are affordable and accessible), and propose testing with sales data.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Our password creation form requires 15 characters, uppercase, numbers, and symbols. Users frequently fail validation. Redesign this to increase compliance while maintaining security.",
+      "expected_output": "Should recommend progressive disclosure of requirements, provide real-time feedback on complexity, suggest password strength meter, consider passphrase alternative or manager integration, and test for both security and usability outcomes.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "We're implementing GDPR consent forms for data collection. Currently, 3% of users actively consent. How would you improve this while maintaining ethical transparency?",
+      "expected_output": "Should identify current friction points in consent flow, recommend plain-language layered consent (key info prominently, details available), discuss legal requirements vs. behavioral design, propose testing different framing and sequencing, and address risks of dark patterns.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Our benefits enrollment has equal opt-in and opt-out defaults for different programs. Participation rates vary wildly. Which programs should use which default, and why?",
+      "expected_output": "Should explain how defaults shape participation, recommend defaults based on program value and information asymmetry, discuss ethical considerations for each, propose testing effects on enrollment and satisfaction, and identify any unintended equity consequences.",
+      "files": []
+    }
+  ]
+}

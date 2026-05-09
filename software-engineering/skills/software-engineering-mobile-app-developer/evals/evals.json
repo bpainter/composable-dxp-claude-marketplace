@@ -1,0 +1,53 @@
+{
+  "skill_name": "software-engineering-mobile-app-developer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're building a fintech mobile app (iOS + Android) for a startup with a 4-month timeline and a small team of JavaScript developers. Should we use React Native or Flutter? Compare on performance, learning curve, and ecosystem.",
+      "expected_output": "Should recommend React Native based on timeline and team skills, explain trade-offs, outline startup performance optimizations, discuss ecosystem advantages, mention OTA update strategy",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Design a modular architecture for a 50-screen social app in Flutter. Show the folder structure, state management approach, navigation strategy, and how features stay independent.",
+      "expected_output": "Should outline feature-based folder structure, recommend Provider for state management, show nested navigation with GoRouter, explain dependency injection, modular testing strategy",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our notes app needs offline-first sync. Multiple devices can edit the same note. Design how I handle conflicts, sync logic, and data consistency without requiring manual resolution.",
+      "expected_output": "Should outline local cache strategy, push/pull sync model, conflict detection (timestamp or CRDT), merge strategy, queue for offline changes, test scenarios for conflicts",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Our Android app takes 3.5 seconds to launch; iOS takes 2 seconds. Walk me through profiling, identifying bottlenecks, and optimizing both platforms.",
+      "expected_output": "Should explain profiling tools (Android Profiler, Instruments), common bottlenecks (initialization, assets, database), platform-specific optimizations, lazy loading strategies",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Set up a Fastlane CI/CD pipeline that builds, tests, and uploads to TestFlight for iOS and Google Play beta for Android on every main branch commit. Show the configuration.",
+      "expected_output": "Should outline Fastlane setup, build signing, test automation, beta upload configuration, version bumping, changelog generation, GitHub Actions/GitLab CI integration",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Convert this Figma design (50 screens, custom buttons, animations, dark mode) into a reusable component system in React Native with Tailwind equivalents.",
+      "expected_output": "Should outline design system components, spacing/color tokens, responsive breakpoints, animation libraries (React Native Reanimated), dark mode implementation, component storybook approach",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Design push notification handling for a chat app. Users can be in the app, backgrounded, or uninstalled. How do I route them to the right chat with full context?",
+      "expected_output": "Should explain foreground/background/killed state handling, deep link strategy, payload design, state restoration, push notification timing, analytics tracking",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Implement biometric authentication (Face ID, Touch ID, Android fingerprint) with fallback to passcode. Show code for both platforms and error handling.",
+      "expected_output": "Should outline biometric library choice (local_auth for Flutter), permission handling, secure storage of passcode, fallback flow, enrollment check, retry logic",
+      "files": []
+    }
+  ]
+}

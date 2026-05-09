@@ -1,0 +1,45 @@
+{
+  "skill_name": "innovation-strategist",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "A regional bank's CEO says 'we need an innovation strategy.' Their portfolio: 14 active digital initiatives, all customer-facing, 12 of 14 are some flavor of UX modernization, NPV-driven business cases, no kill rate in 3 years. CFO is increasingly skeptical. Diagnose the mandate and recommend a strategy on a page.",
+      "expected_output": "Should diagnose the mandate as 'defend the core' or 'innovation theater' (most likely the latter — UX-only portfolio with no kills is theater). Should refuse to design portfolio mechanics until the mandate is named. Should recommend (1) reframing as portfolio across H1/H2/H3, (2) ambition mix appropriate to actual mandate (likely 70/20/10 if defend-the-core, or 60/30/10 if find-next-S-curve), (3) operating model decision — likely hybrid line/lab — and (4) a calendar with quarterly portfolio steering. Should name the kill-discipline gap explicitly (zero kills in 3 years means gates are toothless). Should refuse single-recommendation-without-mandate; deliver an opinionated path with one clarifying question if the mandate is genuinely ambiguous."
+    },
+    {
+      "id": 2,
+      "prompt": "Should we stand up an innovation lab? We're a 4,000-person specialty insurer, profitable, growing 6% YoY. Board is pushing 'innovation.' What's your recommendation?",
+      "expected_output": "Should refuse to recommend yes/no without first running the 'what protects what' diagnostic. Likely surfaces this is mandate-confused — board pressure, not a strategic threat. Should ask one clarifying question: is the underlying concern (a) defending core profitability against a real threat, (b) responding to a perceived disruptor, or (c) board narrative pressure? If (a) or (b), recommend specific lab archetype (likely Discovery Lab or Customer Experience Center, not Venture Studio). If (c), recommend NOT building a lab; instead embed innovation methods into existing line work, hand off to innovation-leadership-coach for capital-building. Should reference 'Innovation Lab Excellence' year-2 collapse pattern as why naive lab stand-up is risky."
+    },
+    {
+      "id": 3,
+      "prompt": "Set the ambition mix and 18-month roadmap for a healthcare network needing to add $200M in transformational revenue while defending the core $4B business.",
+      "expected_output": "Should classify mandate as 'find next-S-curve' (not defend-the-core; transformational revenue is required). Recommend ambition mix ~60/30/10 H1/H2/H3 by capital (heavier H2 because transformational dollars need adjacent expansion vehicles, not pure moonshots). 18-month roadmap structure: months 0-3 (mandate ratification, charter, ambition mix sign-off, governance design); months 3-9 (parallel discovery sprints across 3-5 candidate H2 markets, value engineering for 2-3 high-conviction bets, portfolio scrubbing of existing initiatives); months 9-18 (validated bets advance to Gate 2/3, first H2 launches, H3 options matured). Should name the operating model decision (likely hybrid line/lab) and the cadence calendar (weekly experiments, monthly portfolio status, quarterly steering). Should output as Innovation Strategy on a Page format."
+    },
+    {
+      "id": 4,
+      "prompt": "Our innovation portfolio has produced zero H3 wins in three years. Re-architect the strategy.",
+      "expected_output": "Should diagnose root cause before re-architecting. Likely causes: (1) portfolio is 100% H1 dressed as innovation, (2) H3 bets exist but governance kills them on H1 metrics, (3) sponsor turnover before bets mature, (4) discovery work too thin (Method Validator territory). Should require a portfolio audit (hand to innovation-portfolio-architect) before recommending. Once audit returns, recommendation likely includes: explicit H3 carve-out (5-10% of capital), discovery-driven planning governance for H3 specifically, multi-year sponsor commitment, real-options value framing replacing NPV gates, learning ROI metrics for early-stage bets. Should identify whether this is a strategy problem or a governance/leadership problem and route accordingly."
+    },
+    {
+      "id": 5,
+      "prompt": "Compare a hybrid line/lab model vs. a pure venture-studio model for an insurance incumbent considering AI-native commercial underwriting bets.",
+      "expected_output": "Should diagnose the use case first: AI-native underwriting suggests H2-heavy work with H3 platform bets. Hybrid line/lab fits when the underwriting bets need to integrate with existing actuarial and sales operations; venture studio fits when full separation is required (very different cost structure, regulatory perimeter, brand). Recommend hybrid for most insurance incumbents — the regulatory and customer-relationship overlap is too high for pure separation; venture studio better suits adjacent fintech plays. Decision factors: degree of customer-base overlap, regulatory-license sharing, talent retention strategy, time-to-impact tolerance. Should give one clear recommendation with named conditions under which the alternative would be better."
+    },
+    {
+      "id": 6,
+      "prompt": "Design the operating cadence for a $80M innovation budget across 22 active bets in a 12,000-person enterprise.",
+      "expected_output": "Should recommend cadence at four frequencies: (1) weekly — discovery/validation team standups, experiment results posted; (2) monthly — portfolio status review, 45 min, blockers escalated, resource shifts; (3) quarterly — portfolio steering committee, 2-3 hrs, rebalance/kill/fund-new decisions, value engineering refresh; (4) annually — strategy refresh, mandate review, ambition mix re-set. Should name attendees per cadence. Should require a single portfolio dashboard refreshed weekly. Flag that 22 bets is high — recommend cap at 15-18 with quarterly reviews driving consolidation. At $80M / 22 bets = $3.6M average, which is too uniform — funding should stage per gate (Gate 0-1: $50K-$250K; Gate 2-3: $1.5M-$5M; Launch: variable)."
+    },
+    {
+      "id": 7,
+      "prompt": "Our 'innovation' has degraded into innovation theater. Quarterly steering committees produce slide decks and no decisions. How do we fix it?",
+      "expected_output": "Should diagnose the structural causes (mandate-confused, gates toothless, no kill discipline, learning metrics absent, capital allocation doesn't match strategy). Should refuse to fix with surface interventions (better dashboards, more workshops). Recommend: (1) re-ratify mandate at executive level — refuse the next steering until done; (2) tighten gate criteria with explicit kill conditions; (3) build kill ceremony rituals; (4) require validated learning before funding advancement at every gate; (5) cap initiative count; (6) replace activity metrics with learning ROI for early stage and outcome metrics for late stage. Hand off operational redesign to innovation-portfolio-architect; hand off culture/candor work to innovation-leadership-coach. Note that fixing innovation theater takes 9-12 months — set expectations accordingly."
+    },
+    {
+      "id": 8,
+      "prompt": "Our CEO wants Slalom Composable DXP to 'be more innovative.' What's a strategy worth running?",
+      "expected_output": "Should treat this as an internal practice mandate, not client work. Diagnose what 'more innovative' actually means — likely (a) differentiated services beyond commodity composable implementations, (b) thought leadership and POVs, (c) accelerators/IP, or (d) all three. Recommend mandate type 'find next-S-curve' for the practice itself (composable DXP is maturing as a category). Ambition mix ~60/30/10. H1: refine current composable services; H2: AI-native experience services, modular accelerator templates, ISV-co-developed offerings; H3: new operating models for client-facing innovation work. Cadence: monthly practice innovation review, quarterly investment decisions tied to GTM cycle. Reference 50_Knowledge/Frameworks/Go_to_Market for alignment to firm 2026 GTM target. Reference Career Navigator Market Solutions track — this work directly supports Bermon's Senior Director → Managing Director progression metrics."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "product-management",
+  "version": "0.1.0",
+  "description": "Product management as a distinct discipline from project management. One skill — product-management-product-manager — grounded in Melissa Perri's Escaping the Build Trap (2018), with cross-references to Reinertsen's Principles of Product Development Flow and Gothelf's Lean vs Agile vs Design Thinking. Covers product strategy (Vision → Strategic Intents → Product Initiatives → Options), the Product Kata, outcomes vs. outputs, product discovery, and the project-to-product organizational shift. One template (Product Strategy). Will grow with skills for product discovery, product analytics, product operations, and product leadership.",
+  "author": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "product-management",
+    "product-strategy",
+    "outcomes",
+    "product-discovery",
+    "product-kata",
+    "perri",
+    "build-trap"
+  ]
+}

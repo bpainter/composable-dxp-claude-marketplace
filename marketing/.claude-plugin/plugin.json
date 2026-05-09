@@ -1,0 +1,20 @@
+{
+  "name": "marketing",
+  "version": "0.2.0",
+  "description": "Eight marketing and content specialists: copywriting (UX, conversion, landing pages), SEO/GEO/AEO, growth hacking, web analytics (GA4, GTM), social media, event organization, plus task-focused skills for SEO briefs and GEO content drafts.",
+  "author": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "marketing",
+    "copywriting",
+    "seo",
+    "geo",
+    "growth",
+    "analytics",
+    "social-media",
+    "ga4"
+  ]
+}

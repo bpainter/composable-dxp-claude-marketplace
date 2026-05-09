@@ -1,0 +1,36 @@
+{
+  "name": "design",
+  "version": "0.4.0",
+  "description": "Fifteen UI/UX/web/mobile/surface design specialists plus operational task workflows. Includes design-taste (anti-bland override layer with dials, intent-first protocol, named AI tells, four pre-show checks), product/web/screen design, motion-and-interaction (with Emil Kowalski's Animation Decision Framework, Sonner/Vaul defaults), accessibility, design audits, dev-ready handoff, design process discipline, plus surface-specific authoring for 16:9 decks, 8.5x11 long-form documents, social assets (LinkedIn/Instagram), iconography (Lucide/Phosphor/Flaticon), visualization (Mermaid/napkin.ai/shadcn-charts/commission), and imagery (higgsfield: nano banana 2, seedance 2). Includes shadcn ecosystem inventories shared with the software-engineering plugin.",
+  "author": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "design",
+    "ui",
+    "ux",
+    "design-taste",
+    "anti-bland",
+    "web-design",
+    "mobile-design",
+    "presentation-design",
+    "document-design",
+    "social-design",
+    "iconography",
+    "visualization",
+    "imagery",
+    "motion",
+    "accessibility",
+    "design-system",
+    "handoff",
+    "shadcn",
+    "stylistic-vocabulary",
+    "higgsfield",
+    "napkin-ai",
+    "flaticon",
+    "sonner",
+    "vaul"
+  ]
+}

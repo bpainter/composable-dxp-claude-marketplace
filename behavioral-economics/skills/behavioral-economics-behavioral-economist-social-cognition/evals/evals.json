@@ -1,0 +1,53 @@
+{
+  "skill_name": "behavioral-economics-behavioral-economist-social-cognition",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our environmental policy emphasizes the economic costs of inaction. Support is declining among both conservatives and progressives. How would you reframe this message?",
+      "expected_output": "Should recommend values-based framing matching audience segments (e.g., 'freedom/innovation' for conservatives, 'fairness/community' for progressives), provide specific reframed language for each, diagnose why current cost-focused messaging isn't working, and suggest testing approach with target audiences.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We're launching a health technology for older adults who distrust tech companies. Specify the audience cognition barriers and design messaging to overcome skepticism.",
+      "expected_output": "Should identify trust, expertise, and in-group identity barriers, recommend peer messengers (trusted community leaders or other older adults), use gain-frame emphasizing health benefits, address specific concerns directly, and suggest focus group testing with target demographic.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Vaccine uptake is low in this community due to historical medical racism. How would you design messaging that builds credibility and addresses real historical concerns?",
+      "expected_output": "Should acknowledge legitimate historical trauma, recommend community-embedded messengers with shared identity, use transparent, two-sided arguments addressing specific concerns, avoid defensiveness or minimization, and propose collaborative approach with community leaders.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Our nonprofit's donation messaging emphasizes suffering and need. Donations are flat. Reframe this to activate approach motivation and empowerment instead.",
+      "expected_output": "Should diagnose why loss-frame (suffering) isn't working, recommend gain-frame emphasizing impact and change, use salient stories of transformation and hope, include social proof of donor effectiveness, and suggest testing messaging variants.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We're rolling out a diversity initiative that some employees oppose. Design messaging to minimize backlash and build support among skeptics.",
+      "expected_output": "Should acknowledge legitimate concerns without validating opposition, recommend shared values frame (fairness, talent, competitive advantage), avoid identity-threat framing, include peer/leadership endorsement, anticipate and address counterarguments, and propose change management communication plan.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Our brand is perceived as corporate and out-of-touch. Design messaging to reposition with younger, socially conscious consumers without alienating existing customer base.",
+      "expected_output": "Should segment audiences by values and processing style, recommend different messaging for different groups (values-based for younger, credibility/tradition for existing), propose visual and narrative identity shifts, identify potential backlash risks, and suggest testing with focus groups.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Voters in swing districts are split on a tax policy. Design messaging strategy that addresses different audience segments without appearing to flip-flop.",
+      "expected_output": "Should recommend core message with audience-specific framing, explain how same policy aligns with different values (efficiency for conservatives, fairness for progressives), identify common ground where possible, avoid contradictory claims, and suggest testing by segment.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Our consultancy pitch is fact-heavy but not resonating with C-suite buyers. Redesign the narrative to activate their decision-making process.",
+      "expected_output": "Should diagnose that analytical buyers need System 2 credibility but want System 1 engagement, recommend opening with business impact story, lead with risk/opportunity relevant to executive concerns, support with evidence and expert validation, provide clear call-to-action with low perceived risk.",
+      "files": []
+    }
+  ]
+}

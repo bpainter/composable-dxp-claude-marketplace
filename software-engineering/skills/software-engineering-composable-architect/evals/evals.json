@@ -1,0 +1,53 @@
+{
+  "skill_name": "software-engineering-composable-architect",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Design a composable architecture for a product marketing site. We need content from Contentful, search via Algolia, and personalized recommendations using Braze. What services should we use, and how do they communicate?",
+      "expected_output": "System diagram showing: Contentful (content management), Next.js (frontend), Vercel (deployment), Algolia (search), Braze (personalization), and interaction flows (APIs, webhooks). Include: data flow, real-time indexing strategy, personalization workflow, and deployment strategy.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Our Next.js app has slow page loads. Should we use SSG, SSR, or ISR? How do we optimize Contentful queries? When should we use edge functions?",
+      "expected_output": "Performance strategy including: when to use each rendering method (SSG for content pages, ISR for frequently updated content, SSR for personalized), GraphQL query optimization (selective fields, flat relationships), cache strategy (s-maxage, stale-while-revalidate), and edge function use cases (redirects, A/B testing).",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "How should I set up Contentful webhooks to trigger Vercel rebuilds? What's the failure handling strategy?",
+      "expected_output": "Webhook architecture including: Contentful webhook configuration (triggers, URL, headers), Vercel API for revalidation, verification/signature validation, error handling and retry logic, revalidation scope (specific routes vs. full rebuild), and monitoring.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Design a multi-language setup for a 5-language platform. How do we structure content in Contentful, route in Next.js, and optimize for SEO?",
+      "expected_output": "Multi-language architecture including: Contentful localization (translatable fields, fallback logic), Next.js routing ([locale]/articles/[slug]), hreflang tags for SEO, language detection (accept-language header), and performance considerations (separate caches per language).",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We want to personalize content based on user segment. Walk me through the data flow from Braze → Next.js → Contentful.",
+      "expected_output": "Personalization flow: user segment stored in cookie/session → middleware detects segment → API route fetches personalized recommendations from Braze → enriches with Contentful content → serves customized page. Include: server-side vs. client-side personalization tradeoffs, caching implications, and fallback behavior.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "We're migrating from a monolithic CMS to composable (Contentful + Next.js + Vercel). Design a phased rollout that minimizes downtime.",
+      "expected_output": "Migration roadmap including: phase 1 (setup new stack, migrate content model), phase 2 (content sync, parallel run), phase 3 (traffic switchover, rollback plan), parallel routing strategy, data validation checklist, and team training plan.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Will this architecture support 1 million monthly users, 100,000 content entries, and 10 million API calls/day? What needs to change?",
+      "expected_output": "Scale assessment including: CDN and caching strategy (edge functions, ISR), Contentful GraphQL optimization (batching, fragments), Algolia capacity and indexing strategy, Vercel edge networks, database connection pooling, monitoring/alerting thresholds, and cost implications.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "How do we monitor and optimize Core Web Vitals (LCP, INP, CLS) for our composable platform?",
+      "expected_output": "Observability strategy including: Vercel Analytics and Speed Insights setup, custom metrics, error tracking (Sentry), performance budgets, specific optimizations (image optimization, font loading, code splitting), and alert thresholds for each metric.",
+      "files": []
+    }
+  ]
+}

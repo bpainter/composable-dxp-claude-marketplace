@@ -1,0 +1,53 @@
+{
+  "skill_name": "marketing-analytics-strategist",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're setting up GA4 from scratch for our SaaS product. What's the full implementation roadmap? Include: event taxonomy, key events to track, GTM setup, and how to implement in Next.js.",
+      "expected_output": "Provide step-by-step roadmap: 1) GA4 account setup, 2) Define measurement framework (AARRR or HEART), 3) Event taxonomy (signup, feature_used, upgrade, churn signals), 4) GTM container setup with data layer pattern, 5) Next.js implementation using router tracking + form events, 6) Custom dimension registration, 7) Dashboard setup. Include code examples.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Our conversion tracking is inaccurate. Purchases are showing as 50% of actual revenue. What are the most likely causes and how do I diagnose?",
+      "expected_output": "Likely causes: 1) Missing/duplicate purchase events, 2) Missing revenue parameter, 3) Multiple containers firing, 4) Wrong measurement ID, 5) Events not reaching GA4 (consent block). Provide diagnostic steps: Check GTM Preview mode, verify purchase event fires, validate revenue parameter, check GA4 DebugView, test with test transaction in GSC.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Design a measurement framework for our e-commerce business. What KPIs should we track? How should we structure events to measure the full customer journey?",
+      "expected_output": "Use AARRR framework or funnel-based approach. Define KPIs per stage: Awareness (impressions, CTR), Activation (product views, cart add), Revenue (purchase, AOV), Retention (repeat purchase rate), Referral (shares). Map to events: product_viewed, add_to_cart, purchase, review_submitted. Include metrics/dimensions for each. Create sample dashboard structure.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Our GTM is a mess. We have tags firing inconsistently and we can't figure out why. Walk me through the debugging process step by step.",
+      "expected_output": "Provide systematic debugging checklist: 1) Enable GTM Preview mode, navigate to site, look for tags firing, 2) Check data layer: is event being pushed correctly?, 3) Verify trigger conditions: does event match trigger?, 4) Check tag configuration: measurement ID correct?, 5) Test in GA4 DebugView: does event reach GA4?, 6) Identify: is issue in data push, trigger logic, or tag config. Provide fixes for each.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We're about to run an A/B test on our checkout flow. We want to track whether our test increases conversion. How do we set up event tracking to measure this accurately?",
+      "expected_output": "Recommend: 1) Define conversion events (purchase, payment_completed), 2) Add test variant parameter to dataLayer (variant: 'control' or 'test'), 3) Track both checkout_started and purchase_completed with variant parameter, 4) Create GA4 segments by variant, 5) Set up comparison report (control vs. test), 6) Monitor for data integrity (ensure events fire for both variants equally). Provide expected sample size calculation.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Create an event taxonomy for feature adoption tracking. We want to measure which features users adopt, how often they use them, and when they stop using them.",
+      "expected_output": "Design events: feature_opened, feature_used (feature_name param), feature_completed (time_spent param), feature_abandoned (days_since_last_use param). Register dimensions (feature_name, user_segment) and metrics (time_spent, adoption_rate). Show how to calculate adoption metrics in GA4 (usage ratio, cohort retention by feature). Include visualization recommendations.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Our GDPR compliance requires we track user consent before firing pixels. How should we set up consent management with GTM and GA4?",
+      "expected_output": "Recommend: 1) Integrate CMP (OneTrust, Cookiebot) that sets consent variables, 2) Create consent variables in GTM (consent_analytics, consent_marketing), 3) Add consent check to all tag triggers ('Only fire if consent_analytics = true'), 4) Delay page_view and other events until consent granted, 5) Test in Preview mode with consent on/off, 6) Implement consent withdrawal handling. Provide code pattern for CMP integration.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Implement event tracking for our Next.js SaaS app. We need to track: page views, button clicks, form submissions, feature adoption, and upgrade events. Show me the code and GTM setup.",
+      "expected_output": "Provide: 1) Next.js useEffect hook for router-based page view tracking, 2) Custom hook for click/form tracking with dataLayer.push(), 3) Event taxonomy (page_view, button_clicked, form_submitted, feature_used, upgrade_initiated), 4) GTM tags and triggers for each event, 5) Data layer variable examples, 6) Testing/debugging approach. Include full code examples.",
+      "files": []
+    }
+  ]
+}

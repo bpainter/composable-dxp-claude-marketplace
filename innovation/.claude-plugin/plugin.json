@@ -1,0 +1,29 @@
+{
+  "name": "innovation",
+  "version": "0.2.0",
+  "description": "Eleven innovation specialists grounded in canonical sources — Christensen's Innovator's Dilemma, Dyer/Gregersen/Christensen's Innovator's DNA, Furr & Dyer's Innovator's Method, Doblin's Ten Types, Ramanujam & Tacke's Monetizing Innovation, Innovation Lab Excellence, Kelley's Ten Faces, Catmull's Creativity Inc, Dyer/Furr/Lefrandt's Innovation Capital, Rogers's Driving Digital Strategy, Tushman/Anand's Why Digital Transformations Fail, and Kane et al's Technology Fallacy — plus HBR Must-Reads on Innovation and Design a Better Business. Skills cover strategy, portfolio governance, value engineering across horizons, JTBD discovery, lean validation, ten-types diagnosis, willingness-to-pay monetization, lab design, disruption analysis, creative leadership/political capital, and digital transformation. One agent (innovation-agent) sequences them. Eight slash commands (audit, strategy, portfolio, discover, validate, value-case, charter, disruption-test) provide high-leverage recurring operations. Six templates: Three Horizons canvas, Ambition Matrix, JTBD Interview Guide, Ten Types diagnostic, Value Engineering canvas, Innovation Charter.",
+  "author": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "innovation",
+    "strategy",
+    "portfolio",
+    "three-horizons",
+    "ambition-matrix",
+    "jobs-to-be-done",
+    "lean-startup",
+    "ten-types",
+    "monetization",
+    "willingness-to-pay",
+    "innovation-lab",
+    "disruption",
+    "christensen",
+    "doblin",
+    "creativity",
+    "digital-transformation",
+    "value-engineering"
+  ]
+}

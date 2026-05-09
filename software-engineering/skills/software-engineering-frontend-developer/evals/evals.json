@@ -1,0 +1,53 @@
+{
+  "skill_name": "software-engineering-frontend-developer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Design a reusable form component system (text input, textarea, select, checkbox, radio, date picker) with validation, error messages, accessibility, and TypeScript types. How would you structure it?",
+      "expected_output": "Should outline component architecture (FormInput, FormError, FormLabel), accessibility (labels, ARIA, keyboard nav), validation hooks, TypeScript prop types, Storybook documentation, usage examples",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Convert a complex Figma design (50-screen dashboard with tables, charts, sidebar navigation, dark mode) into responsive React components. How do you handle responsive breakpoints and design tokens?",
+      "expected_output": "Should outline component breakdown, Tailwind responsive classes, design token implementation, theme switching, component composition, API integration points",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our site's LCP is 4.5s (target 2.5s). Walk me through profiling with DevTools, identifying bottlenecks, and optimizing. Show specific techniques for images, fonts, and JS.",
+      "expected_output": "Should outline profiling steps (Lighthouse, DevTools Performance), identify LCP element, recommend image optimization (WebP, srcset, lazy), font optimization (preload, subset), JS defer/async, result in achieving <2.5s",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Implement data fetching with React Query. Handle pagination, filtering, background refetching, and keep the UI in sync. Show the hook pattern and cache strategy.",
+      "expected_output": "Should show React Query setup, custom hook for queries with params, pagination handling, filter state management, stale-while-revalidate, loading/error/success states",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Design a theme system supporting light/dark mode with design tokens (colors, spacing, typography). How do you use it with Tailwind and switch themes dynamically?",
+      "expected_output": "Should outline token structure, Tailwind config customization, CSS variables or CSS-in-JS approach, theme context/provider, localStorage persistence, system preference detection",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "This React component has performance issues, accessibility problems, and architectural flaws. Review it and suggest improvements. [Example component provided]",
+      "expected_output": "Should identify unnecessary re-renders, missing keys in lists, accessibility gaps (alt text, semantic HTML), prop drilling issues, suggest memoization, useCallback, custom hooks",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Set up a Storybook component library. How do I document components, write tests, handle design tokens, and distribute to other teams?",
+      "expected_output": "Should outline Storybook setup, story definitions with variants, accessibility testing in Storybook, documentation, build and publish process, version management",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Optimize images for a content site (100+ articles, hero images, thumbnails, user avatars). What formats, sizes, lazy loading, and responsive image strategies would you use?",
+      "expected_output": "Should recommend WebP with JPEG fallback, AVIF for modern browsers, srcset for responsive, lazy loading for below-fold, CDN integration, picture element for art direction, performance metrics",
+      "files": []
+    }
+  ]
+}

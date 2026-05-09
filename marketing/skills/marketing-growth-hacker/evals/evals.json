@@ -1,0 +1,53 @@
+{
+  "skill_name": "marketing-growth-hacker",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're a SaaS startup at $10K MRR with 500 paid customers. We want to reach $100K MRR in 18 months. Create a growth roadmap by quarter including: channel strategy, funnel targets, experiments to run, and expected outcomes.",
+      "expected_output": "Develop 6-quarter roadmap with: Q1 (optimize existing funnel, target CAC/LTV), Q2 (launch new paid channel), Q3 (retention focus), Q4 (upsell existing), Q5 (scale winner), Q6 (compound growth). Include specific metrics per quarter (signup rate target, retention %, revenue target). List 3-5 growth experiments per quarter with expected impact.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Our customer CAC is $150 but LTV is only $600 (4:1 ratio). Our competitor has 1:0.5 ratio. What's driving our high CAC and how do we improve it?",
+      "expected_output": "Ask clarifying questions: 1) CAC by channel (what's most expensive?), 2) Payback period (how long to recoup CAC?), 3) Churn rate (affecting LTV), 4) Conversion funnel (where's bottleneck?). Recommend: 1) Shift to lower-CAC organic channels, 2) Improve funnel conversion (activate more signups), 3) Reduce churn (increase LTV), 4) Test pricing (maybe lower price = more volume = better unit economics).",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "We're launching a referral program. Design an experiment to test if a $50 referral bonus increases signup rate by 10%. Include: hypothesis, test duration, sample size, success metric, and how we'll measure impact.",
+      "expected_output": "Structure: Hypothesis = '$50 bonus increases signup 10% among referred users because incentive reduces friction.' Test design: Control (no bonus), Test ($50 bonus). Sample size: ~2000 referrals per variant needed for 95% confidence. Duration: 4 weeks. Success metric: Referred signup rate (Control baseline: 30%, expect Test: 33%). Track: total referred signups, % who activate, % who become paying customers.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Our trial-to-paid conversion is 15%. Industry benchmark is 25%. What should we test to improve conversion? Provide 5 specific experiments ranked by impact/effort.",
+      "expected_output": "Rank experiments: 1) Trial length test (14 vs 7 days) - high impact, low effort, 2) Upgrade prompt timing (day 7 vs day 10) - high impact, low effort, 3) Pricing test (2 tiers vs 3) - high impact, medium effort, 4) Feature gating (what's locked vs unlocked) - medium impact, medium effort, 5) Win-back email for expiring trials - medium impact, low effort. Recommend starting with #1-2, then #3.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We're allocating $50K/month to marketing across 3 channels: Google Ads ($20K), Meta Ads ($20K), and LinkedIn ($10K). We don't know which channel works best. How do we test and optimize?",
+      "expected_output": "Recommend: 1) Tag all channels with UTM params to track CAC by source, 2) Set up conversion tracking in GA4, 3) Run for 30 days to gather baseline data, 4) Analyze: CAC, conversion rate, LTV by channel. Reallocate: Scale winner channel (+$10K), reduce loser (-$10K), test new channel with remaining budget. Provide monthly testing plan and expected outcomes by month 3.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Our onboarding has 40% completion rate. Users signup but don't finish setup. What's causing drop-off and how do we improve?",
+      "expected_output": "Ask: 1) At what step do users abandon? 2) How long does onboarding take? 3) Is setup required or optional? Diagnose: Likely too long, too many steps, unclear benefit. Recommend: 1) Simplify to 3-5 core steps, 2) Add demo/sample data (instant value), 3) Email checklist (guidance), 4) In-app tooltips (context), 5) Progress bar (motivation). Test: Reduced steps (3 vs 5) expected to increase completion to 60%.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "We're a DTC e-commerce brand and we've hit a CAC wall. Our CAC increased 40% YoY and we're struggling to find new customer acquisition channels. What's our strategy?",
+      "expected_output": "Acknowledge: Oversaturation in paid channels (Meta CPM rising). Recommend: 1) Shift to owned channels (email marketing, loyalty program, community), 2) Test organic (content, SEO, partnerships), 3) Optimize existing funnel (increase AOV, reduce returns), 4) Retention focus (repeat purchase rate > CAC). Target: Reduce CAC 20% through channel optimization, increase LTV 30% through retention, achieve better blended CAC.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Create a month-long growth sprint plan. We have a small team (1 growth PM, 1 designer, 1 engineer). What experiments should we prioritize and how do we structure the week?",
+      "expected_output": "Weekly structure: Mon (brainstorm 5-10 hypotheses, prioritize with RICE), Tues-Wed (design and set up 2-3 experiments), Thu (monitor data, adjust), Fri (analyze and decide what to scale). Recommend experiments: 1) Landing page headline test (low effort, high impact), 2) Email subject line test (no dev), 3) CTA button color (minimal dev). Avoid: Complex experiments requiring weeks of engineering. Show expected velocity: 4 experiments/month, 1-2 winners, compounding 20-30% growth.",
+      "files": []
+    }
+  ]
+}

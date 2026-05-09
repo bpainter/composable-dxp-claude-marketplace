@@ -1,0 +1,23 @@
+{
+  "name": "contentful",
+  "version": "0.1.0",
+  "description": "Twelve specialist skills for implementing Contentful-based composable platforms — content modeling, React/Next.js wiring, space and environment architecture, CMA migrations via CLI, GraphQL Content API, webhooks, delivery and image optimization, App Framework extensions, Personalization (former Ninetailed), rich text rendering, localization, and the practical Contentful MCP / CLI workflows that drive agent-led delivery. Production-grade guidance for Slalom's Composable DXP practice.",
+  "author": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "contentful",
+    "headless-cms",
+    "composable",
+    "dxp",
+    "graphql",
+    "personalization",
+    "ninetailed",
+    "app-framework",
+    "webhooks",
+    "mcp",
+    "cli"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "leadership",
+  "version": "0.3.0",
+  "description": "Leadership coaching, people-management, hiring, meetings and cadences, goal-setting, transitions, and stoic perspective. Seven specialized skills under one orchestrating agent. The two original skills (executive coach for neurodivergent leaders, people-leader for everyday craft) are joined by skills for hiring, meetings & cadences, onboarding & transitions, goals & OKRs, and stoic perspective. Each skill carries deep reference files distilled from canonical leadership texts — Hire With Your Head, The First 90 Days, Radical Focus, Drive, Good to Great, The Coaching Habit, Never Split the Difference, Meeting Design, The Effective Manager, Managing Humans, The Manager's Path, A Guide to the Good Life, How F*cked Up Is Your Management, Peopleware, Scaling Teams, Performance Appraisal Phrase Book, Exactly What to Say, How We Talk, Radical Candor, and 7 Habits.",
+  "author": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "leadership",
+    "executive-coaching",
+    "people-management",
+    "neurodivergent-leadership",
+    "team-leadership",
+    "feedback",
+    "hiring",
+    "performance-based-hiring",
+    "interviewing",
+    "meetings",
+    "facilitation",
+    "one-on-ones",
+    "okrs",
+    "goal-setting",
+    "motivation",
+    "onboarding",
+    "first-90-days",
+    "transitions",
+    "stoicism",
+    "perspective",
+    "burnout-prevention",
+    "performance-reviews",
+    "delegation",
+    "coaching",
+    "negotiation",
+    "influence"
+  ]
+}

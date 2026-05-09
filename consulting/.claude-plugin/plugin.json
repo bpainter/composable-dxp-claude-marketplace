@@ -1,0 +1,24 @@
+{
+  "name": "consulting",
+  "version": "0.4.0",
+  "description": "Eight management-consulting and digital-strategy advisors covering the full engagement lifecycle, grounded in canonical sources: Block's Flawless Consulting, Kubr's Management Consulting, Burtonshaw-Gunn's Essential Tools, Mabee's Consulting Discipline, Robbins & Judge's Essentials of OB, Voss's Never Split the Difference, and Dixon & Adamson's Challenger Sale. Four ready-to-use templates: Engagement Scoping, Negotiation Prep, Challenger Sale Pursuit, Change Readiness & Discovery. Specialists cover management consulting, digital strategy, change management, proposals, SOW risk, sales/BD, negotiation, and client humanization. Innovation work moved to the dedicated `innovation` plugin (formerly consulting-innovation-strategist); DT books shared via cross-reference.",
+  "author": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "consulting",
+    "strategy",
+    "proposals",
+    "sow",
+    "project-management",
+    "change-management",
+    "sales",
+    "negotiation",
+    "block",
+    "kubr",
+    "voss",
+    "challenger-sale"
+  ]
+}

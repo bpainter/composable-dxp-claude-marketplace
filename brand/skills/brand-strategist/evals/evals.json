@@ -1,0 +1,53 @@
+{
+  "skill_name": "brand-strategist",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Our B2B SaaS company provides data governance tools for enterprises. We're currently positioned as 'Enterprise Data Management Platform' but our sales team says we're losing deals to Collibra because our positioning feels generic. What positioning framework should we use, and how would you differentiate us?",
+      "expected_output": "Recommend a specific positioning framework (e.g., use-case, problem-solution, or quality-based) with clear rationale. Identify key differentiation angles (e.g., ease-of-use vs. heavyweight platforms, compliance automation, cost efficiency for mid-market). Provide a reframed positioning statement that is credible, resonant, and defensible against Collibra.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Define our brand voice for a B2C sustainable fashion startup targeting Gen Z. We want to sound authentic and values-aligned without being preachy or trying too hard. What personality traits should we embody, and provide examples of how we'd sound across: Instagram captions, email newsletters, and product UI error messages.",
+      "expected_output": "Suggest 4-5 core personality traits for the brand. Write 3-4 sample voice examples across Instagram (casual, conversational), email (warm, value-focused), and product UI (helpful, brief). Provide clear do/don't examples showing what authentic Gen Z voice sounds like versus what's inauthentic.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "We acquired a competitor 6 months ago and are planning a rebrand for Q3. We have 2 options: (1) consolidate under the parent brand or (2) keep the acquired brand as a sub-brand for their customer segment. What questions should we ask to decide? What are the pros/cons of each approach?",
+      "expected_output": "List 5-7 clarifying questions about: customer overlap, product differentiation, market positioning, go-to-market strategy, internal team alignment. Provide pros/cons of monolithic vs. endorsed/house-of-brands architectures. Recommend a framework for making the decision aligned to business strategy.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "We're a B2B workflow automation tool with three customer segments: SMBs (cost-sensitive, simplicity-focused), mid-market (need customization), and enterprise (need security/compliance). Develop a positioning strategy that works across all three. Should we use one master positioning or segment-specific messaging?",
+      "expected_output": "Recommend one core positioning statement that applies universally. Develop segment-specific messaging modules for each buyer archetype showing how the same promise translates differently (e.g., SMB: ease, Mid-market: flexibility, Enterprise: compliance/scale). Show how sales and marketing can use these without feeling inconsistent.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Our brand was founded 15 years ago in healthcare compliance software. The market has shifted, and younger customers see us as 'legacy' and 'boring,' even though we have the strongest product. How do we refresh our positioning without losing our credibility with existing enterprise customers?",
+      "expected_output": "Propose a refresh strategy that preserves credibility signals (heritage, proven track record, deep expertise) while modernizing the narrative. Suggest positioning angles that blend trust with innovation. Recommend how to communicate the refresh internally and externally to avoid alienating existing customers.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Create a competitive positioning map for our B2C personal finance app. Our main competitors are: (1) Mint (free, basic), (2) Betterment (investing-focused, premium), (3) YNAB (behavioral change, high price). Where should we position ourselves in this landscape?",
+      "expected_output": "Map current competitors on dimensions like: price, primary use case (budgeting vs. investing), user sophistication (beginner vs. advanced), emotional appeal (fun vs. serious). Identify white space or underserved positioning (e.g., \"investing made simple for millennials,\" \"budgeting for couples\"). Recommend a differentiated position with proof points and messaging.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Our CEO wants to position us as the 'category creator' for 'financial wellness' (not just personal finance). Is this credible? What evidence would we need to own this category, and what's the rollout strategy?",
+      "expected_output": "Assess credibility: Do we have unique capabilities or insights? Do we have amplification (thought leadership, content, research)? Recommend 3-5 pillars of proof (e.g., first research report, founder podcast, content hub). Outline rollout plan: 1) build authority through content, 2) define the category through language, 3) evangelize internally and externally.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "We're launching a premium tier of our SaaS product with 3x the price. How should we position the premium product to justify the price increase without cannibalizing the standard tier or alienating existing customers?",
+      "expected_output": "Recommend a sub-brand or tier-specific positioning that emphasizes premium benefits (faster support, advanced features, compliance). Show how to communicate the tiers to different buyer personas. Suggest messaging that frames premium as an upgrade path (not a replacement) for power users and enterprises.",
+      "files": []
+    }
+  ]
+}

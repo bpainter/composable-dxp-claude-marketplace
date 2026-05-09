@@ -1,0 +1,53 @@
+{
+  "skill_name": "software-engineering-agentic-workflow-engineer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Design a multi-agent customer support system where one agent triages tickets, delegates to specialized agents (billing, technical, general), and a coordinator synthesizes responses. What framework would you use and why? Sketch the agent architecture.",
+      "expected_output": "Should recommend LangGraph or AutoGen, explain state machine/graph structure, define agent roles with tool access patterns, show how coordinator collects and synthesizes results",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I have a tool that calls an external API with a 2% failure rate. It needs to be integrated into an agent workflow. How do I handle retries, exponential backoff, and fallbacks without creating infinite loops?",
+      "expected_output": "Should explain circuit breaker pattern, structured retry logic with max attempts, fallback strategies, idempotency requirements, and how to log failures for agent debugging",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Build a research agent that decomposes a complex question into sub-questions, searches for information in parallel, evaluates source credibility, and synthesizes a final report. How should I structure memory and tool calls?",
+      "expected_output": "Should outline task decomposition strategy, parallel execution pattern, memory structure for tracking sources, tool definitions for search and ranking, synthesis logic",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Compare OpenAI Agents SDK vs. LangGraph for a workflow that requires conditional branching on API response content and needs to handle 20+ different error scenarios. Which is better and why?",
+      "expected_output": "Should compare state machine vs. graph models, discuss error branching capabilities, mention debugging and observability features, recommend LangGraph for this complexity",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "My agent is stuck in a loop calling the same tool repeatedly. How do I add observability to trace the decision path and identify the root cause?",
+      "expected_output": "Should recommend logging every state transition, tool call, and LLM decision, suggest structured logging format, show how to replay/debug agent execution, recommend tools like LangSmith",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Design a RAG-augmented agent that answers questions about internal documentation. How do I ground responses in actual documents while handling cases where no relevant source exists?",
+      "expected_output": "Should outline vector store integration, retrieval ranking, confidence thresholds, source attribution in responses, fallback when no sources match, and testing strategy",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Our agent processes 1000+ requests daily. How do I structure state persistence so agents can resume after failures and not lose context or duplicate work?",
+      "expected_output": "Should discuss state serialization, distributed memory/cache design, idempotency keys, transaction logs, recovery mechanisms, and monitoring for consistency",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Design the memory architecture for a long-running agent that needs to maintain context across 500 interactions while keeping token usage under control. What strategies help?",
+      "expected_output": "Should explain episodic vs. semantic vs. procedural memory tradeoffs, summarization/compression techniques, relevance-based retrieval, example implementations with vector stores",
+      "files": []
+    }
+  ]
+}

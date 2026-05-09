@@ -1,0 +1,53 @@
+{
+  "skill_name": "cx-information-architect",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm modeling a product catalog. Products have multiple variants (size, color), pricing, descriptions, and reviews. How should I structure this, and should I use reference fields or nest content?",
+      "expected_output": "Propose two content types: Product (main content) and ProductVariant (references). Explain: why variants should be separate (queryable, updatable independently), field-level breakdown for each type, relationship pattern (Product → variants, Reference multi), and rationale for flat vs. nested approach.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We're launching mobile, email, and web simultaneously. How should I model content so it works across all three channels without duplication?",
+      "expected_output": "Omnichannel strategy including: single Article content type (not separate models per channel), field list applicable to all channels, channel-specific transformation approach (web template, mobile template, email template), examples of content transformation, and how to handle channel-specific fields (email_cta, mobile_image_size).",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our editors keep tagging articles inconsistently. Design a taxonomy and content governance system that ensures quality without micromanaging editors.",
+      "expected_output": "Governance framework including: taxonomy structure (hierarchy of tags/categories), validation rules (allowed values, constraints), default field values to reduce author burden, help text examples, editor workflow stages, and quality checklist editors follow before publishing.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "I have a 'Product Page' content type and a 'Product Card' component. They seem redundant. Can I consolidate them into one reusable type?",
+      "expected_output": "Model refactoring showing: why consolidation improves scalability, single unified Product type that works for both page and card contexts, assembly pattern (ProductDetailPage references Product, ProductListPage references multiple Products), and transformation logic for different presentations.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We need to support 5 languages (English, Spanish, French, German, Portuguese). Which fields should be translatable, and how should I structure the model?",
+      "expected_output": "Localization strategy including: which fields are translatable (title, body, description) vs. not (slug, author, images), field configuration in Contentful (translatable toggle), language variant naming (en-US, es-MX), fallback approach if translation missing, and query pattern for language-specific content.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Review this content model I'm designing. I have deep nesting (Article → Chapter → Section → Subsection). Is this scalable, or should I refactor?",
+      "expected_output": "Critique identifying: nesting depth problems (hard to query, update, delete individual items), scalability concerns with 10,000+ entries, recommendation to flatten with reference fields (Article → References to Chapters, Chapters → References to Sections), benefits of flat hierarchy (easier to reuse, query, manage).",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "I need to model a FAQ section with 200+ Q&A pairs, organized by category. How should I structure this for scale and discoverability?",
+      "expected_output": "FAQ model including: separate FAQ content type with question and answer fields, FAQCategory type for grouping, reference relationship (FAQ → category), metadata for sorting (sort_order, related_articles), search/filtering strategy, and how to handle related/similar questions.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "What are the most common content modeling mistakes you see teams make? How do I avoid them?",
+      "expected_output": "Common anti-patterns: page-centric models, overly deep nesting, duplicate fields across types, missing validation rules, unclear relationships, inflexible structures that break with scale. Solutions: audit for these patterns, apply modular thinking, flatten hierarchy, document field purposes, validate early, test with 10,000+ entries.",
+      "files": []
+    }
+  ]
+}

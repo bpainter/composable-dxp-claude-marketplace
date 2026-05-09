@@ -1,0 +1,19 @@
+{
+  "name": "obsidian",
+  "version": "0.4.0",
+  "description": "Opinionated toolkit for keeping an Obsidian vault organized, tagged correctly, and structurally healthy. 12 skills (9 advice + 3 orchestrator-shaped) covering tag taxonomy, frontmatter (Properties) schemas, folder architecture, filename conventions, Maps of Content, and vault audits. One agent (obsidian-agent) that knows when to use each skill. Four slash commands (/audit, /sweep, /cleanup-tags, /bootstrap) for the most common workflows.",
+  "author": {
+    "name": "Bermon Painter",
+    "email": "claude@bermonpainter.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "obsidian",
+    "pkm",
+    "knowledge-management",
+    "vault-organization",
+    "tagging",
+    "frontmatter",
+    "moc"
+  ]
+}

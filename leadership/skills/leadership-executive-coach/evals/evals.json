@@ -1,0 +1,53 @@
+{
+  "skill_name": "leadership-executive-coach",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have a critical conversation coming up with my CEO tomorrow about my quarterly results. I'm nervous about how I'll come across and what I'll say. The results are mixed (some wins, some misses). Help me prepare.",
+      "expected_output": "Preparation framework: 1) Clarify your narrative (what's the story? where did you win? where did you fall short? why?), 2) Acknowledge your anxiety without letting it derail you, 3) Prepare key messages (3 main points you want to land), 4) Anticipate questions (What might CEO ask? How will you respond?), 5) Create a script framework (Opening statement, wins, misses/learnings, forward plan). Provide specific language examples. Coach on tone: confident without defensive. Suggest: Lead with context (bigger picture), acknowledge misses honestly, demonstrate learning and adjusted approach. Final prep: Practice out loud; get feedback. Role-play if needed.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I have ADHD and struggle with time management. My weeks spiral into meetings and reactive work. I have good intentions about strategic projects, but they never happen. Help me build a system that actually works.",
+      "expected_output": "Assessment: Time blindness, task initiation difficulty, reactive calendar. Recommend: 1) Time-blocking system (protect 9-11am for deep work before opening calendar for meetings), 2) Weekly planning session (90 min Sunday evening: review, prioritize top 3, block calendar), 3) Task capture system (one place for all commitments; weekly review), 4) Daily 3 Big Rocks (not 15 priorities), 5) Buffer time (30 min between meetings for transition/admin). Concrete example week shown. Acknowledge: This is structure replacing internal executive function; not laziness. Expect: First 2 weeks hard (building habit); payoff in clarity and strategic output. Check-in point: How's energy/reactivity after first month?",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I'm autistic and I communicate very directly. My team sometimes interprets my feedback as harsh or critical when I mean it constructively. How do I maintain my honesty without damaging relationships?",
+      "expected_output": "Validation: Direct communication is a strength and a mirror of your integrity. Reframing: Not about changing your honesty; about contextualizing it. Framework: Lead with context (why this matters) + observation (factual) + collaboration (help me understand your thinking) + path forward. Example: Not 'That analysis has gaps' but 'This analysis is important because it drives the investment decision. I noticed gaps in the methodology. Help me understand your approach. Here's what I think we should strengthen.' Also: Check in directly: 'I want you to know my intention is to help you do better work, not criticize you. How is my feedback landing?' Most people will appreciate directness once they understand your intent. Leverage your strength; frame it collaboratively.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "I made an impulsive decision in a meeting (ADHD impulse) that I regret. Now I need to address it. How do I own the mistake without losing credibility?",
+      "expected_output": "Acknowledge: Impulsiveness is ADHD; owning mistakes builds credibility more than appearing perfect. Quick action plan: 1) Name it soon (within 24 hours, not weeks), 2) Take responsibility (no excuses), 3) Explain what you're doing to fix it, 4) Name what you're learning (how you'll prevent next time). Script: 'In yesterday's meeting, I made a quick call on [decision] without thinking it through. That wasn't my best judgment. Here's what I'm doing to address it: [correction]. Going forward, I'm building in a pause before big decisions so I can think them through.' Result: Team respects your honesty and self-awareness. Leadership is built on integrity, not perfection. Also: This is why the 'three-breath pause' technique matters—create space between impulse and action.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "I want to lead more authentically instead of masking my autism traits. But I'm worried it'll make me appear less professional or lose authority. How do I show up authentically without jeopardizing my leadership?",
+      "expected_output": "Mindset shift: Authentic leadership is more effective, not less. Research shows teams trust and engage more with authentic leaders. Your autistic traits (directness, systems thinking, integrity) are leadership strengths, not deficits. Practical approaches: 1) Small shifts first (take notes in meetings instead of forcing eye contact; explain your listening style), 2) Transparency about your communication style (clarify intent), 3) Let your strengths show (deep expertise, pattern recognition, clarity), 4) Set boundaries that work for you (low-stimulation work spaces, reduced small talk), 5) Name what's happening (if overwhelmed or shutting down, explain what you need). Example: Not 'Sorry, I don't do eye contact' but 'I process information better when I listen fully without eye contact. I'm fully engaged, just in a different way.' Reassure about concerns: Most teams appreciate honesty more than performed professionalism. Your authenticity builds psychological safety for others to be authentic too.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "I'm overwhelmed by competing priorities from different stakeholders. My CEO wants X, my team needs Y, my peer wants Z. How do I navigate this and make a decision?",
+      "expected_output": "Framework: 1) Make stakeholder priorities explicit (list what each wants and why), 2) Identify alignment (where do they overlap? leverage this), 3) Identify real conflicts (where do they genuinely trade off?), 4) Evaluate against strategy (which serves the organization's direction best?), 5) Make conscious choice (you pick what takes priority and communicate why clearly). Example: CEO wants cost reduction, team wants better tools, peer wants collaboration. Your call: 'We'll implement shared tools that improve collaboration [serving peer/team] and reduce manual work [serving CEO]. Here's the ROI and timeline.' Articulate your decision reasoning and acknowledge tradeoffs. Stakeholder management isn't about pleasing everyone; it's about making intentional choices and explaining them. Credibility comes from clear reasoning, not saying yes to everyone.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "I'm burned out. I've been pushing hard for a year and I'm at my limit. My energy is gone, decisions feel impossible, and I'm considering quitting. What do I do?",
+      "expected_output": "First: This is serious; assess immediately. Quick check: Is this temporary (bad quarter) or systemic (unsustainable role)? Ask: What specific demands pushed you to this? What would need to change for this to be sustainable? If: Root cause is fixable (too many meetings, wrong role, lack of support), you can adjust. If: Role fundamentally incompatible with your needs, quitting might be right choice. Immediate recovery actions: 1) Reduce demands immediately (delegate, defer, eliminate non-essential), 2) Add buffer time (no back-to-back meetings; build recovery), 3) Sleep and movement non-negotiable, 4) Professional support (therapist/coach), 5) Honest conversation with manager (can we adjust scope/role?). Reality check: Burnout usually means the system isn't working, not that you're broken. Sustainability > heroic overwork. Consider: What would a sustainable version of this role look like? Can you reshape it? If not, exploring options is wise.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "My team is high-performing but I want to make sure I'm not just relying on them to cover my weaknesses. How do I build trust while also being honest about where I struggle (ADHD executive function gaps)?",
+      "expected_output": "Balance frame: Strong leadership is knowing your strengths AND having systems for your gaps. You don't have to be good at everything; you need to be aware and manage smartly. Honesty about ADHD gaps actually builds trust (you're managing consciously, not pretending). Actions: 1) Be transparent about your system (weekly planning, time-blocking, delegation), 2) Ask team for help (not weakness; collaboration), 3) Acknowledge their strengths explicitly (what do they do brilliantly?), 4) Build systems that don't depend on any one person, 5) Invest in their development (show you're not just using them). Example: 'I have ADHD, which means details can slip through cracks for me. Here's how we manage that [system]. And here's where I need your strength [specific areas].' Result: Team feels valued, not exploited. Understands leadership is about leveraging collective strengths, not pretending you're good at everything.",
+      "files": []
+    }
+  ]
+}

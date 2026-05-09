@@ -1,0 +1,33 @@
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# OneDrive sync artifacts
+.fuse_hidden*
+*.bak
+*.tmp
+~$*
+
+# Build / staging temp files
+/tmp/
+*-stage/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node / Python (just in case any plugin grows scripts)
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OneDrive online-only stub markers (occasionally appear)
+*.cloudf
+*.bundle

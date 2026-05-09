@@ -1,0 +1,53 @@
+{
+  "skill_name": "software-engineering-ai-engineer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to build a churn prediction model for SaaS customers. Walk me through the entire lifecycle: data needs, model selection, evaluation metrics, production setup, and monitoring strategy.",
+      "expected_output": "Should outline problem framing, required data features (customer behavior, engagement), recommend algorithms (logistic regression baseline, gradient boosting), define metrics (recall for false negatives, AUC), evaluation approach, serving architecture, and drift detection",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Fine-tune Llama 2 7B on our internal documentation for customer support. Show data preparation, training code with LoRA, inference setup, and cost estimation.",
+      "expected_output": "Should outline data format (conversation pairs), show LoRA fine-tuning code, explain parameter choices, demonstrate inference with prompt template, estimate training cost and inference cost per request",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our image classification model trained on public data performs at 92% accuracy on test set but only 78% on production data. What's happening and how do I debug?",
+      "expected_output": "Should explain data/concept drift, outline diagnostic approach (distribution analysis, error pattern review, domain analysis), recommend solutions (retraining, domain adaptation, ensemble)",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Design a real-time product recommendation system for our e-commerce platform with 100k SKUs. What architecture, algorithms, and serving strategy would you use?",
+      "expected_output": "Should recommend collaborative filtering with offline/online hybrid, discuss embeddings/similarity search, outline architecture (feature store, candidate generation, ranking), serving on edge or server-side",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Our dataset has 1% positive class (fraud detection). How do I handle this imbalance and what metrics should I optimize for?",
+      "expected_output": "Should explain imbalance techniques (stratified splits, SMOTE, class weights), recommend metrics (precision/recall/F1 over accuracy, AUC-PR), discuss business trade-offs, outline evaluation approach",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Build a content moderation classifier using transfer learning. What base model would you use, how would you fine-tune, and what safety checks should be in production?",
+      "expected_output": "Should recommend pre-trained model (DistilBERT, RoBERTa), show fine-tuning approach, define content categories, implement confidence thresholds, explain human review escalation, monitoring",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Set up a continuous training pipeline that automatically retrains our model when performance degrades. How do I detect performance issues and validate before production deployment?",
+      "expected_output": "Should outline monitoring metrics, define degradation thresholds, show retraining trigger, explain validation approach (A/B test, shadow deployment), automatic deployment gates",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "I need to deploy a 13B parameter LLM for customer interactions with <100ms latency and <$0.001 per request cost. Is this feasible and what would you recommend?",
+      "expected_output": "Should analyze feasibility (challenging for 13B, may need quantization), recommend quantization/distillation, discuss batch serving vs. streaming, estimate cost with vLLM/TensorRT, suggest trade-offs",
+      "files": []
+    }
+  ]
+}

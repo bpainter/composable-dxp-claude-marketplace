@@ -1,0 +1,53 @@
+{
+  "skill_name": "consulting-digital-strategist",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We want to launch a new digital product but our leadership team isn't aligned on the problem statement or customer. Design a 2-week discovery sprint that will validate our assumptions and get leaders aligned.",
+      "expected_output": "Discovery sprint plan including: (1) Core question and riskiest assumptions (problem validity, target customer, solution appeal), (2) Customer interview guide (15-20x interviews), (3) Research approach (interviews, competitive analysis, concept testing), (4) Success criteria for each assumption, (5) Daily synthesis approach, (6) Friday decision memo template (GO/PIVOT/KILL), (7) Stakeholder alignment plan if GO",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Build a 12-month product roadmap for a new SaaS product going from Discovery through Live. We have 6 engineers, 1 product manager, and a $2M budget. Map phases, OKRs, phases gates, and risk mitigation.",
+      "expected_output": "Roadmap blueprint including: (1) Phase definitions (Discovery 8w → Alpha MVP 14w → Beta 10w → Live 4w), (2) Phase gate criteria and success metrics, (3) OKR alignment per quarter, (4) Prioritized initiatives per phase, (5) Resource allocation and dependencies, (6) Risk identification and mitigation (technical, market, execution), (7) Monthly and phase-gate review cadence, (8) Go/Pivot/Kill decision criteria",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our product roadmap is stuck because we can't agree on priorities. We have 15+ opportunities but only capacity for 3-4. Help us frame a prioritization approach and resolve the conflict.",
+      "expected_output": "Prioritization framework including: (1) Strategic context (where is product positioned in market? What's competitive advantage?), (2) Opportunity scoring matrix (impact, effort, strategic fit, risk), (3) Dependency mapping (which initiatives block others?), (4) Trade-off conversation guide (why we're saying no to X), (5) Phased approach (what ships in Q1, Q2, Q3?), (6) Stakeholder communication (how to present decisions and rationale)",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Map our customer journey from awareness through advocacy. We're seeing high churn at Month 3 even though early customers love the product. Help us diagnose where friction exists.",
+      "expected_output": "Journey analysis including: (1) Detailed journey map (stages: awareness → evaluation → purchase → onboarding → adoption → expansion → advocacy), (2) Touchpoint and pain point identification, (3) Churn analysis (where/why do customers leave?), (4) Hypothesis for Month 3 churn (insufficient ROI realization? Insufficient implementation capacity? Competitive pressure?), (5) Improvement opportunities ranked by impact, (6) Redesigned journey with interventions at friction points, (7) Metrics to track improvement",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Our digital transformation initiative is 6 months into a 12-month plan and we're only 30% done. Diagnose why we're behind and rebuild the roadmap with realistic timelines.",
+      "expected_output": "Diagnosis and replan including: (1) Root cause analysis of delays (scope creep, skill gaps, underestimated complexity, dependencies, organizational resistance, poor requirements), (2) Current state assessment (what's done, what's in progress, what's blocked), (3) Dependency mapping (what must finish before what else starts?), (4) Team capacity reassessment (resources, skills, availability), (5) Revised phasing (what ships in this phase, what defers to next phase), (6) Risk mitigation (how do we prevent further delays?), (7) Stakeholder communication plan",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "We're considering a major pivot from enterprise sales to self-serve. What evidence should we gather before deciding? Design a validation approach.",
+      "expected_output": "Pivot validation blueprint including: (1) Core assumptions to test (customer willingness to self-serve? product fits self-serve model? CAC sustainable without sales? retention/LTV viable?), (2) Customer research approach (interviews with self-serve segment, willingness-to-pay testing), (3) Product analysis (what product changes needed for self-serve?), (4) Financial modeling (CAC, LTV, payback period comparison: enterprise vs. self-serve), (5) Technical requirements (what infra, analytics, support systems needed?), (6) 4-week validation sprint plan, (7) Decision framework (go-to-self-serve / hybrid / stay-enterprise)",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Create an OKR-driven quarterly plan for our product team. We're in the Beta phase with 150 customers, 40% churn, and need to improve retention and expand revenue.",
+      "expected_output": "OKR and roadmap plan including: (1) Strategic objectives (improve retention, expand revenue, solidify product-market fit) with 2-3 key results per objective, (2) 3-4 prioritized product initiatives (improve onboarding, expand upsell features, increase customer success, build integrations), (3) Initiative-to-OKR mapping, (4) Success metrics and leading indicators, (5) Resource allocation (team, timeline, dependencies), (6) Quarterly review gates (retention <35%? LTV:CAC >3? NPS >50?), (7) Month-by-month breakdown of activities and milestones",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Build a competitive positioning and market differentiation strategy for our new product entering a crowded market. 5 strong competitors already established, but we believe we have a better UX and customer success approach.",
+      "expected_output": "Positioning strategy including: (1) Competitive analysis (map competitor strengths/weaknesses, feature parity assessment), (2) Customer jobs and unmet needs that competitors don't address, (3) Your differentiation thesis (why are we better? At what? For whom?), (4) Target customer segment (which underserved segment loves your differentiation?), (5) Value proposition and messaging (short positioning statement + key messages), (6) Go-to-market strategy (how to reach target segment cost-effectively?), (7) Proof-point strategy (case studies, testimonials, benchmarks that prove differentiation), (8) Roadmap priorities to strengthen and maintain differentiation",
+      "files": []
+    }
+  ]
+}

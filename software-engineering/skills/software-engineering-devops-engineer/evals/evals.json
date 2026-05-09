@@ -1,0 +1,53 @@
+{
+  "skill_name": "software-engineering-devops-engineer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Design a complete CI/CD pipeline for a Node.js microservices platform with 15 services. Include build, test, security scanning, and multi-environment deployment stages. What tool would you use and why?",
+      "expected_output": "Should recommend GitHub Actions or GitLab CI, outline pipeline stages with build/test/scan/deploy gates, show security scanning integration, define approval workflows for production",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Create a Terraform module for an EKS cluster that provisions networking, security groups, IAM roles, worker nodes with auto-scaling, and integrates with Prometheus monitoring. Show the module structure.",
+      "expected_output": "Should outline module directory structure, show variable inputs for cluster configuration, outputs for downstream use, security best practices (least privilege IAM), monitoring integration patterns",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Our production environment has configuration drift. We last updated infrastructure code 6 months ago but made manual changes in the AWS console. How do I audit, document, and remediate drift?",
+      "expected_output": "Should recommend drift detection tools (terraform plan, AWS CloudTrail, third-party tools), show how to audit state vs. reality, explain manual remediation, prevent future drift with GitOps",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Design a multi-environment setup (dev/staging/prod) where each uses separate Terraform state with locking, but code is DRY with shared modules. How do I structure the repo?",
+      "expected_output": "Should show directory structure with modules/ and environments/ separation, remote state per environment with locking, tfvars for overrides, backend configuration",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "We're deploying a stateful application (database + cache) with zero-downtime requirement. Compare blue-green, canary, and rolling deployments. Which would you use and why?",
+      "expected_output": "Should analyze each strategy's tradeoffs, handle database migration concerns, recommend approach (likely blue-green with managed cutover), show rollback mechanics",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Set up a security scanning gate that blocks deployments with high-severity CVEs, non-compliant Terraform, or exposed secrets. Show the pipeline stage and what tools to use.",
+      "expected_output": "Should recommend Trivy for images, Checkov for IaC, GitGuardian for secrets, show how to integrate into CI/CD, define severity thresholds for blocking",
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Our AWS bill is 2.5x industry average for our scale. Where would you look first to find waste, and what automated optimizations can DevOps implement?",
+      "expected_output": "Should analyze common waste patterns (oversized instances, unused resources, data transfer, reserved instance gaps), recommend Cost Anomaly Detection, show tagging for cost attribution",
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "Design a GitOps workflow using ArgoCD where Git commits to main automatically deploy to production, but manual approval is required for database schema changes. How do I structure this?",
+      "expected_output": "Should explain ArgoCD ApplicationSet pattern, Git workflow (trunk-based vs. feature branches), how to gate database migrations separately, show observability for failed syncs",
+      "files": []
+    }
+  ]
+}
