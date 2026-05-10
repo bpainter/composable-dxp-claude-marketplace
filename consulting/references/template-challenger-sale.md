@@ -5,6 +5,9 @@ scope: plugin
 plugin: consulting
 tags: [type/reference, plugin/consulting, scope/template, topic/sales, source/dixon, source/adamson]
 status: active
+related:
+  - "[[../../../50_Knowledge/Frameworks/Sales_Theory/03_The_Challenger_Sale|Sales_Theory/03_The_Challenger_Sale.md]]"
+  - "[[book-challenger-sale|book-challenger-sale.md]]"
 ---
 
 # Template — Challenger Sale (Teach, Tailor, Take Control)
@@ -12,6 +15,20 @@ status: active
 **Source:** Dixon & Adamson, *The Challenger Sale: Taking Control of the Customer Conversation* (Portfolio/Penguin, 2011) — see [`book-challenger-sale.md`](book-challenger-sale.md). Mobilizer/stakeholder taxonomy below pulls from the 2015 sequel *The Challenger Customer*.
 
 A pursuit-prep worksheet for complex B2B sales. Use it when scoping a new pursuit, preparing a discovery meeting, or building a commercial insight that will shape how the customer sees their problem.
+
+> **Three lenses on this source.** *The Challenger Sale* is referenced in three locations across the Slalom corpus, each serving a different need. They are **not duplicates — they are complementary views**.
+>
+> | Lens | File | Strength | Use when… |
+> |---|---|---|---|
+> | Content lens | `50_Knowledge/Frameworks/Sales_Theory/03_The_Challenger_Sale.md` | Detailed mechanics + verbatim scripts + per-deliverable Solution Factory mapping | Building a Solution Factory deliverable. |
+> | Citation lens | `80_Skills_and_Agents/consulting/references/book-challenger-sale.md` | Page-anchored stats and claims; canonical numerical source for the 5 rep profiles and 53/38/9 stat | Defending a claim that needs page-precise sourcing. |
+> | **Worksheet lens (this file)** | `80_Skills_and_Agents/consulting/references/template-challenger-sale.md` | **Fillable pursuit-prep worksheet** + the 7-type Mobilizer/Talker stakeholder map (from the 2015 sequel) | **Running a live pursuit.** Pre-meeting prep filling in Reframe / supporting data / emotional-impact narrative / Mobilizer map for *this specific account*. |
+>
+> **What this file is uniquely strong at:** the **7-type Mobilizer/Talker taxonomy** (Go-Getters / Skeptics / Teachers / Friends / Climbers / Guides / Blockers) — this is the *only* place in the Slalom corpus where the content from the 2015 sequel *The Challenger Customer* is documented at depth. Plus a fillable worksheet shape for live pursuit prep. **What this file does not have:** verbatim DuPont 4-step negotiation scripts (see content lens or `template-negotiation-prep.md`); page-anchored sourcing for stats (see citation lens); per-Solution-Factory-deliverable mapping (see content lens).
+>
+> **Section-level cross-reference table:** see [`Sales_Theory/03_The_Challenger_Sale.md`](../../../50_Knowledge/Frameworks/Sales_Theory/03_The_Challenger_Sale.md) for the comprehensive routing matrix.
+>
+> **Where this fits in the larger Slalom OS.** This worksheet is operational — fill it out for an active pursuit. The conceptual grounding is in the content and citation lenses above. The unified end-to-end synthesis is in [`50_Knowledge/Frameworks/Slalom_Operating_System/00_Master_Operating_System.md`](../../../50_Knowledge/Frameworks/Slalom_Operating_System/00_Master_Operating_System.md). The pursuit-to-engagement boundary is documented in [`50_Knowledge/Frameworks/Pursuit_to_Delivery/00_Sales_to_Engagement_Handoff.md`](../../../50_Knowledge/Frameworks/Pursuit_to_Delivery/00_Sales_to_Engagement_Handoff.md).
 
 ## When to use it
 

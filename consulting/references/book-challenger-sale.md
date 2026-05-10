@@ -5,11 +5,28 @@ scope: plugin
 plugin: consulting
 tags: [type/reference, plugin/consulting, scope/foundational, topic/sales, topic/business-development, source/dixon, source/adamson]
 status: active
+related:
+  - "[[../../../50_Knowledge/Frameworks/Sales_Theory/03_The_Challenger_Sale|Sales_Theory/03_The_Challenger_Sale.md]]"
+  - "[[template-challenger-sale|template-challenger-sale.md]]"
 ---
 
 # The Challenger Sale — Matthew Dixon & Brent Adamson (2011)
 
 **Source digest** for the consulting plugin (pursuit, BD, sales-led growth). Page numbers refer to the Portfolio/Penguin 2011 hardcover. Cite as "(Dixon & Adamson, *Challenger*, p. X)".
+
+> **Three lenses on this source.** *The Challenger Sale* is referenced in three locations across the Slalom corpus, each serving a different need. They are **not duplicates — they are complementary views**.
+>
+> | Lens | File | Strength | Use when… |
+> |---|---|---|---|
+> | Content lens | `50_Knowledge/Frameworks/Sales_Theory/03_The_Challenger_Sale.md` | Detailed mechanics + verbatim scripts + per-deliverable Solution Factory mapping | Building a Solution Factory deliverable that needs the Challenger 6-step pitch built in. |
+> | **Citation lens (this file)** | `80_Skills_and_Agents/consulting/references/book-challenger-sale.md` | **Page-anchored stats and claims** (Portfolio/Penguin 2011 hardcover); canonical numerical source for "5 rep profiles" and "53/38/9 loyalty split"; cross-references to Voss and Solution Selling | **Defending a claim in a deck or POV that needs page-precise sourcing**, or briefing a `consulting-sales-bd-strategist` skill that needs to cite specific pages. |
+> | Worksheet lens | `80_Skills_and_Agents/consulting/references/template-challenger-sale.md` | Fillable pursuit-prep worksheet + 7-type Mobilizer/Talker stakeholder map (from the 2015 sequel *The Challenger Customer*) | Running a live pursuit. Pre-meeting prep when you need to fill in a Reframe headline, supporting data, emotional-impact narrative, and Mobilizer map for *this specific account*. |
+>
+> **What this file is uniquely strong at:** page anchors for every load-bearing claim. The 5-Rep-Profile percentages (Figure 2.2, ~p. 28) and the 53/38/9 sales-experience-loyalty split (Figure 4.1, pp. 53–55) are *here* with citations any consulting deliverable can lift. **What this file does not have:** the full per-Solution-Factory-deliverable mapping (see content lens) and the fillable Mobilizer/Talker worksheet (see template lens — which uniquely covers content from the 2015 sequel *The Challenger Customer*).
+>
+> **Section-level cross-reference table:** see [`Sales_Theory/03_The_Challenger_Sale.md`](../../../50_Knowledge/Frameworks/Sales_Theory/03_The_Challenger_Sale.md) for the comprehensive routing matrix.
+>
+> **Where this fits in the larger Slalom OS.** This is the consulting-plugin lens; companion sales-side and worksheet-side files exist as above. The unified end-to-end synthesis that integrates both is in [`50_Knowledge/Frameworks/Slalom_Operating_System/00_Master_Operating_System.md`](../../../50_Knowledge/Frameworks/Slalom_Operating_System/00_Master_Operating_System.md). The pursuit-to-engagement boundary is documented in [`50_Knowledge/Frameworks/Pursuit_to_Delivery/00_Sales_to_Engagement_Handoff.md`](../../../50_Knowledge/Frameworks/Pursuit_to_Delivery/00_Sales_to_Engagement_Handoff.md).
 
 ## Thesis
 

@@ -116,6 +116,12 @@
       "source": "./bynder",
       "version": "0.1.0",
       "description": "Twelve specialist skills for implementing and optimizing Bynder DAM-based composable platforms \u2014 asset modeling and metaproperties, Brand Guidelines, derivative templates, the bynder-js-sdk, Universal Compact View embedding, Bynder + Contentful pairing, portal and account architecture, permissions and workflow, webhooks and asset events, marketplace connectors, migrations into Bynder, and optimization audits for existing implementations. Production-grade guidance for Slalom's Composable DXP practice."
+    },
+    {
+      "name": "solution-factory",
+      "source": "./solution-factory",
+      "version": "0.1.0",
+      "description": "The Slalom Solution Factory \u2014 orchestrates the four-stage pipeline (Frame \u2192 Draft \u2192 Polish \u2192 Ship) for producing solution kits (8 deliverables: One-Pager, Sales Enablement Kit, Discovery Workshop, First Call Deck, Case Study, Email Templates, Handoff Packet, Marketing Handoff) from idea to promoted artifact. Cowork-native: walks users through the intake via AskUserQuestion (5 required calls + free-text problem framing + buyer personas + listen-fors). Six skills (1 main orchestrator + 4 stage orchestrators + 1 status advice skill). Three agents (scaffolder for WIP folder creation, promoter for canonical-home routing, stub-generator for library reference stubs). Six slash commands (/solution-create, /solution-frame, /solution-draft, /solution-polish, /solution-ship, /solution-status). Implements the dual-routing single-source-of-truth model: Composable DXP secondary brand promotes to 10_Practice/Offerings/Solutions/{Tier}/[Solution-Name]-[YYYY-MM]-Slalom/ with reference stub at 40_Library/Solution_Briefs/; Slalom default brand promotes directly to 40_Library/Solution_Briefs/. Sequences specialty skills from consulting, design, marketing, brand, cx, facilitation, contentful, vercel, anthropic-skills/pptx, and anthropic-skills/docx. Polish toolchain: Napkin / Figma+Mermaid / PowerPoint native / higgsfield (nano banana default, chatgpt 2 fallback, Seedance) / Flaticon. Output formats: 16:9 PPTX via PowerPoint MCP, 8.5\u00d711 PDF via Word MCP, optional encapsulated microsite via Vercel for Composable DXP Complex tier. Companion factory at /60_Digital_Manufacturing/Solution_Factory/ holds the templates and pipeline doc."
     }
   ]
 }

@@ -1,0 +1,7 @@
+{
+  "name": "solution-factory",
+  "version": "0.1.0",
+  "description": "The Slalom Solution Factory — orchestrates the Frame → Draft → Polish → Ship pipeline for producing solution kits (8 deliverables) from idea to promoted artifact. Cowork-native: walks users through the intake via AskUserQuestion, sequences specialist skills across stages, applies brand and visual toolchain, routes promoted solutions to the right canonical home (10_Practice/Offerings/Solutions for DXP; 40_Library/Solution_Briefs for general).",
+  "author": "Bermon Painter",
+  "keywords": ["solution-factory", "slalom", "composable-dxp", "sales-kit", "orchestration"]
+}
