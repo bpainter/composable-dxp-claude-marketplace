@@ -98,7 +98,7 @@ Three distinct shapes show up; the agent and skills explicitly recognize each:
 - **`cx`** — `cx-information-architect` outputs feed asset-model and metaproperty design upstream
 - **`project-management`** — adoption metrics from `bynder-optimization-audit` feed practice-level engagement tracking
 
-## Part of the second-brain marketplace
+## Part of the composable-dxp marketplace
 
 See the [marketplace README](../README.md) for the full architecture.
 

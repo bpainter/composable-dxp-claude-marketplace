@@ -104,7 +104,7 @@ Session 3 (queued separately): brand plugin restructure — see `../Brand_and_De
 - **`software-engineering`** — `design-handoff` and `design-screen` outputs feed `software-engineering-design-implementation` and `software-engineering-frontend-developer`
 - **`cx`** — journey maps, personas, and IA inputs from cx land here
 
-## Part of the second-brain marketplace
+## Part of the composable-dxp marketplace
 
 See the [marketplace README](../README.md) for the full architecture.
 

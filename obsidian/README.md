@@ -132,7 +132,7 @@ Workers that *act* on the vault (read, scan, refactor):
 
 Synthesis, draft assistance, periodic reviews.
 
-## Part of the second-brain marketplace
+## Part of the composable-dxp marketplace
 
 See the [marketplace README](../README.md) for the full architecture: each plugin is self-contained; the marketplace at `80_Skills_and_Agents/` is the entry point for installation.
 

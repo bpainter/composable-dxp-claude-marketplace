@@ -75,7 +75,7 @@ For Slalom-branded work, the canonical reference lives at `50_Knowledge/Framewor
 
 Binary assets (Brand Guide PDF, .potx, design-system bundle) live at `70_Templates/Slalom_Brand_Assets/`.
 
-## Part of the second-brain marketplace
+## Part of the composable-dxp marketplace
 
 See the [marketplace README](../README.md) for the full architecture.
 

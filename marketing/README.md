@@ -39,7 +39,7 @@ status: active
 - **`cx`** — `cx-personalization-strategist` and `cx-customer-research` inform targeting and messaging
 - **`design`** — landing-page design and conversion-optimized layouts
 
-## Part of the second-brain marketplace
+## Part of the composable-dxp marketplace
 
 See the [marketplace README](../README.md) for the full architecture.
 

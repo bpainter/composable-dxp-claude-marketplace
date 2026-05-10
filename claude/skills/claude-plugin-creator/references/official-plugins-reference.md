@@ -138,7 +138,7 @@ When borrowing from official plugins:
 
 ## How official plugins handle marketplaces
 
-The repo IS a marketplace. Its `.claude-plugin/marketplace.json` lists every plugin under `plugins/<name>/`. This is the same shape as your `second-brain` marketplace:
+The repo IS a marketplace. Its `.claude-plugin/marketplace.json` lists every plugin under `plugins/<name>/`. This is the same shape as your `composable-dxp` marketplace:
 
 ```json
 {

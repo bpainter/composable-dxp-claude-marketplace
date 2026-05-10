@@ -58,7 +58,7 @@ Shared with the `product-management` plugin (canonical digests live there):
 - **`software-engineering`** — `cx-information-architect` outputs feed `software-engineering-contentful-model`
 - **`marketing`** — for personalization and lifecycle execution
 
-## Part of the second-brain marketplace
+## Part of the composable-dxp marketplace
 
 See the [marketplace README](../README.md) for the full architecture.
 

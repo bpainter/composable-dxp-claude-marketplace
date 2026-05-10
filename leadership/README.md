@@ -71,7 +71,7 @@ Tight, opinionated wrappers over the most-used workflows. Each command routes th
 | T_Decision_Log.md | `70_Templates/` | leadership-executive-coach, leadership-people-leader |
 | T_Coaching_Notes.md | `70_Templates/` | leadership-people-leader, leadership-executive-coach |
 
-## Part of the second-brain marketplace
+## Part of the composable-dxp marketplace
 
 See the [marketplace README](../README.md) for the full architecture.
 

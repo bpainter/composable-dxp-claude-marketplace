@@ -66,7 +66,7 @@ The plugin also pairs deeply with the project-management plugin's `book-product-
 # Drag Plugins/product-management.plugin into Settings → Customize → Personal Plugins
 
 # Or marketplace install (Claude Code CLI)
-claude plugin install product-management@second-brain
+claude plugin install product-management@composable-dxp
 ```
 
 ## License

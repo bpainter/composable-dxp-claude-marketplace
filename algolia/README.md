@@ -93,7 +93,7 @@ Every skill in this plugin can cite these category-level references at `referenc
 - **`marketing`** — SEO/GEO and analytics pair with `algolia-analytics-events` for full-funnel attribution
 - **`cx`** — `cx-information-architect` outputs feed `algolia-index-design` (faceting and refinement design)
 
-## Part of the second-brain marketplace
+## Part of the composable-dxp marketplace
 
 See the [marketplace README](../README.md) for the full architecture.
 

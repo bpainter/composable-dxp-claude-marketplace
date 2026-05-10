@@ -2,19 +2,19 @@
 
 The Composable DXP **plugin marketplace** for Claude. 18 plugins, 182 skills, packaged for Claude Code (CLI), Claude Desktop (Cowork mode), and drag-and-drop install.
 
-**Marketplace name:** `second-brain` (the value in `.claude-plugin/marketplace.json`)
-**Repo:** `https://github.com/Slalom/composable-dxp-claude-marketplace` *(private, Slalom org)*
+**Marketplace name:** `composable-dxp` (the value in `.claude-plugin/marketplace.json`)
+**Repo:** `https://github.com/bpainter/composable-dxp-claude-marketplace` *(public, personal)*
 
 ## Quick install
 
 ```bash
 # Cowork (Git URL — Cowork requires Git, not local paths)
-claude plugin marketplace add https://github.com/Slalom/composable-dxp-claude-marketplace.git
-claude plugin install <plugin>@second-brain
+claude plugin marketplace add https://github.com/bpainter/composable-dxp-claude-marketplace.git
+claude plugin install <plugin>@composable-dxp
 
 # Claude Code (also accepts the local path)
 claude plugin marketplace add "/Users/bermon.painter/Library/CloudStorage/OneDrive-Slalom/Slalom Second Brain/80_Skills_and_Agents"
-claude plugin install <plugin>@second-brain
+claude plugin install <plugin>@composable-dxp
 ```
 
 **For full install paths (Cowork, Claude Code, drag-and-drop), see `INSTALL.md`.**
@@ -225,7 +225,7 @@ See `INSTALL.md` for full instructions. Short version:
 
 # Or marketplace install (Claude Code CLI)
 claude plugin marketplace add "/path/to/80_Skills_and_Agents"
-claude plugin install obsidian@second-brain
+claude plugin install obsidian@composable-dxp
 ```
 
 Plugins installed via the CLI become available in both Claude Code sessions and Claude Desktop's Cowork mode.

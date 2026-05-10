@@ -55,7 +55,7 @@ The plugin also pairs with the product-management plugin's `book-escaping-the-bu
 - **`leadership`** — `leadership-people-leader` for the human side of running teams
 - **`software-engineering`** — sprint and user-story outputs feed engineering execution
 
-## Part of the second-brain marketplace
+## Part of the composable-dxp marketplace
 
 See the [marketplace README](../README.md) for the full architecture.
 

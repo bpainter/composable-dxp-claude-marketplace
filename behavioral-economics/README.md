@@ -59,7 +59,7 @@ The Slalom Behavioral Design Model is also documented as a Solution Brief at [`/
 - Each skill has a `references/` folder with skill-specific reference files.
 - Tone across all skills: direct, practical, builder-oriented.
 
-## Part of the second-brain marketplace
+## Part of the composable-dxp marketplace
 
 See the [marketplace README](../README.md) for the full architecture: skills (atomic), category agents (sequencing), orchestrators (cross-domain coordination).
 

@@ -112,7 +112,7 @@ Every skill in this plugin can cite these category-level references at `referenc
 - The previous skill's two references (`portfolio_governance_template.md` and `jobs_to_be_done_discovery.md`) have moved to this plugin's `references/`.
 - Cross-plugin DT references — three books on digital transformation live here, with `consulting-digital-strategist` cross-referencing them.
 
-## Part of the second-brain marketplace
+## Part of the composable-dxp marketplace
 
 See the [marketplace README](../README.md) for the full architecture: skills (atomic), category agents (sequencing), orchestrators (cross-domain coordination).
 

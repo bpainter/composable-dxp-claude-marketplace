@@ -87,7 +87,7 @@ Every skill in this plugin can cite these category-level references at `referenc
 - **`design`** — `design-process` for the discovery → define → develop → deliver framing on the design side.
 - **`leadership`** — `leadership-people-leader` for the people-leader side of running a team's meeting cadence.
 
-## Part of the second-brain marketplace
+## Part of the composable-dxp marketplace
 
 See the [marketplace README](../README.md) for the full architecture: skills (atomic), category agents (sequencing), orchestrators (cross-domain coordination).
 

@@ -35,22 +35,22 @@ This marketplace publishes 18 plugins to **Claude Desktop (Cowork mode)**, **Cla
 
 ## Recommended path: Cowork via Git marketplace
 
-Cowork's marketplace registration requires a **Git URL**. This marketplace lives in a private GitHub repo under the Slalom org.
+Cowork's marketplace registration requires a **Git URL**. This marketplace lives in a public GitHub repo on Bermon's personal account.
 
 ```bash
 # In Claude Desktop's Cowork mode (or via the desktop app's Settings UI):
-claude plugin marketplace add https://github.com/Slalom/composable-dxp-claude-marketplace.git
-claude plugin marketplace update second-brain
+claude plugin marketplace add https://github.com/bpainter/composable-dxp-claude-marketplace.git
+claude plugin marketplace update composable-dxp
 
 # Install plugins (Cowork)
-claude plugin install obsidian@second-brain
-claude plugin install behavioral-economics@second-brain
+claude plugin install obsidian@composable-dxp
+claude plugin install behavioral-economics@composable-dxp
 # ... etc.
 ```
 
-> **Marketplace name vs repo name:** the GitHub repo is `composable-dxp-claude-marketplace`; the *marketplace* name (what you reference in `<plugin>@<marketplace>`) is `second-brain`, set in `.claude-plugin/marketplace.json`. They don't have to match.
+> **Marketplace name vs repo name:** the GitHub repo is `composable-dxp-claude-marketplace`; the *marketplace* name (what you reference in `<plugin>@<marketplace>`) is `composable-dxp`, set in `.claude-plugin/marketplace.json`. They don't have to match.
 
-For the private Slalom repo, ensure your Mac has a working GitHub auth path (SSH key, `gh` CLI, or HTTPS personal access token) with read access to the `Slalom` org. SSH config alias `github-slalom` (with `IdentityFile ~/.ssh/id_ed25519_slalom`) is the working setup for this repo.
+The repo is public, so cloning the marketplace doesn't need credentials. Pushing changes requires Bermon's personal SSH key — see the Publishing section below for the alias setup.
 
 ## Claude Code CLI
 
@@ -61,10 +61,10 @@ Same marketplace, but Claude Code accepts local paths *or* Git URLs:
 claude plugin marketplace add "/Users/bermon.painter/Library/CloudStorage/OneDrive-Slalom/Slalom Second Brain/80_Skills_and_Agents"
 
 # Or Git URL (works for both Claude Code and Cowork)
-claude plugin marketplace add https://github.com/Slalom/composable-dxp-claude-marketplace.git
+claude plugin marketplace add https://github.com/bpainter/composable-dxp-claude-marketplace.git
 
-claude plugin install obsidian@second-brain
-claude plugin install <name>@second-brain
+claude plugin install obsidian@composable-dxp
+claude plugin install <name>@composable-dxp
 ```
 
 CLI-installed plugins land in `~/.claude.json` and `~/.claude/plugins/` and are visible to Claude Code anywhere on the machine.
@@ -96,10 +96,10 @@ If a skill doesn't trigger on its expected phrase, the description's trigger lan
 
 ```bash
 # Refresh the marketplace listing (after a git push)
-claude plugin marketplace update second-brain
+claude plugin marketplace update composable-dxp
 
 # Update a specific plugin
-claude plugin update obsidian@second-brain
+claude plugin update obsidian@composable-dxp
 ```
 
 ### Drag-and-drop install
@@ -134,13 +134,13 @@ For all 18 plugins at once, see the build loop in this repo's earlier conversati
 
 ## Publishing the marketplace to GitHub
 
-The marketplace lives at `git@github.com:Slalom/composable-dxp-claude-marketplace.git` (private, Slalom org). Pushing requires the Slalom-specific SSH key, configured via this `~/.ssh/config` host alias:
+The marketplace lives at `git@github.com:bpainter/composable-dxp-claude-marketplace.git` (public, personal). Pushing requires the personal SSH key, configured via this `~/.ssh/config` host alias:
 
 ```
-Host github-slalom
+Host github-bermon
   HostName github.com
   User git
-  IdentityFile ~/.ssh/id_ed25519_slalom
+  IdentityFile ~/.ssh/id_ed25519_github_bermon
   AddKeysToAgent yes
   UseKeychain yes
 ```
@@ -155,13 +155,13 @@ git add -A
 git commit -m "Replace marketplace with current Composable DXP plugin set"
 
 # Add the remote using the SSH alias (note: no git@ prefix)
-git remote add origin github-slalom:Slalom/composable-dxp-claude-marketplace.git
+git remote add origin github-bermon:bpainter/composable-dxp-claude-marketplace.git
 
 # Confirm it resolved correctly
 git remote -v
 
-# Quick auth sanity check — should report your Slalom GitHub identity
-ssh -T github-slalom
+# Quick auth sanity check — should report your bpainter GitHub identity
+ssh -T github-bermon
 
 # Force-push main, replacing whatever is there
 git push --set-upstream origin main --force
@@ -171,7 +171,7 @@ If the existing remote uses `master` as the default branch, push as `main:master
 
 > **OneDrive caveat:** Git inside a OneDrive-synced folder can occasionally produce sync conflicts on `.git/index` and similar files during heavy commits. For a low-traffic personal marketplace this is usually fine, but if you hit `.git` corruption, consider moving the repo outside OneDrive (e.g., `~/Code/composable-dxp-claude-marketplace/`) and treat OneDrive as a separate backup.
 
-> **"Repository not found" on push:** GitHub returns this error both for missing repos and for keys without access. If the repo exists at the path above, the issue is almost always SSH using the wrong key. Check `ssh-add -l` lists `id_ed25519_slalom`, run `ssh -T github-slalom` to confirm it authenticates as your Slalom identity, and verify the URL in `git remote -v` uses the `github-slalom:` prefix (not `git@github.com:`).
+> **"Repository not found" on push:** GitHub returns this error both for missing repos and for keys without access. If the repo exists at the path above, the issue is almost always SSH using the wrong key. Check `ssh-add -l` lists `id_ed25519_github_bermon`, run `ssh -T github-bermon` to confirm it authenticates as your Slalom identity, and verify the URL in `git remote -v` uses the `github-bermon:` prefix (not `git@github.com:`).
 
 ## Updating the marketplace after a change
 
@@ -179,13 +179,13 @@ If the existing remote uses `master` as the default branch, push as `main:master
 cd "/Users/bermon.painter/Library/CloudStorage/OneDrive-Slalom/Slalom Second Brain/80_Skills_and_Agents"
 
 # Make changes, rebuild relevant .plugin files
-# Then commit and push (using the github-slalom alias)
+# Then commit and push (using the github-bermon alias)
 git add .
 git commit -m "Update behavioral-economics to 0.4.0; rebuild .plugin"
 git push origin main
 
 # Refresh the marketplace listing in Claude Code / Cowork
-claude plugin marketplace update second-brain
+claude plugin marketplace update composable-dxp
 ```
 
 ## Cleaning up stale Cowork "Local uploads"

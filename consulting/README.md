@@ -67,7 +67,7 @@ The synthesized engagement view lives as a Solution Brief at [`/40_Library/Solut
 - **`cx`** — for customer research, journey, and personalization inputs feeding strategy
 - **`brand`** — for client-facing brand work inside engagements
 
-## Part of the second-brain marketplace
+## Part of the composable-dxp marketplace
 
 See the [marketplace README](../README.md) for the full architecture: skills (atomic), category agents (sequencing), orchestrators (cross-domain coordination).
 

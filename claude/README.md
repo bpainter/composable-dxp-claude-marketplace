@@ -81,7 +81,7 @@ Same pattern as every plugin in this marketplace. See `../INSTALL.md`.
 # Drag Plugins/claude.plugin into Settings → Customize → Personal Plugins
 
 # Or marketplace install (Claude Code CLI)
-claude plugin install claude@second-brain
+claude plugin install claude@composable-dxp
 ```
 
 ## License

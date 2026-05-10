@@ -77,7 +77,7 @@ Every skill in this plugin can cite these category-level references at `referenc
 - **`design`** — `design-handoff` outputs feed into v0 prompts when design-to-code is in play
 - **`project-management`** — release planning aligns with the Vercel deploy cadence
 
-## Part of the second-brain marketplace
+## Part of the composable-dxp marketplace
 
 See the [marketplace README](../README.md) for the full architecture.
 

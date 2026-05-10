@@ -76,7 +76,7 @@ Every skill in this plugin can cite these category-level references at `referenc
 - **`cx`** — `cx-information-architect` outputs feed `contentful-content-model`
 - **`project-management`** — sprint and user-story outputs drive engineering execution against Contentful
 
-## Part of the second-brain marketplace
+## Part of the composable-dxp marketplace
 
 See the [marketplace README](../README.md) for the full architecture.
 

@@ -113,7 +113,7 @@ Every skill in this plugin can cite these category-level references at `referenc
 - **`project-management`** — sprint and user-story outputs drive engineering execution
 - **`consulting`** — `consulting-management-consultant` and architecture personas pair on engagement structure
 
-## Part of the second-brain marketplace
+## Part of the composable-dxp marketplace
 
 See the [marketplace README](../README.md) for the full architecture.
 

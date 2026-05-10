@@ -232,6 +232,6 @@ Escalation: User wants a non-standard plugin format (`.mcpb`) — out of scope. 
 3. "My plugin install fails with `homepage: Invalid URL`. What's the fix?"
 4. "Generate the plugin.json for a plugin called research, version 0.1.0, MIT license, no homepage."
 5. "Add a slash command /morning to my obsidian plugin. How do I structure the file?"
-6. "Walk me through registering my new plugin in the second-brain marketplace."
+6. "Walk me through registering my new plugin in the composable-dxp marketplace."
 7. "Build the obsidian plugin's .plugin file from `80_Skills_and_Agents/obsidian/`."
 8. "I'm getting OneDrive deadlocks when I try to build my .plugin. Walk me through the staging-in-tmp workaround."

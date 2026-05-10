@@ -110,7 +110,7 @@ import { createQuerySuggestionsPlugin } from '@algolia/autocomplete-plugin-query
 import { createRedirectUrlPlugin } from '@algolia/autocomplete-plugin-redirect-url';
 
 const recentSearchesPlugin = createLocalStorageRecentSearchesPlugin({
-  key: 'second-brain-recent-searches',
+  key: 'composable-dxp-recent-searches',
   limit: 5,
 });
 

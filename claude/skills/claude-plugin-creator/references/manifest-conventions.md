@@ -94,7 +94,7 @@ Path: `<marketplace>/.claude-plugin/marketplace.json`
 
 | Field | Type | Notes |
 |---|---|---|
-| `name` | string | Marketplace name (e.g., `"second-brain"`) |
+| `name` | string | Marketplace name (e.g., `"composable-dxp"`) |
 | `owner` | object | `{ "name": "...", "email": "..." }` |
 | `plugins` | array | List of plugin entries |
 
@@ -122,7 +122,7 @@ Mixing relative paths and URLs in the same marketplace is fine.
 
 ```json
 {
-  "name": "second-brain",
+  "name": "composable-dxp",
   "owner": {
     "name": "Bermon Painter",
     "email": "claude@bermonpainter.com"
