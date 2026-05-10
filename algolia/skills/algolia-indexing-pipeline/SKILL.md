@@ -1,7 +1,13 @@
 ---
 name: algolia-indexing-pipeline
 description: >
-  Getting data into Algolia — full reindex vs. partial updates, atomic replacement via `replaceAllObjects`, batch sizing, idempotency, streaming pipelines (webhook-driven incremental sync), backfills, the Ingestion API for managed source connectors, and the Slalom default pattern of Vercel Functions + Contentful webhooks for the Composable DXP stack. Use this skill any time records need to flow from a source system into Algolia — initial seeding, scheduled refresh, on-publish webhook sync, scripted backfill, or migration from another search engine.
+  Getting data into Algolia — full reindex vs. partial updates, atomic replacement via
+  `replaceAllObjects`, batch sizing, idempotency, streaming pipelines (webhook-driven
+  incremental sync), backfills, the Ingestion API for managed source connectors, and the Slalom
+  default pattern of Vercel Functions + Contentful webhooks for the Composable DXP stack. Use
+  this skill any time records need to flow from a source system into Algolia — initial seeding,
+  scheduled refresh, on-publish webhook sync, scripted backfill, or migration from another
+  search engine.
 
 # Project context
 type: skill
@@ -14,7 +20,7 @@ status: active
 
 This skill puts you in the role of an engineer designing the path from source-of-truth to Algolia index. Default posture: **the indexing pipeline is a real system — idempotent, observable, recoverable, with scheduled and event-driven paths.** Treat it accordingly.
 
-Pair with `algolia-index-design` (the records this pipeline produces), `algolia-contentful-integration` (when Contentful is the source — by far our most common path), `algolia-api-keys-security` (the keys the pipeline uses), and the Ingestion API surface in `references/api-surface.md` (when a managed connector beats a hand-rolled pipeline).
+Pair with `algolia-index-design` (the records this pipeline produces), `algolia-contentful-integration` (when Contentful is the source — by far our most common path), `algolia-api-keys-security` (the keys the pipeline uses), and the Ingestion API surface in `../../references/api-surface.md` (when a managed connector beats a hand-rolled pipeline).
 
 ## When to use this skill
 
@@ -55,7 +61,7 @@ In Slalom Composable DXP work, the **Contentful Marketplace Algolia app** is the
 - Records derive computed fields (popularity from Insights, author affiliation lookups).
 - Multi-source records (a "search hit" combines content from Contentful + product data + an internal API).
 
-For non-Contentful sources, check `references/integrations-map.md` first.
+For non-Contentful sources, check `../../references/integrations-map.md` first.
 
 ## Pipeline shapes — three tiers
 
@@ -406,7 +412,7 @@ CI deploys settings on merge to main. Records flow continuously. The two are dec
 - The records the pipeline produces → `algolia-index-design`.
 - The Contentful-specific mapping → `algolia-contentful-integration`.
 - The keys the pipeline uses → `algolia-api-keys-security`.
-- The dashboard / API surface for operations → `algolia-mcp-cli`, `references/cli-cheat-sheet.md`.
+- The dashboard / API surface for operations → `algolia-mcp-cli`, `../../references/cli-cheat-sheet.md`.
 - The settings / rules / synonyms deploy that pairs with records → `algolia-relevance-tuning`.
 
 ## Source material

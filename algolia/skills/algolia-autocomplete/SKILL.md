@@ -1,7 +1,14 @@
 ---
 name: algolia-autocomplete
 description: >
-  Building autocomplete and search-suggestion experiences with the Algolia Autocomplete UI library — distinct from InstantSearch. Covers query suggestions, multi-source autocomplete (suggestions + recent searches + records + redirects + content), the plugin architecture (`@algolia/autocomplete-plugin-*`), keyboard nav, accessibility, theming on shadcn, integration into a Next.js header, and the Query Suggestions index. Use this skill when building the global header search box, a command-palette experience, or any "type ahead and pick" UI. Don't reach for InstantSearch for these — Autocomplete is a different library with a different mental model.
+  Building autocomplete and search-suggestion experiences with the Algolia Autocomplete UI
+  library — distinct from InstantSearch. Covers query suggestions, multi-source autocomplete
+  (suggestions + recent searches + records + redirects + content), the plugin architecture
+  (`@algolia/autocomplete-plugin-*`), keyboard nav, accessibility, theming on shadcn,
+  integration into a Next.js header, and the Query Suggestions index. Use this skill when
+  building the global header search box, a command-palette experience, or any "type ahead and
+  pick" UI. Don't reach for InstantSearch for these — Autocomplete is a different library with
+  a different mental model.
 
 # Project context
 type: skill

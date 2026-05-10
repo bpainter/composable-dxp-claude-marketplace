@@ -1,7 +1,13 @@
 ---
 name: algolia-api-keys-security
 description: >
-  API-key strategy for Algolia — admin vs. search vs. monitoring vs. analytics keys, scoped keys with explicit ACLs, the secured API key pattern (HMAC-derived per-request keys with embedded filters and expiry) for multi-tenant filtering, IP allowlists, rate-limit partitioning, key rotation, and the audit trail. Use this skill any time the user is touching keys — first integration, multi-tenant rollout, security audit, key rotation after a staff change, or "we got a 403, what changed." Keys are the surface where production search experiences fail; treat them with discipline.
+  API-key strategy for Algolia — admin vs. search vs. monitoring vs. analytics keys, scoped
+  keys with explicit ACLs, the secured API key pattern (HMAC-derived per-request keys with
+  embedded filters and expiry) for multi-tenant filtering, IP allowlists, rate-limit
+  partitioning, key rotation, and the audit trail. Use this skill any time the user is touching
+  keys — first integration, multi-tenant rollout, security audit, key rotation after a staff
+  change, or "we got a 403, what changed." Keys are the surface where production search
+  experiences fail; treat them with discipline.
 
 # Project context
 type: skill

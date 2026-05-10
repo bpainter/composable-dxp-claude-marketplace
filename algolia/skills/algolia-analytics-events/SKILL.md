@@ -1,7 +1,14 @@
 ---
 name: algolia-analytics-events
 description: >
-  Insights events and search analytics — designing the event taxonomy (eventType, eventName, objectIDs, queryID, userToken), wiring `view`, `click`, and `conversion` events from React / Next.js, the Insights middleware in InstantSearch, attributing search-driven revenue, A/B test setup, reading Search Analytics (top searches, no-result queries, click position, CTR by query), and the patterns that make every other AI feature work. Use this skill any time events are the topic — first integration, fixing missing attribution, debugging Personalization, evaluating relevance changes, or building the analytics dashboard for the engagement.
+  Insights events and search analytics — designing the event taxonomy (eventType, eventName,
+  objectIDs, queryID, userToken), wiring `view`, `click`, and `conversion` events from React /
+  Next.js, the Insights middleware in InstantSearch, attributing search-driven revenue, A/B
+  test setup, reading Search Analytics (top searches, no-result queries, click position, CTR by
+  query), and the patterns that make every other AI feature work. Use this skill any time
+  events are the topic — first integration, fixing missing attribution, debugging
+  Personalization, evaluating relevance changes, or building the analytics dashboard for the
+  engagement.
 
 # Project context
 type: skill
@@ -404,7 +411,7 @@ For high-privacy engagements (legal, healthcare), consider:
 - The widgets that the Insights middleware instruments → `algolia-instantsearch-react`, `algolia-autocomplete`.
 - Models that train on these events → `algolia-recommend`, `algolia-personalization-ai`.
 - Tuning informed by these analytics → `algolia-relevance-tuning`.
-- API surface for sending and reading events → `references/api-surface.md`.
+- API surface for sending and reading events → `../../references/api-surface.md`.
 - Privacy controls and key permissions → `algolia-api-keys-security`.
 
 ## Source material

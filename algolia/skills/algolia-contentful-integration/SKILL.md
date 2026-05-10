@@ -1,7 +1,14 @@
 ---
 name: algolia-contentful-integration
 description: >
-  The Contentful ↔ Algolia integration we ship by default on Composable DXP engagements — choosing between the Marketplace app, the Ingestion API source connector, and a custom Vercel-Function indexer; mapping Topics & Assemblies to Algolia records; per-locale fan-out; preview vs. delivery indices; webhook signature verification; on-publish revalidation; backfills; the moments where the Marketplace app is enough and the moments where it's not. Use this skill any time a Composable DXP engagement needs Contentful as the source of truth for an Algolia index — first integration, new content type, locale rollout, or migration from a hand-rolled indexer to a managed connector (or vice versa).
+  The Contentful ↔ Algolia integration we ship by default on Composable DXP engagements —
+  choosing between the Marketplace app, the Ingestion API source connector, and a custom
+  Vercel-Function indexer; mapping Topics & Assemblies to Algolia records; per-locale fan-out;
+  preview vs. delivery indices; webhook signature verification; on-publish revalidation;
+  backfills; the moments where the Marketplace app is enough and the moments where it's not.
+  Use this skill any time a Composable DXP engagement needs Contentful as the source of truth
+  for an Algolia index — first integration, new content type, locale rollout, or migration from
+  a hand-rolled indexer to a managed connector (or vice versa).
 
 # Project context
 type: skill

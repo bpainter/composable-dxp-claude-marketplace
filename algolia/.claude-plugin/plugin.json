@@ -1,7 +1,7 @@
 {
   "name": "algolia",
   "version": "0.1.0",
-  "description": "Twelve specialist skills for Algolia-powered search: index design, relevance tuning, InstantSearch React/Next.js, Autocomplete, search-client, indexing pipelines (Contentful → Algolia, batch + streaming), API-key strategy, the Recommend API, AI search and Personalization (NeuralSearch), Insights events and A/B, Contentful ↔ Algolia integration, and Algolia MCP/CLI workflows. One agent (algolia-agent) and five slash commands (/algolia-bootstrap, /algolia-audit, /algolia-relevance-review, /algolia-reindex, /algolia-keys-rotate) for the engagement lifecycle. Production-grade guidance for Slalom's Composable DXP practice.",
+  "description": "Twelve specialist skills for Algolia-powered search: index design, relevance tuning, InstantSearch React/Next.js, Autocomplete, search-client, indexing pipelines (Contentful \u2192 Algolia, batch + streaming), API-key strategy, the Recommend API, AI search and Personalization (NeuralSearch), Insights events and A/B, Contentful \u2194 Algolia integration, and Algolia MCP/CLI workflows.",
   "author": {
     "name": "Bermon Painter",
     "email": "claude@bermonpainter.com"
@@ -14,11 +14,6 @@
     "autocomplete",
     "neuralsearch",
     "recommend",
-    "personalization",
-    "composable",
-    "dxp",
-    "contentful",
-    "mcp",
-    "cli"
+    "personalization"
   ]
 }

@@ -1,7 +1,12 @@
 ---
 name: algolia-mcp-cli
 description: >
-  Practical Algolia MCP server and CLI workflows — when to reach for which, agent-led indexing and relevance work, scripted ops in CI, safety rails, and the Slalom defaults for keys and run logs. Use this skill when an LLM agent needs to operate against an Algolia app (read settings, propose synonyms, simulate ranking, apply rules), when scripting reproducible ops in CI (settings/rules/synonyms-as-code), or when deciding which interface fits a given task. The MCP shines for conversational diagnosis; the CLI shines for repeatable deploys.
+  Practical Algolia MCP server and CLI workflows — when to reach for which, agent-led indexing
+  and relevance work, scripted ops in CI, safety rails, and the Slalom defaults for keys and
+  run logs. Use this skill when an LLM agent needs to operate against an Algolia app (read
+  settings, propose synonyms, simulate ranking, apply rules), when scripting reproducible ops
+  in CI (settings/rules/synonyms-as-code), or when deciding which interface fits a given task.
+  The MCP shines for conversational diagnosis; the CLI shines for repeatable deploys.
 
 # Project context
 type: skill
@@ -14,7 +19,7 @@ status: active
 
 This skill puts you in the role of an engineer (or an LLM agent) deciding which interface fits a given Algolia op. Default posture: **MCP for conversational diagnosis and one-off tweaks; CLI for reproducible, version-controlled, CI-deployed work.**
 
-Pair with `algolia-relevance-tuning` (the changes you make via these tools), `algolia-indexing-pipeline` (the bulk write paths), `algolia-api-keys-security` (the keys these tools use), and `references/cli-cheat-sheet.md` / `references/mcp-cheat-sheet.md` for command-level details.
+Pair with `algolia-relevance-tuning` (the changes you make via these tools), `algolia-indexing-pipeline` (the bulk write paths), `algolia-api-keys-security` (the keys these tools use), and `../../references/cli-cheat-sheet.md` / `../../references/mcp-cheat-sheet.md` for command-level details.
 
 ## When to use this skill
 
@@ -322,7 +327,7 @@ algolia/
 
 - The changes these tools apply → `algolia-relevance-tuning`, `algolia-indexing-pipeline`.
 - The keys these tools need → `algolia-api-keys-security`.
-- Command-level reference → `references/cli-cheat-sheet.md`, `references/mcp-cheat-sheet.md`.
+- Command-level reference → `../../references/cli-cheat-sheet.md`, `../../references/mcp-cheat-sheet.md`.
 - The Contentful-side equivalent (Contentful CLI + MCP) → `contentful-mcp-cli` in the contentful plugin.
 
 ## Source material

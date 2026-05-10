@@ -1,7 +1,14 @@
 ---
 name: algolia-index-design
 description: >
-  Index and record design for Algolia — designing the JSON record shape that powers search, deciding searchable vs. faceted vs. displayed attributes, choosing per-type indices vs. one federated index, structuring distinct/grouping for variant collapse, and architecting replicas (standard vs. virtual) for sort orders. Use this skill any time the user is starting a new Algolia integration, adding a new content type to an existing index, refactoring records that have gotten bloated, deciding between one index or many, or planning sort orders. The schema decisions here propagate into every other skill — get them right and ranking, faceting, and indexing pipelines fall into place.
+  Index and record design for Algolia — designing the JSON record shape that powers search,
+  deciding searchable vs. faceted vs. displayed attributes, choosing per-type indices vs. one
+  federated index, structuring distinct/grouping for variant collapse, and architecting
+  replicas (standard vs. virtual) for sort orders. Use this skill any time the user is starting
+  a new Algolia integration, adding a new content type to an existing index, refactoring
+  records that have gotten bloated, deciding between one index or many, or planning sort
+  orders. The schema decisions here propagate into every other skill — get them right and
+  ranking, faceting, and indexing pipelines fall into place.
 
 # Project context
 type: skill

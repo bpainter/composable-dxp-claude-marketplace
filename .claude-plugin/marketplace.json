@@ -18,8 +18,8 @@
     {
       "name": "claude",
       "source": "./claude",
-      "version": "0.2.0",
-      "description": "Claude tooling skills for Claude Desktop (Cowork) and Claude Code. Two skills: claude-plugin-creator scaffolds new plugins (folder structure, manifest, .plugin build, install via Settings \u2192 Customize \u2192 Personal Plugins, references Anthropic's official plugins as exemplars) and claude-orchestrator designs the orchestration layer for new Cowork projects (CLAUDE.md project-level routing, multi-phase commands, parallel agent teams). One slash command (/plugin-help). Will grow with skills for hooks, MCP servers, status line, and other Claude-specific workflows."
+      "version": "0.3.0",
+      "description": "Claude tooling skills for Cowork and Claude Code. Two skills: claude-plugin-creator scaffolds new plugins (folder structure, manifest, .plugin build, Cowork install) with empirically-established validation rules; claude-orchestrator designs the orchestration layer for new Cowork projects (CLAUDE.md routing, multi-phase commands, agent teams). One slash command (/plugin-help)."
     },
     {
       "name": "behavioral-economics",

@@ -1,7 +1,14 @@
 ---
 name: algolia-search-client
 description: >
-  Direct usage of the Algolia search client (`algoliasearch` and the lite `@algolia/client-search`) — when InstantSearch and Autocomplete are the wrong shape and you need raw queries. Covers RSC search, server actions, edge runtime, multi-index queries, browse, search params, locale-aware querying, error handling, and the Slalom defaults for module boundaries (where the client lives, who instantiates it, how secrets are scoped). Use this skill when building a custom search UI, when calling Algolia from a Next.js Server Component or Route Handler, when running search at the edge, or when InstantSearch overhead isn't justified.
+  Direct usage of the Algolia search client (`algoliasearch` and the lite
+  `@algolia/client-search`) — when InstantSearch and Autocomplete are the wrong shape and you
+  need raw queries. Covers RSC search, server actions, edge runtime, multi-index queries,
+  browse, search params, locale-aware querying, error handling, and the Slalom defaults for
+  module boundaries (where the client lives, who instantiates it, how secrets are scoped). Use
+  this skill when building a custom search UI, when calling Algolia from a Next.js Server
+  Component or Route Handler, when running search at the edge, or when InstantSearch overhead
+  isn't justified.
 
 # Project context
 type: skill

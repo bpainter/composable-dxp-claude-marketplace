@@ -1,7 +1,12 @@
 ---
 name: algolia-instantsearch-react
 description: >
-  Building search UIs with React InstantSearch and Next.js InstantSearch Hooks — server-rendered search pages, refinement widgets, infinite scroll, federation across multiple indices, routing, theming, accessibility, and the patterns that survive App Router / Server Components / Vercel deployments. Use this skill when wiring search to a Next.js or React front end, when migrating from `react-instantsearch-dom` to the current `react-instantsearch` Hooks, or when the search page needs to be SEO-friendly, fast, and refinement-rich.
+  Building search UIs with React InstantSearch and Next.js InstantSearch Hooks —
+  server-rendered search pages, refinement widgets, infinite scroll, federation across multiple
+  indices, routing, theming, accessibility, and the patterns that survive App Router / Server
+  Components / Vercel deployments. Use this skill when wiring search to a Next.js or React
+  front end, when migrating from `react-instantsearch-dom` to the current `react-instantsearch`
+  Hooks, or when the search page needs to be SEO-friendly, fast, and refinement-rich.
 
 # Project context
 type: skill

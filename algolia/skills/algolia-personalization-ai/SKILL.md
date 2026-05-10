@@ -1,7 +1,14 @@
 ---
 name: algolia-personalization-ai
 description: >
-  AI and personalization on Algolia — Personalization (affinity-based per-user re-ranking), Dynamic Re-Ranking (auto-tuned by similar-query click signals), NeuralSearch (vector + keyword hybrid retrieval, Premium plan), Query Categorization (intent classification on the query), AI Browse (conversational discovery), and how the pieces compose. Covers when each earns its cost, the data prerequisites, the rollout posture (always A/B), and the specific points where AI-on-search makes things worse, not better. Use this skill when planning the AI surface for an engagement, debugging weird results after enabling NeuralSearch, or evaluating whether a feature is worth its plan tier.
+  AI and personalization on Algolia — Personalization (affinity-based per-user re-ranking),
+  Dynamic Re-Ranking (auto-tuned by similar-query click signals), NeuralSearch (vector +
+  keyword hybrid retrieval, Premium plan), Query Categorization (intent classification on the
+  query), AI Browse (conversational discovery), and how the pieces compose. Covers when each
+  earns its cost, the data prerequisites, the rollout posture (always A/B), and the specific
+  points where AI-on-search makes things worse, not better. Use this skill when planning the AI
+  surface for an engagement, debugging weird results after enabling NeuralSearch, or evaluating
+  whether a feature is worth its plan tier.
 
 # Project context
 type: skill

@@ -1,7 +1,14 @@
 ---
 name: algolia-recommend
 description: >
-  Algolia Recommend — pre-trained recommendation models served as a separate API. Covers the four model families (Related Items, Frequently Bought Together, Trending Items / Trending Facets, Looking Similar), training data requirements (Insights events), nightly retraining cadence, fallback strategies, the React widgets and Hooks (`useRelatedProducts`, `useFrequentlyBoughtTogether`, etc.), and where Recommend earns its place vs. building it yourself. Use this skill when designing detail-page widgets ("you might also like", "frequently bought together", "trending now"), when launching Recommend on an engagement, or when a Recommend model isn't returning results and we need to debug the training data.
+  Algolia Recommend — pre-trained recommendation models served as a separate API. Covers the
+  four model families (Related Items, Frequently Bought Together, Trending Items / Trending
+  Facets, Looking Similar), training data requirements (Insights events), nightly retraining
+  cadence, fallback strategies, the React widgets and Hooks (`useRelatedProducts`,
+  `useFrequentlyBoughtTogether`, etc.), and where Recommend earns its place vs. building it
+  yourself. Use this skill when designing detail-page widgets ("you might also like",
+  "frequently bought together", "trending now"), when launching Recommend on an engagement, or
+  when a Recommend model isn't returning results and we need to debug the training data.
 
 # Project context
 type: skill

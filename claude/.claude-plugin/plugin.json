@@ -1,7 +1,7 @@
 {
   "name": "claude",
-  "version": "0.2.0",
-  "description": "Claude tooling skills for Claude Desktop (Cowork) and Claude Code. Two skills: claude-plugin-creator scaffolds new plugins (folder structure, manifest, .plugin build, install via Settings → Customize → Personal Plugins) and claude-orchestrator helps you set up new Cowork projects so they understand how to coordinate multiple skills, agents, and commands. Will grow with skills for slash commands, hooks, MCP servers, status line, and other Claude-specific workflows.",
+  "version": "0.3.0",
+  "description": "Claude tooling skills for Cowork and Claude Code. Two skills: claude-plugin-creator scaffolds new plugins (folder structure, manifest, .plugin build, Cowork install) with empirically-established validation rules; claude-orchestrator designs the orchestration layer for new Cowork projects (CLAUDE.md routing, multi-phase commands, agent teams). One slash command (/plugin-help).",
   "author": {
     "name": "Bermon Painter",
     "email": "claude@bermonpainter.com"
@@ -9,12 +9,11 @@
   "license": "MIT",
   "keywords": [
     "claude",
-    "claude-code",
-    "claude-desktop",
     "cowork",
     "plugin-authoring",
     "orchestration",
-    "agent-teams",
+    "validation",
+    "claude-code",
     "tooling"
   ]
 }

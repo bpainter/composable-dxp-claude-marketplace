@@ -1,7 +1,13 @@
 ---
 name: algolia-relevance-tuning
 description: >
-  Relevance tuning for Algolia indices — searchable-attribute order, custom ranking, the master ranking formula, typo tolerance, synonyms (one-way, multi-way, alt-corrections), query rules (pinning, redirects, banners, boosting, hiding, dynamic filters), Dynamic Re-Ranking, and A/B testing changes safely. Use this skill any time relevance is the topic — search returns the wrong things, the business asks to pin a result, the team is rolling out NeuralSearch, or the index is being audited. Pairs with `algolia-index-design` (records first) and `algolia-analytics-events` (measure with Insights).
+  Relevance tuning for Algolia indices — searchable-attribute order, custom ranking, the master
+  ranking formula, typo tolerance, synonyms (one-way, multi-way, alt-corrections), query rules
+  (pinning, redirects, banners, boosting, hiding, dynamic filters), Dynamic Re-Ranking, and A/B
+  testing changes safely. Use this skill any time relevance is the topic — search returns the
+  wrong things, the business asks to pin a result, the team is rolling out NeuralSearch, or the
+  index is being audited. Pairs with `algolia-index-design` (records first) and
+  `algolia-analytics-events` (measure with Insights).
 
 # Project context
 type: skill
