@@ -1,15 +1,15 @@
 # 80_Skills_and_Agents
 
-Personal **plugin marketplace** for Claude. 18 plugins, 169 skills, packaged for Claude Code (CLI), Claude Desktop (Cowork mode), and drag-and-drop install.
+The Composable DXP **plugin marketplace** for Claude. 18 plugins, 182 skills, packaged for Claude Code (CLI), Claude Desktop (Cowork mode), and drag-and-drop install.
 
 **Marketplace name:** `second-brain` (the value in `.claude-plugin/marketplace.json`)
-**GitHub:** `https://github.com/bermonpainter/claude-plugins-skills-agents` *(repo name; private)*
+**Repo:** `https://github.com/Slalom/composable-dxp-claude-marketplace` *(private, Slalom org)*
 
 ## Quick install
 
 ```bash
-# Cowork (private GitHub URL — Cowork requires Git, not local paths)
-claude plugin marketplace add https://github.com/bermonpainter/claude-plugins-skills-agents.git
+# Cowork (Git URL — Cowork requires Git, not local paths)
+claude plugin marketplace add https://github.com/Slalom/composable-dxp-claude-marketplace.git
 claude plugin install <plugin>@second-brain
 
 # Claude Code (also accepts the local path)
@@ -234,20 +234,24 @@ Plugins installed via the CLI become available in both Claude Code sessions and 
 
 | Plugin | Version | Skills | Description |
 |---|---|---|---|
-| `obsidian` | 0.4.0 | 12 | Obsidian vault organization (9 advice + 3 orchestrator-shaped), 1 agent, 4 slash commands |
-| `claude` | 0.2.0 | 2 | Claude tooling — `claude-plugin-creator` for building plugins (Cowork-first) and `claude-orchestrator` for Cowork project orchestration |
-| `behavioral-economics` | 0.3.0 | 7 | Decision science grounded in Kahneman/Thaler-Sunstein/Ariely/Wendel + Slalom Behavioral Design Model. 6 ready-to-use templates (Behavioral Profile, Choice Architecture, Nudges, Intervention Design, Scoring, Validation) |
-| `brand` | 0.2.0 | 2 | Brand strategy and brand identity execution |
-| `consulting` | 0.3.0 | 9 | Management consulting grounded in Block/Kubr/Burtonshaw/Mabee/Robbins-Judge/Voss/Challenger Sale. 4 templates (Engagement Scoping, Negotiation Prep, Challenger Sale, Change Readiness). Companion Solution Brief in /40_Library |
-| `cx` | 0.2.0 | 9 | Research, JTBD, personas, journeys, service design, IA, trends, personalization |
-| `design` | 0.2.0 | 8 | UI/UX/web/mobile, motion, accessibility, plus design-process/audit/screen/handoff |
+| `algolia` | 0.1.0 | 12 | Algolia search platform — index design, relevance tuning, InstantSearch React, Autocomplete, search-client, indexing pipelines (Contentful → Algolia), API key strategy, Recommend, NeuralSearch/Personalization, Insights events + A/B, MCP/CLI |
+| `behavioral-economics` | 0.3.0 | 7 | Decision science grounded in Kahneman/Thaler-Sunstein/Ariely/Wendel + Slalom Behavioral Design Model. 6 templates: Behavioral Profile, Choice Architecture, Nudges, Intervention Design, Scoring, Validation |
+| `brand` | 0.3.0 | 7 | Strategy + identity — strategist, designer, naming, voice & tone, identity system, guidelines composer, audit |
+| `bynder` | 0.1.0 | 12 | Bynder DAM — asset model, brand guidelines, derivatives, marketplace connectors, Contentful pairing, JS SDK, migration, optimization audit, permissions/workflow, portal architect, webhooks, Compact View |
+| `claude` | 0.3.0 | 2 | Claude tooling — `claude-plugin-creator` (build new plugins) and `claude-orchestrator` (Cowork project orchestration) |
+| `consulting` | 0.4.0 | 9 | Management consulting grounded in Block/Kubr/Burtonshaw/Mabee/Robbins-Judge/Voss/Challenger Sale. 4 templates (Engagement Scoping, Negotiation Prep, Challenger Sale, Change Readiness). Companion Solution Brief in /40_Library |
+| `contentful` | 0.1.0 | 12 | Contentful platform — content modeling, React/Next.js wiring, GraphQL, space architecture, CMA migrations, webhooks, delivery optimization, App Framework, Personalization (former Ninetailed), rich text, localization, MCP/CLI |
+| `cx` | 0.2.0 | 9 | Research, JTBD, personas, journeys, service design, IA, product trends, customer-feedback synthesis, personalization |
+| `design` | 0.4.0 | 15 | Product/web/motion/accessibility specialists, plus process/audit/screen/handoff/iconography/imagery/document/social/presentation/visualization/taste |
+| `facilitation` | 0.4.0 | 10 | Senior facilitator + 9 specialists — meeting architect, workshop designer, collaboration patterns, design thinking, strategic visualizer, decision architect, group dynamics, virtual/hybrid, gamestorming. 9 templates, 6 slash commands |
+| `innovation` | 0.2.0 | 11 | Innovation operating system grounded in Christensen/Doblin/Dyer/Furr + Slalom DT books. Strategy, portfolio, value engineering, JTBD, lean validation, ten-types, monetization, lab design, disruption, creative leadership, digital transformation. 6 templates + 8 slash commands |
 | `leadership` | 0.3.0 | 7 | Executive coaching (neurodivergent), people-leader, hiring, meetings/cadences, onboarding/transitions, goals/OKRs, stoic perspective |
 | `marketing` | 0.2.0 | 8 | Copy, SEO/GEO/AEO, growth, analytics, social, events, briefs, AI-extractable content |
-| `project-management` | 0.4.0 | 9 | PM persona, task workflows + new flow-engineer (Reinertsen) and methodology-advisor (Gothelf). Templates: Flow Metrics, Methodology Selector, Risk Up Front |
+| `obsidian` | 0.4.0 | 12 | Obsidian vault organization (9 advice + 3 orchestrator-shaped), 1 agent, 4 slash commands |
 | `product-management` | 0.1.0 | 1 | Product management discipline grounded in Perri's *Escaping the Build Trap*. Strategy cascade, Product Kata, outcomes-over-outputs |
-| `software-engineering` | 0.4.0 | 28 | Architecture, build, AI/data/security/writing personas, Next.js 16 deep dives, plus shadcn + Tailwind workflows. Platform-implementation work (Contentful, Vercel) lives in its own plugins |
-| `contentful` | 0.1.0 | 12 | Contentful platform implementation — content modeling, React/Next.js wiring, GraphQL, space architecture, CMA migrations, webhooks, delivery optimization, App Framework, Personalization (former Ninetailed), rich text, localization, MCP/CLI workflows. Live reference of the Slalom Demo 2.0 model and curated marketplace app coverage |
-| `vercel` | 0.1.0 | 11 | Vercel platform implementation — deploy pipeline, Fluid Compute, CDN/edge, Vercel-managed storage, observability, security, AI SDK, AI Gateway, v0, Sandbox/Agent/Workflows, REST API. Adjacent to software-engineering's Next.js skills — that plugin owns the framework, this plugin owns the platform |
+| `project-management` | 0.4.0 | 9 | PM persona, task workflows + flow-engineer (Reinertsen) and methodology-advisor (Gothelf). Templates: Flow Metrics, Methodology Selector, Risk Up Front |
+| `software-engineering` | 0.3.1 | 28 | Architecture, build, AI/data/security/writing personas, Next.js deep dives, shadcn + Tailwind workflows. Platform implementations (Contentful, Vercel, Algolia, Bynder) live in their own plugins |
+| `vercel` | 0.1.0 | 11 | Vercel platform — deploy pipeline, Fluid Compute, CDN/edge, storage, observability, security, AI SDK, AI Gateway, v0, Sandbox/Agent/Workflows, REST API. Adjacent to software-engineering's Next.js skills — that plugin owns the framework, this owns the platform |
 
 ## Reading order for a new contributor (or future-you)
 
