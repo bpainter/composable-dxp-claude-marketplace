@@ -1,0 +1,7 @@
+{
+  "name": "proposal-factory",
+  "version": "0.1.0",
+  "description": "The Slalom Proposal Factory — orchestrates the Frame → Draft → Polish → Ship pipeline for producing pursuit proposals (SPRO, Small, Large-Slides, Large-Document) with up to three optional companion pieces (POC, walkthrough video, microsite). Cowork-native: walks through intake via AskUserQuestion, auto-parses attached RFPs, sequences specialist skills across stages, applies brand and visual toolchain, promotes to 20_Proposals/Active/[Pursuit]/Final/.",
+  "author": "Bermon Painter",
+  "keywords": ["proposal-factory", "slalom", "pursuit", "rfp", "composable-dxp", "orchestration"]
+}
