@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Two Col Text Text</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 09-two-col-text-text ===
+     Two side-by-side text columns. "Vision / Solution" or "Before / After" pattern. */
+  .ttt-layout {
+    padding: var(--pad-y) var(--pad-x);
+    height: 100%;
+    display: flex; flex-direction: column;
+  }
+  .ttt-header { margin-bottom: var(--space-10); }
+  .ttt-header .eyebrow { margin-bottom: var(--space-4); }
+  .ttt-header .title { font-size: 64px; }
+  .ttt-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+    flex: 1;
+  }
+  .ttt-col-eyebrow {
+    font-family: var(--font-sans); font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-eyebrow);
+    color: var(--color-fg-muted);
+    margin: 0 0 var(--space-4);
+    padding-bottom: var(--space-4);
+    border-bottom: 2px solid var(--color-primary);
+    display: inline-block;
+  }
+  .ttt-col-title {
+    font-family: var(--font-sans); font-weight: 700;
+    font-size: 36px; line-height: 1.2;
+    margin: 0 0 var(--space-5);
+  }
+  .ttt-col-body {
+    font-size: 22px; line-height: 1.6;
+    color: var(--color-fg);
+    max-width: 32ch;
+  }
+  .ttt-col-body p { margin: 0 0 var(--space-4); }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-strip"></div>
+  <div class="ttt-layout">
+    <div class="ttt-header">
+      <span class="eyebrow" data-slot="eyebrow">FROM VISION TO OUTCOME</span>
+      <h1 class="title" data-slot="title">What we <em>set out</em> to do — and what we <em>delivered</em></h1>
+    </div>
+    <div class="ttt-cols">
+      <div>
+        <span class="ttt-col-eyebrow" data-slot="col-1-eyebrow">THE VISION</span>
+        <h2 class="ttt-col-title" data-slot="col-1-title">A brand experience where fans co-create what they wear</h2>
+        <div class="ttt-col-body" data-slot="col-1-body">
+          <p>Announcing new jerseys is a challenge for every kit supplier. Whether positive or negative, every fan has a strong opinion. AI Creator was designed to let them participate.</p>
+          <p>Together with Manchester City, PUMA wanted to combine AI technology with brand and fan culture — and activate fans everywhere in the world.</p>
+        </div>
+      </div>
+      <div>
+        <span class="ttt-col-eyebrow" data-slot="col-2-eyebrow">THE SOLUTION</span>
+        <h2 class="ttt-col-title" data-slot="col-2-title">A scalable infrastructure that handles 50,000 simultaneous prompts</h2>
+        <div class="ttt-col-body" data-slot="col-2-body">
+          <p>Slalom built a global, scalable AI infrastructure on Google Kubernetes Engine, with a custom queueing system that sorts and buffers incoming user requests.</p>
+          <p>Design-generation time dropped from 60 to 17 seconds. The system needed 306 instead of 600 H100 GPUs — significantly more cost-effective.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">07 / 24</span>
+  </div>
+</div>
+</body>
+</html>

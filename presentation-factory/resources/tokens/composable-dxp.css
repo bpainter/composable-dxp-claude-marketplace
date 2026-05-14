@@ -1,0 +1,295 @@
+/* =============================================================
+   PRESENTATION FACTORY — Composable DXP brand tokens
+   Sub-brand: Slalom Composable Platforms practice
+   Lavender primary, cobalt secondary, Lora 700 (non-italic) for display
+   ============================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --brand-name: 'Composable DXP';
+
+  /* Brand colors */
+  --color-primary:        #8A7CE0;
+  --color-primary-deep:   #5A4FC4;
+  --color-primary-soft:   #EBE7F8;
+  --color-secondary:      #0A25FF;
+  --color-secondary-deep: #061AC8;
+  --color-secondary-soft: #E0E4FF;
+
+  /* Foreground / surfaces */
+  --color-fg:           #0E0E1A;
+  --color-fg-muted:     #5A5A6E;
+  --color-fg-inverse:   #FFFFFF;
+  --color-fg-muted-inverse: rgba(255, 255, 255, 0.78);
+
+  --color-bg:           #FFFFFF;
+  --color-bg-soft:      #FAF9FC;
+  --color-bg-dark:      #0E0E1A;
+  --color-border:       #E0DCEB;
+
+  /* Accents */
+  --color-accent-warm:  #F7C948;
+  --color-accent-cool:  #2DD4BF;
+  --color-eyebrow:      var(--color-primary-deep);
+
+  /* The DXP gradient — lavender to cobalt */
+  --gradient-brand:
+    linear-gradient(135deg,
+      var(--color-primary)        0%,
+      var(--color-primary-deep)  40%,
+      var(--color-secondary)     75%,
+      var(--color-secondary-deep) 100%);
+
+  --gradient-brand-vertical:
+    linear-gradient(180deg,
+      var(--color-primary)        0%,
+      var(--color-primary-deep)  40%,
+      var(--color-secondary)     75%,
+      var(--color-secondary-deep) 100%);
+
+  --gradient-brand-horizontal:
+    linear-gradient(90deg,
+      var(--color-primary)        0%,
+      var(--color-primary-deep)  40%,
+      var(--color-secondary)     75%,
+      var(--color-secondary-deep) 100%);
+
+  --gradient-hero-dark:
+    radial-gradient(ellipse at top left, var(--color-primary-deep) 0%, #0E0E1A 65%);
+
+  --gradient-stat-wash:
+    linear-gradient(135deg,
+      rgba(138, 124, 224, 0.10) 0%,
+      rgba(10, 37, 255, 0.08) 100%);
+
+  /* Typography — DXP uses Lora 700 (non-italic) for display, Inter body */
+  --font-display: 'Lora', 'Iowan Old Style', Georgia, serif;
+  --font-sans:    'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Slide-scale type */
+  --fs-title-xl:    120px;
+  --fs-title-l:     96px;
+  --fs-title-m:     72px;
+  --fs-subtitle:    44px;
+  --fs-stat:        220px;
+  --fs-stat-m:      160px;
+  --fs-h2:          56px;
+  --fs-h3:          40px;
+  --fs-h4:          28px;
+  --fs-body-l:      28px;
+  --fs-body:        22px;
+  --fs-body-s:      18px;
+  --fs-caption:     16px;
+  --fs-eyebrow:     16px;
+  --fs-footer:      14px;
+
+  --lh-display: 1.08;
+  --lh-heading: 1.15;
+  --lh-body:    1.55;
+  --lh-tight:   1.2;
+
+  --tracking-hero:    -0.01em;
+  --tracking-display: -0.005em;
+  --tracking-normal:  0;
+  --tracking-eyebrow: 0.12em;
+
+  --slide-w: 1920px;
+  --slide-h: 1080px;
+  --pad-x:   120px;
+  --pad-y:   100px;
+
+  --space-1: 4px;  --space-2: 8px;   --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px;  --space-8: 48px; --space-10: 64px;
+  --space-12: 96px; --space-16: 128px;
+
+  --radius-sm: 4px; --radius-md: 8px; --radius-lg: 16px; --radius-xl: 32px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 8px 32px rgba(14, 14, 26, 0.08);
+  --shadow-lift: 0 24px 64px rgba(14, 14, 26, 0.12);
+
+  --gradient-strip-w: 56px;
+  --gradient-band-h:  88px;
+  --logo-h: 40px;
+}
+
+/* ============== BASE SLIDE — same as Slalom, with DXP type rules ============== */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0; padding: 0;
+  width: 1920px; height: 1080px;
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-fg);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+}
+
+.slide {
+  position: relative;
+  width: 1920px; height: 1080px;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+.slide--dark {
+  background: var(--gradient-hero-dark);
+  color: var(--color-fg-inverse);
+}
+
+.slide--dark .eyebrow,
+.slide--dark .footer-meta { color: rgba(255, 255, 255, 0.78); }
+
+/* DXP title: Lora 700 (non-italic) for display, no italic-emphasis pattern */
+.title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: normal;
+  font-size: var(--fs-title-l);
+  line-height: var(--lh-display);
+  letter-spacing: var(--tracking-hero);
+  margin: 0;
+  text-wrap: balance;
+}
+
+/* If italic is requested, it's a deliberate stylistic accent — still Lora */
+.title em {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.title--xl { font-size: var(--fs-title-xl); }
+.title--m  { font-size: var(--fs-title-m); }
+
+.subtitle {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: var(--fs-subtitle);
+  line-height: var(--lh-heading);
+  color: var(--color-fg-muted);
+  margin: var(--space-5) 0 0;
+  text-wrap: balance;
+  max-width: 32ch;
+}
+
+.slide--dark .subtitle { color: var(--color-fg-muted-inverse); }
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-eyebrow);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-eyebrow);
+  color: var(--color-eyebrow);
+  margin: 0 0 var(--space-5);
+  display: inline-block;
+}
+
+.body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: var(--fs-body-l);
+  line-height: var(--lh-body);
+  color: var(--color-fg);
+  margin: var(--space-5) 0;
+  max-width: 28ch;
+  text-wrap: pretty;
+}
+
+.body--narrow { max-width: 22ch; }
+.body--wide   { max-width: 38ch; }
+
+.kicker {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-tight);
+  margin: 0 0 var(--space-4);
+}
+
+.pullquote {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+  text-wrap: balance;
+  margin: 0;
+  border-left: 6px solid var(--color-primary);
+  padding-left: var(--space-8);
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-stat);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  margin: 0;
+  color: var(--color-fg);
+}
+
+.stat-label {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: var(--fs-body-l);
+  line-height: var(--lh-tight);
+  color: var(--color-fg-muted);
+  margin: var(--space-5) 0 0;
+  max-width: 22ch;
+}
+
+.footer {
+  position: absolute;
+  bottom: var(--space-8);
+  left: var(--pad-x);
+  right: var(--pad-x);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--fs-footer);
+  color: var(--color-fg-muted);
+  letter-spacing: 0.04em;
+}
+
+.slide--dark .footer { color: var(--color-fg-muted-inverse); }
+.footer-logo { height: var(--logo-h); width: auto; }
+.slide-number { font-variant-numeric: tabular-nums; }
+
+.gradient-strip {
+  position: absolute; top: 0; right: 0;
+  width: var(--gradient-strip-w); height: 100%;
+  background: var(--gradient-brand-vertical);
+}
+
+.gradient-band {
+  position: absolute; left: 0; right: 0;
+  height: var(--gradient-band-h);
+  background: var(--gradient-brand-horizontal);
+}
+.gradient-band--top    { top: 0; }
+.gradient-band--bottom { bottom: 0; }
+
+.gradient-hero {
+  position: absolute; inset: 0;
+  background: var(--gradient-brand);
+  z-index: 0;
+}
+
+.slide-content {
+  position: relative; z-index: 1;
+  padding: var(--pad-y) var(--pad-x);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slide-content--top    { justify-content: flex-start; padding-top: var(--pad-y); }
+.slide-content--bottom { justify-content: flex-end;   padding-bottom: calc(var(--pad-y) + 40px); }

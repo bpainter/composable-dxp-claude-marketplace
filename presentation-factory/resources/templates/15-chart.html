@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chart</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 15-chart ===
+     SVG bar/line chart rendered by vanilla JS from data-slot="chart-data" JSON.
+     Brand palette. */
+  .chart-layout {
+    padding: var(--pad-y) var(--pad-x);
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-12);
+    align-items: center;
+  }
+  .chart-header .eyebrow { margin-bottom: var(--space-5); }
+  .chart-header .title { font-size: 56px; }
+  .chart-header .body { font-size: 22px; margin-top: var(--space-5); max-width: 32ch; }
+  .chart-stage {
+    background: var(--color-bg-soft);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8);
+    height: 600px;
+    display: flex; flex-direction: column;
+  }
+  .chart-stage-title {
+    font-family: var(--font-sans); font-weight: 700;
+    font-size: 18px;
+    color: var(--color-fg-muted);
+    margin: 0 0 var(--space-5);
+  }
+  .chart-svg { flex: 1; width: 100%; }
+  .chart-legend {
+    display: flex; gap: var(--space-6);
+    margin-top: var(--space-5);
+    font-size: 14px;
+  }
+  .chart-legend-item { display: flex; align-items: center; gap: var(--space-2); }
+  .chart-legend-swatch { width: 14px; height: 14px; border-radius: 3px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-strip"></div>
+  <div class="chart-layout">
+    <div class="chart-header">
+      <span class="eyebrow" data-slot="eyebrow">SURVEY DATA</span>
+      <h1 class="title" data-slot="title">Confidence is high. <em>Capability</em> is constrained.</h1>
+      <p class="body" data-slot="body">68% of leaders believe they're keeping pace with AI. 93% report workforce barriers that say otherwise.</p>
+    </div>
+    <div class="chart-stage">
+      <p class="chart-stage-title" data-slot="chart-title">% of 2,000 leaders surveyed — Slalom AI Outlook 2026</p>
+      <svg class="chart-svg" id="chart" viewBox="0 0 800 400" aria-label="Chart">
+        <!-- Rendered by vanilla JS below -->
+      </svg>
+      <div class="chart-legend">
+        <div class="chart-legend-item"><span class="chart-legend-swatch" style="background: var(--slalom-blue)"></span>Confidence</div>
+        <div class="chart-legend-item"><span class="chart-legend-swatch" style="background: var(--slalom-coral)"></span>Reported barriers</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">13 / 24</span>
+  </div>
+</div>
+
+<script>
+// Simple SVG bar chart renderer. The composer can inject `chartData` as JSON.
+const chartData = {
+  categories: ['Strategy', 'Workforce', 'Funding', 'Data', 'Governance'],
+  series: [
+    { name: 'Confidence', values: [72, 68, 65, 70, 78], color: 'var(--slalom-blue)' },
+    { name: 'Barriers',   values: [60, 93, 87, 82, 50], color: 'var(--slalom-coral)' }
+  ]
+};
+
+(function renderChart() {
+  const svg = document.getElementById('chart');
+  if (!svg) return;
+  const W = 800, H = 400;
+  const padL = 60, padR = 20, padT = 20, padB = 60;
+  const chartW = W - padL - padR;
+  const chartH = H - padT - padB;
+  const groups = chartData.categories.length;
+  const series = chartData.series.length;
+  const groupW = chartW / groups;
+  const barW = (groupW * 0.7) / series;
+  const gap = groupW * 0.3 / 2;
+
+  // y-axis grid
+  for (let i = 0; i <= 4; i++) {
+    const y = padT + (chartH / 4) * i;
+    const v = 100 - i * 25;
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('x1', padL); line.setAttribute('x2', W - padR);
+    line.setAttribute('y1', y); line.setAttribute('y2', y);
+    line.setAttribute('stroke', '#E6E6E6'); line.setAttribute('stroke-width', '1');
+    svg.appendChild(line);
+    const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    label.setAttribute('x', padL - 10); label.setAttribute('y', y + 4);
+    label.setAttribute('text-anchor', 'end');
+    label.setAttribute('font-size', '12'); label.setAttribute('fill', '#707070');
+    label.setAttribute('font-family', 'inherit');
+    label.textContent = v + '%';
+    svg.appendChild(label);
+  }
+
+  // bars
+  chartData.categories.forEach((cat, i) => {
+    const groupX = padL + i * groupW + gap;
+    chartData.series.forEach((s, j) => {
+      const v = s.values[i];
+      const h = (v / 100) * chartH;
+      const x = groupX + j * barW;
+      const y = padT + chartH - h;
+      const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      rect.setAttribute('x', x); rect.setAttribute('y', y);
+      rect.setAttribute('width', barW - 2); rect.setAttribute('height', h);
+      rect.setAttribute('fill', s.color);
+      rect.setAttribute('rx', '3');
+      svg.appendChild(rect);
+    });
+    const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    label.setAttribute('x', groupX + (barW * series) / 2);
+    label.setAttribute('y', H - padB + 24);
+    label.setAttribute('text-anchor', 'middle');
+    label.setAttribute('font-size', '13'); label.setAttribute('fill', '#292929');
+    label.setAttribute('font-family', 'inherit');
+    label.textContent = cat;
+    svg.appendChild(label);
+  });
+})();
+</script>
+</body>
+</html>

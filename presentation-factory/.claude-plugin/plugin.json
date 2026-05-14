@@ -1,0 +1,7 @@
+{
+  "name": "presentation-factory",
+  "version": "0.1.0",
+  "description": "The Slalom Presentation Factory — orchestrates the Frame → Draft → Compose → Ship pipeline for producing branded 16:9 presentations in two styles (informational, presentational), three brands (Slalom default, Composable DXP secondary, Client custom), and three outputs (HTML → PDF → editable PPTX with movable assets). Cowork-native: walks intake via AskUserQuestion, ingests client brand from URL or PDF, drafts content with consulting + design + humanize skills, composes HTML slides from 25 canonical templates, exports to PDF, converts to editable PowerPoint.",
+  "author": "Bermon Painter",
+  "keywords": ["presentation-factory", "slalom", "pptx", "html-slides", "composable-dxp", "orchestration", "16x9", "branded-decks"]
+}

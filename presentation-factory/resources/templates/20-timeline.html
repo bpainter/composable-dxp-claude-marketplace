@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Timeline</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 20-timeline ===
+     Horizontal timeline. Date markers + milestones along a gradient track. */
+  .tl-layout {
+    padding: var(--pad-y) var(--pad-x);
+    height: 100%;
+    display: flex; flex-direction: column;
+  }
+  .tl-header { margin-bottom: var(--space-12); max-width: 1200px; }
+  .tl-header .eyebrow { margin-bottom: var(--space-5); }
+  .tl-header .title { font-size: 56px; }
+  .tl-track {
+    position: relative;
+    margin-top: var(--space-12);
+    flex: 1;
+    display: flex; align-items: center;
+  }
+  .tl-line {
+    position: absolute;
+    top: 50%;
+    left: 0; right: 0;
+    height: 8px;
+    background: var(--gradient-brand-horizontal);
+    border-radius: 4px;
+  }
+  .tl-events {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    z-index: 1;
+  }
+  .tl-event {
+    text-align: center;
+    position: relative;
+    padding-top: 80px;
+  }
+  .tl-event::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px; height: 24px;
+    background: var(--color-fg);
+    border: 4px solid var(--color-bg);
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px rgba(0, 10, 37, 0.06);
+  }
+  .tl-event--top { padding-top: 0; padding-bottom: 80px; }
+  .tl-event--top::before { top: auto; bottom: -8px; transform: translate(-50%, 50%); }
+  .tl-event-date {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-primary);
+    letter-spacing: 0.05em;
+    margin: 0 0 var(--space-3);
+  }
+  .tl-event-title {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.25;
+    margin: 0 0 var(--space-2);
+  }
+  .tl-event-body {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--color-fg-muted);
+    margin: 0;
+    max-width: 24ch;
+    margin-left: auto; margin-right: auto;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-strip"></div>
+  <div class="tl-layout">
+    <div class="tl-header">
+      <span class="eyebrow" data-slot="eyebrow">ROADMAP</span>
+      <h1 class="title" data-slot="title">From kickoff to <em>handoff</em></h1>
+    </div>
+    <div class="tl-track">
+      <div class="tl-line" aria-hidden="true"></div>
+      <div class="tl-events" data-slot="events">
+        <div class="tl-event">
+          <p class="tl-event-date" data-slot="event-1-date">JUN 2026</p>
+          <h3 class="tl-event-title" data-slot="event-1-title">Kickoff</h3>
+          <p class="tl-event-body" data-slot="event-1-body">Outcome brief signed. Team assembled.</p>
+        </div>
+        <div class="tl-event tl-event--top">
+          <p class="tl-event-date" data-slot="event-2-date">AUG 2026</p>
+          <h3 class="tl-event-title" data-slot="event-2-title">Cycle one shipped</h3>
+          <p class="tl-event-body" data-slot="event-2-body">First production deploy. Initial measurement against baseline.</p>
+        </div>
+        <div class="tl-event">
+          <p class="tl-event-date" data-slot="event-3-date">OCT 2026</p>
+          <h3 class="tl-event-title" data-slot="event-3-title">Cycle two shipped</h3>
+          <p class="tl-event-body" data-slot="event-3-body">Second build cycle. Capability gap closing.</p>
+        </div>
+        <div class="tl-event tl-event--top">
+          <p class="tl-event-date" data-slot="event-4-date">DEC 2026</p>
+          <h3 class="tl-event-title" data-slot="event-4-title">Solo sprint</h3>
+          <p class="tl-event-body" data-slot="event-4-body">Your team runs the last cycle without us.</p>
+        </div>
+        <div class="tl-event">
+          <p class="tl-event-date" data-slot="event-5-date">JAN 2027</p>
+          <h3 class="tl-event-title" data-slot="event-5-title">Handoff</h3>
+          <p class="tl-event-body" data-slot="event-5-body">Runbook documented. Capability owned. We exit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">18 / 24</span>
+  </div>
+</div>
+</body>
+</html>

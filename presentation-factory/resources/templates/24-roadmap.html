@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Roadmap</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 24-roadmap ===
+     Phased roadmap. Quarters as columns, workstreams as rows. */
+  .rm-layout {
+    padding: var(--pad-y) var(--pad-x);
+    height: 100%;
+    display: flex; flex-direction: column;
+  }
+  .rm-header { margin-bottom: var(--space-8); max-width: 1200px; }
+  .rm-header .eyebrow { margin-bottom: var(--space-5); }
+  .rm-header .title { font-size: 56px; }
+  .rm-grid {
+    display: grid;
+    grid-template-columns: 200px repeat(4, 1fr);
+    flex: 1;
+    gap: 4px;
+    background: var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+  }
+  .rm-cell {
+    background: var(--color-bg);
+    padding: var(--space-5);
+  }
+  .rm-cell-head {
+    background: var(--color-fg);
+    color: var(--color-fg-inverse);
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    display: flex; align-items: center;
+    padding: var(--space-5);
+  }
+  .rm-cell-row {
+    background: var(--color-bg-soft);
+    display: flex; align-items: center;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-fg);
+  }
+  .rm-item {
+    display: inline-block;
+    background: var(--color-primary);
+    color: var(--color-fg-inverse);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 500;
+    margin-bottom: var(--space-2);
+  }
+  .rm-item--accent  { background: var(--slalom-cyan, var(--color-primary)); color: var(--color-fg); }
+  .rm-item--soft    { background: rgba(12, 98, 251, 0.10); color: var(--color-primary); }
+  .rm-item--gradient {
+    background: var(--gradient-brand-horizontal);
+    color: var(--color-fg);
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-strip"></div>
+  <div class="rm-layout">
+    <div class="rm-header">
+      <span class="eyebrow" data-slot="eyebrow">ROADMAP · 2026-2027</span>
+      <h1 class="title" data-slot="title">Phased delivery across <em>four quarters</em></h1>
+    </div>
+    <div class="rm-grid">
+      <div class="rm-cell-head"></div>
+      <div class="rm-cell-head" data-slot="col-1-head">Q3 2026</div>
+      <div class="rm-cell-head" data-slot="col-2-head">Q4 2026</div>
+      <div class="rm-cell-head" data-slot="col-3-head">Q1 2027</div>
+      <div class="rm-cell-head" data-slot="col-4-head">Q2 2027</div>
+
+      <div class="rm-cell-row" data-slot="row-1-name">Discovery + Frame</div>
+      <div class="rm-cell"><span class="rm-item" data-slot="r1c1">Current-state map</span><span class="rm-item rm-item--soft" data-slot="r1c1b">Outcome brief</span></div>
+      <div class="rm-cell"></div>
+      <div class="rm-cell"></div>
+      <div class="rm-cell"></div>
+
+      <div class="rm-cell-row" data-slot="row-2-name">Build cycles</div>
+      <div class="rm-cell"></div>
+      <div class="rm-cell"><span class="rm-item" data-slot="r2c2">Cycle 1 ship</span></div>
+      <div class="rm-cell"><span class="rm-item" data-slot="r2c3">Cycle 2 ship</span></div>
+      <div class="rm-cell"><span class="rm-item rm-item--soft" data-slot="r2c4">Cycle 3 solo</span></div>
+
+      <div class="rm-cell-row" data-slot="row-3-name">Measure</div>
+      <div class="rm-cell"></div>
+      <div class="rm-cell"><span class="rm-item rm-item--accent" data-slot="r3c2">Baseline</span></div>
+      <div class="rm-cell"><span class="rm-item rm-item--accent" data-slot="r3c3">Cycle 1 result</span></div>
+      <div class="rm-cell"><span class="rm-item rm-item--gradient" data-slot="r3c4">Final result + handoff</span></div>
+
+      <div class="rm-cell-row" data-slot="row-4-name">Capability build</div>
+      <div class="rm-cell"><span class="rm-item rm-item--soft" data-slot="r4c1">Team paired</span></div>
+      <div class="rm-cell"><span class="rm-item rm-item--soft" data-slot="r4c2">Co-build</span></div>
+      <div class="rm-cell"><span class="rm-item rm-item--soft" data-slot="r4c3">Co-build</span></div>
+      <div class="rm-cell"><span class="rm-item rm-item--gradient" data-slot="r4c4">Runbook + exit</span></div>
+    </div>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">22 / 24</span>
+  </div>
+</div>
+</body>
+</html>

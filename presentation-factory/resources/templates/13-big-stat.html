@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Big Stat</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 13-big-stat ===
+     Huge number + label. Supports 1, 2, or 3 stats via class.
+     Optional faint gradient wash backing. */
+  .stat-layout {
+    padding: var(--pad-y) var(--pad-x);
+    height: 100%;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative;
+  }
+  .stat-wash {
+    position: absolute; inset: 0;
+    background: var(--gradient-stat-wash);
+    z-index: 0;
+  }
+  .stat-header {
+    position: relative; z-index: 1;
+    margin-bottom: var(--space-12);
+    max-width: 1200px;
+  }
+  .stat-header .eyebrow { margin-bottom: var(--space-4); }
+  .stat-header .title { font-size: 56px; }
+  .stat-grid {
+    position: relative; z-index: 1;
+    display: grid;
+    gap: var(--space-16);
+  }
+  .stat-grid--1 { grid-template-columns: 1fr; }
+  .stat-grid--2 { grid-template-columns: repeat(2, 1fr); }
+  .stat-grid--3 { grid-template-columns: repeat(3, 1fr); }
+  .stat-card .stat-number {
+    font-size: 240px;
+    color: var(--color-fg);
+  }
+  .stat-card--small .stat-number { font-size: 160px; }
+  .stat-grid--2 .stat-number,
+  .stat-grid--3 .stat-number { font-size: 160px; }
+  .stat-card .stat-label {
+    font-size: 24px;
+    max-width: 24ch;
+  }
+  .stat-card .stat-unit {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.5em;
+    color: var(--color-primary);
+    vertical-align: top;
+    margin-left: var(--space-2);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="stat-wash"></div>
+  <div class="gradient-strip"></div>
+  <div class="stat-layout">
+    <div class="stat-header">
+      <span class="eyebrow" data-slot="eyebrow">CUSTOMER IMPACT</span>
+      <h1 class="title" data-slot="title">PUMA AI Creator — in <em>numbers</em></h1>
+    </div>
+    <div class="stat-grid stat-grid--3" data-slot="stat-grid">
+      <div class="stat-card">
+        <p class="stat-number" data-slot="stat-1-number">180<span class="stat-unit">k</span></p>
+        <p class="stat-label" data-slot="stat-1-label">jersey designs created in 11 days</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-number" data-slot="stat-2-number">1.7<span class="stat-unit">M</span></p>
+        <p class="stat-label" data-slot="stat-2-label">fan ratings generated</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-number" data-slot="stat-3-number">206</p>
+        <p class="stat-label" data-slot="stat-3-label">countries represented in launch</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">11 / 24</span>
+  </div>
+</div>
+</body>
+</html>

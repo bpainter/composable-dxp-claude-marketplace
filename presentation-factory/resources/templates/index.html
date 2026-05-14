@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Presentation Factory — Template Catalog</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  html, body { width: auto; height: auto; overflow: auto; background: #F5F5F5; }
+  body { padding: 48px; }
+  .catalog-header { max-width: 1200px; margin: 0 auto 48px; }
+  .catalog-header h1 { font-family: var(--font-sans); font-weight: 400; font-size: 48px; margin: 0 0 16px; }
+  .catalog-header h1 em { font-family: var(--font-display); font-style: italic; }
+  .catalog-header p { font-size: 18px; color: var(--color-fg-muted); max-width: 60ch; }
+  .catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 1600px; margin: 0 auto;
+  }
+  .catalog-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,10,37,0.06);
+  }
+  .catalog-card-frame {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    position: relative;
+    background: #f0f0f0;
+  }
+  .catalog-card-frame iframe {
+    width: 1920px; height: 1080px;
+    border: 0;
+    transform: scale(0.36);
+    transform-origin: top left;
+    pointer-events: none;
+  }
+  .catalog-card-meta {
+    padding: 16px 24px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .catalog-card-name {
+    font-family: var(--font-sans); font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+  }
+  .catalog-card-num {
+    font-family: var(--font-sans);
+    color: var(--color-fg-muted);
+    font-size: 14px;
+  }
+  .catalog-family-head {
+    grid-column: 1 / -1;
+    padding-top: 32px;
+    border-top: 2px solid var(--color-fg);
+  }
+  .catalog-family-head:first-child { padding-top: 0; border-top: 0; }
+  .catalog-family-head h2 {
+    font-family: var(--font-sans); font-weight: 400;
+    font-size: 28px;
+    margin: 0;
+  }
+  .catalog-family-head h2 em {
+    font-family: var(--font-display); font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="catalog-header">
+  <h1>Presentation Factory — <em>template catalog</em></h1>
+  <p>25 canonical 16:9 templates. Inline-CSS, vanilla-JS, slot-driven. Brand tokens injected at compose time. Below: small-scale previews. Open any file directly to render at full 1920×1080.</p>
+</div>
+<div class="catalog-grid">
+
+  <div class="catalog-family-head"><h2><em>Openers & closers</em></h2></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="01-title.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Title</p><span class="catalog-card-num">01 · both</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="02-section-divider.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Section Divider</p><span class="catalog-card-num">02 · both</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="03-agenda.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Agenda</p><span class="catalog-card-num">03 · both</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="04-thank-you.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Thank You</p><span class="catalog-card-num">04 · both</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="05-contact.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Contact</p><span class="catalog-card-num">05 · both</span></div></div>
+
+  <div class="catalog-family-head"><h2><em>Content layouts</em></h2></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="06-one-col-text.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">One-Col Text</p><span class="catalog-card-num">06 · informational</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="07-eyebrow-headline-body.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Eyebrow + Headline + Body</p><span class="catalog-card-num">07 · both</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="08-two-col-text-image.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Two-Col Text + Image</p><span class="catalog-card-num">08 · both</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="09-two-col-text-text.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Two-Col Text + Text</p><span class="catalog-card-num">09 · informational</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="10-three-col.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Three-Col</p><span class="catalog-card-num">10 · both</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="11-image-led.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Image-Led</p><span class="catalog-card-num">11 · presentational</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="12-pull-quote.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Pull Quote</p><span class="catalog-card-num">12 · both</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="13-big-stat.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Big Stat</p><span class="catalog-card-num">13 · both</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="14-list-with-icons.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">List with Icons</p><span class="catalog-card-num">14 · informational</span></div></div>
+
+  <div class="catalog-family-head"><h2><em>Data & diagrams</em></h2></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="15-chart.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Chart</p><span class="catalog-card-num">15 · both</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="16-table.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Table</p><span class="catalog-card-num">16 · informational</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="17-framework-2x2.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Framework 2×2</p><span class="catalog-card-num">17 · both</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="18-process-3-stage.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Process 3-Stage</p><span class="catalog-card-num">18 · both</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="19-comparison.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Comparison</p><span class="catalog-card-num">19 · both</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="20-timeline.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Timeline</p><span class="catalog-card-num">20 · both</span></div></div>
+
+  <div class="catalog-family-head"><h2><em>Specialty</em></h2></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="21-team-bios.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Team Bios</p><span class="catalog-card-num">21 · both</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="22-case-study.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Case Study</p><span class="catalog-card-num">22 · informational</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="23-pricing.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Pricing</p><span class="catalog-card-num">23 · informational</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="24-roadmap.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Roadmap</p><span class="catalog-card-num">24 · both</span></div></div>
+  <div class="catalog-card"><div class="catalog-card-frame"><iframe src="25-before-after.html"></iframe></div><div class="catalog-card-meta"><p class="catalog-card-name">Before / After</p><span class="catalog-card-num">25 · both</span></div></div>
+
+</div>
+</body>
+</html>

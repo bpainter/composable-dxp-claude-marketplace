@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Two Col Text and Image</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 08-two-col-text-image ===
+     50/50 split. Text left, image right (or reversed via class .reversed). */
+  .tci-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+  }
+  .tci-layout.reversed { grid-template-columns: 1fr 1fr; }
+  .tci-layout.reversed .tci-text  { order: 2; }
+  .tci-layout.reversed .tci-image { order: 1; }
+  .tci-text {
+    padding: var(--pad-y) var(--space-8) var(--pad-y) var(--pad-x);
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .tci-text .eyebrow { margin-bottom: var(--space-5); }
+  .tci-text .title { font-size: 64px; }
+  .tci-text .body {
+    font-size: 26px; line-height: 1.55;
+    margin-top: var(--space-6);
+    max-width: 32ch;
+  }
+  .tci-image {
+    position: relative;
+    overflow: hidden;
+  }
+  .tci-image img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .tci-image-caption {
+    position: absolute;
+    bottom: var(--space-6); left: var(--space-6); right: var(--space-6);
+    background: rgba(0,10,37,0.78);
+    color: rgba(255,255,255,0.92);
+    padding: var(--space-3) var(--space-5);
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: var(--radius-sm);
+    backdrop-filter: blur(8px);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="tci-layout">
+    <div class="tci-text">
+      <span class="eyebrow" data-slot="eyebrow">CASE IN POINT</span>
+      <h1 class="title" data-slot="title">PUMA AI Creator turned fans into <em>co-creators</em></h1>
+      <p class="body" data-slot="body">A first-of-its-kind interactive experience inviting fans worldwide to design Manchester City jerseys — built on Google Kubernetes Engine with custom AI infrastructure.</p>
+    </div>
+    <div class="tci-image">
+      <img data-slot="image-src" src="https://s7d9.scene7.com/is/image/slalom/slalom_puma_overview" data-slot-alt="image-alt" alt="PUMA AI Creator launch event">
+      <div class="tci-image-caption" data-slot="caption">PUMA AI Creator launch — Dec 2024</div>
+    </div>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">06 / 24</span>
+  </div>
+</div>
+</body>
+</html>

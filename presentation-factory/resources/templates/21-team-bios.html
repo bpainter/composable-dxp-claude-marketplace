@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Team Bios</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 21-team-bios ===
+     3-5 team members. Each: portrait + name + role + 1-2 sentence quote. */
+  .team-layout {
+    padding: var(--pad-y) var(--pad-x);
+    height: 100%;
+    display: flex; flex-direction: column;
+  }
+  .team-header { margin-bottom: var(--space-10); max-width: 1200px; }
+  .team-header .eyebrow { margin-bottom: var(--space-5); }
+  .team-header .title { font-size: 64px; }
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-8);
+    flex: 1;
+  }
+  .team-grid--3 { grid-template-columns: repeat(3, 1fr); max-width: 1500px; }
+  .team-grid--5 { grid-template-columns: repeat(5, 1fr); gap: var(--space-6); }
+  .team-card { display: flex; flex-direction: column; }
+  .team-portrait {
+    aspect-ratio: 3/4;
+    background: var(--color-bg-soft);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--space-5);
+    position: relative;
+  }
+  .team-portrait img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .team-role {
+    font-family: var(--font-sans); font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-primary);
+    margin: 0 0 var(--space-2);
+  }
+  .team-name {
+    font-family: var(--font-sans); font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 0 0 var(--space-3);
+  }
+  .team-quote {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.45;
+    color: var(--color-fg);
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-strip"></div>
+  <div class="team-layout">
+    <div class="team-header">
+      <span class="eyebrow" data-slot="eyebrow">OUR SLALOM TEAM</span>
+      <h1 class="title" data-slot="title">Who you'll <em>work with</em></h1>
+    </div>
+    <div class="team-grid team-grid--3" data-slot="team-grid">
+      <div class="team-card">
+        <div class="team-portrait" data-slot="member-1-portrait">
+          <img data-slot="member-1-img" src="https://s7d9.scene7.com/is/image/slalom/Simon%20Regnet%20Headshot" alt="Simon Regnet">
+        </div>
+        <p class="team-role" data-slot="member-1-role">DIRECTOR</p>
+        <h3 class="team-name" data-slot="member-1-name">Simon Regnet</h3>
+        <p class="team-quote" data-slot="member-1-quote">"We developed a blueprint for how customer-oriented AI projects can be rolled out at global scale."</p>
+      </div>
+      <div class="team-card">
+        <div class="team-portrait" data-slot="member-2-portrait">
+          <img data-slot="member-2-img" src="https://s7d9.scene7.com/is/image/slalom/Roman%20Stu%CC%88ckert%20Headshot" alt="Roman Stückert">
+        </div>
+        <p class="team-role" data-slot="member-2-role">SALES EXECUTIVE</p>
+        <h3 class="team-name" data-slot="member-2-name">Roman Stückert</h3>
+        <p class="team-quote" data-slot="member-2-quote">"Technology, fan culture, and brand loyalty cooperating to offer customers innovative experiences."</p>
+      </div>
+      <div class="team-card">
+        <div class="team-portrait" data-slot="member-3-portrait">
+          <img data-slot="member-3-img" src="https://s7d9.scene7.com/is/image/slalom/Zoran%20Zaric%CC%81%20Headshot" alt="Zoran Zarić">
+        </div>
+        <p class="team-role" data-slot="member-3-role">PRINCIPAL</p>
+        <h3 class="team-name" data-slot="member-3-name">Zoran Zarić</h3>
+        <p class="team-quote" data-slot="member-3-quote">"We created a scalable cloud AI infrastructure that brought the magic of generative AI closer to people worldwide."</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">19 / 24</span>
+  </div>
+</div>
+</body>
+</html>

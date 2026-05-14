@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Thank You</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 04-thank-you ===
+     Closing slide. Large italic message. Optional next-step CTA. Gradient backdrop. */
+  .slide { background: var(--color-bg-dark); color: var(--color-fg-inverse); }
+  .gradient-bg {
+    position: absolute; inset: 0;
+    background: var(--gradient-brand);
+    z-index: 0;
+  }
+  .gradient-bg::after {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at center, transparent 25%, rgba(0,10,37,0.55) 100%);
+  }
+  .thank-you-content {
+    position: relative; z-index: 1;
+    height: 100%;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    padding: var(--pad-y) var(--pad-x);
+    text-align: center;
+  }
+  .thank-you-title {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 200px;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    color: var(--color-fg-inverse);
+    margin: 0;
+    text-shadow: 0 4px 24px rgba(0,10,37,0.3);
+  }
+  .thank-you-title em {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+  }
+  .thank-you-sub {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: var(--lh-heading);
+    color: rgba(255,255,255,0.92);
+    margin: var(--space-8) 0 0;
+    max-width: 30ch;
+    text-wrap: balance;
+  }
+  .thank-you-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-12);
+    padding: var(--space-5) var(--space-8);
+    background: var(--color-fg-inverse);
+    color: var(--color-fg);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+  .thank-you-cta::after { content: '→'; }
+  .thank-you-footer {
+    position: absolute;
+    bottom: var(--space-8);
+    left: var(--pad-x); right: var(--pad-x);
+    display: flex; justify-content: space-between; align-items: center;
+    color: rgba(255,255,255,0.78);
+    font-size: var(--fs-footer);
+    letter-spacing: 0.06em;
+    z-index: 2;
+  }
+  .thank-you-footer-logo {
+    height: 48px;
+    filter: brightness(0) invert(1);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-bg"></div>
+  <div class="thank-you-content">
+    <h1 class="thank-you-title" data-slot="title">Let's solve <em>together</em>.</h1>
+    <p class="thank-you-sub" data-slot="subtitle">Questions, reactions, what we should chase next.</p>
+    <a class="thank-you-cta" data-slot="cta-text" href="#">Continue the conversation</a>
+  </div>
+  <div class="thank-you-footer">
+    <img class="thank-you-footer-logo" data-slot="logo" src="../assets/slalom-logo-white.svg" alt="Slalom">
+    <span data-slot="footer-meta">Fiercely Human Consulting</span>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Comparison</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 19-comparison ===
+     Side-by-side A-vs-B comparison. Two columns with header + bullet items.
+     One column highlighted as preferred (optional). */
+  .cmp-layout {
+    padding: var(--pad-y) var(--pad-x);
+    height: 100%;
+    display: flex; flex-direction: column;
+  }
+  .cmp-header { margin-bottom: var(--space-8); max-width: 1200px; }
+  .cmp-header .eyebrow { margin-bottom: var(--space-5); }
+  .cmp-header .title { font-size: 56px; }
+  .cmp-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    flex: 1;
+  }
+  .cmp-col {
+    padding: var(--space-8);
+    border-radius: var(--radius-lg);
+    background: var(--color-bg-soft);
+    border: 2px solid var(--color-border);
+    display: flex; flex-direction: column;
+  }
+  .cmp-col--featured {
+    background: var(--color-fg);
+    color: var(--color-fg-inverse);
+    border-color: var(--color-fg);
+    position: relative;
+  }
+  .cmp-col--featured::after {
+    content: 'RECOMMENDED';
+    position: absolute;
+    top: -14px; right: var(--space-6);
+    background: var(--color-primary);
+    color: var(--color-fg-inverse);
+    padding: 4px var(--space-3);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+  .cmp-col-label {
+    font-family: var(--font-sans); font-weight: 700;
+    font-size: 14px; text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-primary);
+    margin: 0 0 var(--space-3);
+  }
+  .cmp-col--featured .cmp-col-label { color: var(--slalom-cyan, var(--color-primary)); }
+  .cmp-col-title {
+    font-family: var(--font-sans); font-weight: 700;
+    font-size: 32px; line-height: 1.2;
+    margin: 0 0 var(--space-6);
+  }
+  .cmp-list { list-style: none; margin: 0; padding: 0; flex: 1; }
+  .cmp-list li {
+    padding: var(--space-3) 0;
+    font-size: 19px; line-height: 1.5;
+    border-bottom: 1px solid var(--color-border);
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: var(--space-3);
+  }
+  .cmp-col--featured .cmp-list li { border-bottom-color: rgba(255,255,255,0.12); }
+  .cmp-list li:last-child { border-bottom: none; }
+  .cmp-list li::before {
+    content: '+';
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1;
+  }
+  .cmp-col--featured .cmp-list li::before { color: var(--slalom-cyan, var(--color-primary)); }
+  .cmp-list.cmp-list--neg li::before {
+    content: '–';
+    color: var(--color-fg-muted);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-strip"></div>
+  <div class="cmp-layout">
+    <div class="cmp-header">
+      <span class="eyebrow" data-slot="eyebrow">DECISION</span>
+      <h1 class="title" data-slot="title">Two paths. <em>One</em> we recommend.</h1>
+    </div>
+    <div class="cmp-cols">
+      <div class="cmp-col">
+        <p class="cmp-col-label" data-slot="col-1-label">OPTION A</p>
+        <h2 class="cmp-col-title" data-slot="col-1-title">Build internally over 18 months</h2>
+        <ul class="cmp-list cmp-list--neg" data-slot="col-1-items">
+          <li data-slot="col-1-item-1">Requires hiring 12 specialists across 4 domains</li>
+          <li data-slot="col-1-item-2">First production deploy ~Q3 next year</li>
+          <li data-slot="col-1-item-3">Operating cost climbs before revenue follows</li>
+          <li data-slot="col-1-item-4">Capability stays — but you carry the full ramp risk</li>
+        </ul>
+      </div>
+      <div class="cmp-col cmp-col--featured">
+        <p class="cmp-col-label" data-slot="col-2-label">OPTION B</p>
+        <h2 class="cmp-col-title" data-slot="col-2-title">Partner with Slalom, build with your team</h2>
+        <ul class="cmp-list" data-slot="col-2-items">
+          <li data-slot="col-2-item-1">First production deploy in 8 weeks</li>
+          <li data-slot="col-2-item-2">Joint build — your engineers learn the platform in motion</li>
+          <li data-slot="col-2-item-3">Documented handoff at month 6</li>
+          <li data-slot="col-2-item-4">Capability stays after we leave</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">17 / 24</span>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 05-contact ===
+     Names + roles + emails. Grid of 2-4 people. Use for hand-off slides. */
+  .contact-layout {
+    padding: var(--pad-y) var(--pad-x);
+    height: 100%;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .contact-header { margin-bottom: var(--space-12); max-width: 1200px; }
+  .contact-header .eyebrow { margin-bottom: var(--space-5); }
+  .contact-header .title { font-size: 84px; }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-8);
+  }
+  .contact-grid--3 { grid-template-columns: repeat(3, 1fr); }
+  .contact-grid--2 { grid-template-columns: repeat(2, 1fr); max-width: 1200px; }
+  .contact-card {
+    padding: var(--space-6) 0;
+    border-top: 3px solid var(--color-primary);
+  }
+  .contact-name {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: var(--lh-tight);
+    margin: 0 0 var(--space-2);
+    color: var(--color-fg);
+  }
+  .contact-role {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: var(--lh-heading);
+    color: var(--color-fg-muted);
+    margin: 0 0 var(--space-4);
+  }
+  .contact-detail {
+    font-family: var(--font-sans);
+    font-size: 18px;
+    line-height: var(--lh-heading);
+    color: var(--color-fg);
+    margin: 0 0 var(--space-2);
+  }
+  .contact-detail a { color: var(--color-primary); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-strip"></div>
+  <div class="contact-layout">
+    <div class="contact-header">
+      <span class="eyebrow" data-slot="eyebrow">REACH US</span>
+      <h1 class="title" data-slot="title">Who to <em>talk to</em></h1>
+    </div>
+    <div class="contact-grid contact-grid--3" data-slot="contact-grid">
+      <div class="contact-card">
+        <h2 class="contact-name" data-slot="person-1-name">Bermon Painter</h2>
+        <p class="contact-role" data-slot="person-1-role">Director, Composable Platforms · Slalom</p>
+        <p class="contact-detail" data-slot="person-1-email"><a href="mailto:bermon.painter@slalom.com">bermon.painter@slalom.com</a></p>
+        <p class="contact-detail" data-slot="person-1-phone">+1 (704) 555-0143</p>
+      </div>
+      <div class="contact-card">
+        <h2 class="contact-name" data-slot="person-2-name">Name Two</h2>
+        <p class="contact-role" data-slot="person-2-role">Role · Company</p>
+        <p class="contact-detail" data-slot="person-2-email"><a href="mailto:name@example.com">name@example.com</a></p>
+        <p class="contact-detail" data-slot="person-2-phone">+1 (555) 555-0144</p>
+      </div>
+      <div class="contact-card">
+        <h2 class="contact-name" data-slot="person-3-name">Name Three</h2>
+        <p class="contact-role" data-slot="person-3-role">Role · Company</p>
+        <p class="contact-detail" data-slot="person-3-email"><a href="mailto:name@example.com">name@example.com</a></p>
+        <p class="contact-detail" data-slot="person-3-phone">+1 (555) 555-0145</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">24 / 24</span>
+  </div>
+</div>
+</body>
+</html>

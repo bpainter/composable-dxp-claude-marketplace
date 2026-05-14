@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Process 3-Stage</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 18-process-3-stage ===
+     3-stage horizontal flow. Stage badge + title + body. Connector arrows. */
+  .proc-layout {
+    padding: var(--pad-y) var(--pad-x);
+    height: 100%;
+    display: flex; flex-direction: column;
+  }
+  .proc-header { margin-bottom: var(--space-10); max-width: 1200px; }
+  .proc-header .eyebrow { margin-bottom: var(--space-5); }
+  .proc-header .title { font-size: 64px; }
+  .proc-stages {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    gap: var(--space-6);
+    align-items: stretch;
+    flex: 1;
+  }
+  .proc-stage {
+    background: var(--color-bg-soft);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8);
+    border-top: 4px solid var(--color-primary);
+    display: flex; flex-direction: column;
+  }
+  .proc-stage-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 48px; height: 48px;
+    background: var(--color-primary);
+    color: var(--color-fg-inverse);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: var(--space-5);
+  }
+  .proc-stage-eyebrow {
+    font-family: var(--font-sans); font-weight: 700;
+    font-size: 13px; text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-primary);
+    margin: 0 0 var(--space-3);
+  }
+  .proc-stage-title {
+    font-family: var(--font-sans); font-weight: 700;
+    font-size: 28px; line-height: 1.25;
+    margin: 0 0 var(--space-4);
+  }
+  .proc-stage-body {
+    font-size: 18px; line-height: 1.55;
+    color: var(--color-fg);
+    margin: 0;
+    flex: 1;
+  }
+  .proc-stage-meta {
+    font-size: 14px;
+    color: var(--color-fg-muted);
+    margin: var(--space-5) 0 0;
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--color-border);
+  }
+  .proc-arrow {
+    display: flex; align-items: center; justify-content: center;
+    color: var(--color-primary);
+    font-size: 32px;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-strip"></div>
+  <div class="proc-layout">
+    <div class="proc-header">
+      <span class="eyebrow" data-slot="eyebrow">OUR APPROACH</span>
+      <h1 class="title" data-slot="title">Three stages, <em>each with a tangible artifact</em></h1>
+    </div>
+    <div class="proc-stages">
+      <div class="proc-stage">
+        <div class="proc-stage-badge">1</div>
+        <p class="proc-stage-eyebrow" data-slot="stage-1-eyebrow">STAGE ONE</p>
+        <h2 class="proc-stage-title" data-slot="stage-1-title">Frame the outcome</h2>
+        <p class="proc-stage-body" data-slot="stage-1-body">We name the metric that has to move, the baseline today, and the target. Signed by the sponsor before any building starts.</p>
+        <p class="proc-stage-meta" data-slot="stage-1-meta">2 weeks · Discovery + alignment</p>
+      </div>
+      <div class="proc-arrow" aria-hidden="true">→</div>
+      <div class="proc-stage">
+        <div class="proc-stage-badge">2</div>
+        <p class="proc-stage-eyebrow" data-slot="stage-2-eyebrow">STAGE TWO</p>
+        <h2 class="proc-stage-title" data-slot="stage-2-title">Build with your team</h2>
+        <p class="proc-stage-body" data-slot="stage-2-body">Joint build cycles. Your engineers learn the platform as we go. Production deploy at the end of cycle, not at the end of the project.</p>
+        <p class="proc-stage-meta" data-slot="stage-2-meta">4-8 weeks · Iterative delivery</p>
+      </div>
+      <div class="proc-arrow" aria-hidden="true">→</div>
+      <div class="proc-stage">
+        <div class="proc-stage-badge">3</div>
+        <p class="proc-stage-eyebrow" data-slot="stage-3-eyebrow">STAGE THREE</p>
+        <h2 class="proc-stage-title" data-slot="stage-3-title">Measure and hand off</h2>
+        <p class="proc-stage-body" data-slot="stage-3-body">Result memo against the baseline. Runbook for ongoing operations. Your team runs the last sprint solo.</p>
+        <p class="proc-stage-meta" data-slot="stage-3-meta">2 weeks · Measurement + transition</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">16 / 24</span>
+  </div>
+</div>
+</body>
+</html>

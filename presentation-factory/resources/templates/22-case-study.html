@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Case Study</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 22-case-study ===
+     Single case study. Client logo + headline + 3-stat strip + body + image. */
+  .cs-layout {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cs-content {
+    padding: var(--pad-y) var(--space-12) var(--pad-y) var(--pad-x);
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .cs-client-mark {
+    height: 48px; max-width: 200px;
+    object-fit: contain;
+    object-position: left center;
+    margin-bottom: var(--space-6);
+    filter: grayscale(1) brightness(0.3);
+  }
+  .cs-content .eyebrow { margin-bottom: var(--space-3); }
+  .cs-content .title { font-size: 56px; line-height: 1.1; }
+  .cs-content .body {
+    font-size: 22px; line-height: 1.55;
+    margin-top: var(--space-6);
+    max-width: 32ch;
+  }
+  .cs-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+    margin-top: var(--space-10);
+    padding-top: var(--space-6);
+    border-top: 2px solid var(--color-fg);
+  }
+  .cs-stat-number {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    color: var(--color-primary);
+    margin: 0;
+  }
+  .cs-stat-label {
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--color-fg-muted);
+    margin: var(--space-2) 0 0;
+  }
+  .cs-image {
+    position: relative;
+    overflow: hidden;
+  }
+  .cs-image img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="cs-layout">
+    <div class="cs-content">
+      <img class="cs-client-mark" data-slot="client-logo" src="https://s7d9.scene7.com/is/image/slalom/PUMA%20logo" alt="PUMA">
+      <span class="eyebrow" data-slot="eyebrow">CUSTOMER STORY · RETAIL</span>
+      <h1 class="title" data-slot="title">Activating fans worldwide with <em>generative AI</em></h1>
+      <p class="body" data-slot="body">Slalom built the global, scalable AI infrastructure behind PUMA AI Creator — a first-of-its-kind experience that let fans co-design Manchester City jerseys.</p>
+      <div class="cs-stats">
+        <div>
+          <p class="cs-stat-number" data-slot="stat-1-number">180k</p>
+          <p class="cs-stat-label" data-slot="stat-1-label">jersey designs created</p>
+        </div>
+        <div>
+          <p class="cs-stat-number" data-slot="stat-2-number">1.7M</p>
+          <p class="cs-stat-label" data-slot="stat-2-label">fan ratings</p>
+        </div>
+        <div>
+          <p class="cs-stat-number" data-slot="stat-3-number">206</p>
+          <p class="cs-stat-label" data-slot="stat-3-label">countries participating</p>
+        </div>
+      </div>
+    </div>
+    <div class="cs-image">
+      <img data-slot="image-src" src="https://s7d9.scene7.com/is/image/slalom/slalom_puma_overview" alt="PUMA AI Creator launch">
+    </div>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">20 / 24</span>
+  </div>
+</div>
+</body>
+</html>

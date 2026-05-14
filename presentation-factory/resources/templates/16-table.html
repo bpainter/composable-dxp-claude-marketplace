@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Table</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 16-table ===
+     Data table. Brand-styled header. Zebra-stripe rows. Informational density. */
+  .table-layout {
+    padding: var(--pad-y) var(--pad-x);
+    height: 100%;
+    display: flex; flex-direction: column;
+  }
+  .table-header { margin-bottom: var(--space-8); max-width: 1200px; }
+  .table-header .eyebrow { margin-bottom: var(--space-5); }
+  .table-header .title { font-size: 56px; }
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-sans);
+    font-size: 20px;
+  }
+  .data-table thead th {
+    text-align: left;
+    padding: var(--space-4) var(--space-5);
+    background: var(--color-fg);
+    color: var(--color-fg-inverse);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .data-table thead th:first-child { border-top-left-radius: var(--radius-md); }
+  .data-table thead th:last-child  { border-top-right-radius: var(--radius-md); }
+  .data-table tbody td {
+    padding: var(--space-5);
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: top;
+  }
+  .data-table tbody tr:nth-child(even) td {
+    background: var(--color-bg-soft);
+  }
+  .data-table tbody tr:last-child td { border-bottom: none; }
+  .table-cell-strong { font-weight: 700; }
+  .table-cell-muted { color: var(--color-fg-muted); }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-strip"></div>
+  <div class="table-layout">
+    <div class="table-header">
+      <span class="eyebrow" data-slot="eyebrow">COMPARISON</span>
+      <h1 class="title" data-slot="title">What changes in <em>each phase</em></h1>
+    </div>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th data-slot="col-1-header">Phase</th>
+          <th data-slot="col-2-header">Focus</th>
+          <th data-slot="col-3-header">Output</th>
+          <th data-slot="col-4-header">Duration</th>
+        </tr>
+      </thead>
+      <tbody data-slot="rows">
+        <tr>
+          <td class="table-cell-strong" data-slot="row-1-col-1">Discover</td>
+          <td data-slot="row-1-col-2">Map current state. Identify constraints.</td>
+          <td class="table-cell-muted" data-slot="row-1-col-3">Findings doc + opportunity scorecard</td>
+          <td class="table-cell-muted" data-slot="row-1-col-4">2 weeks</td>
+        </tr>
+        <tr>
+          <td class="table-cell-strong" data-slot="row-2-col-1">Frame</td>
+          <td data-slot="row-2-col-2">Set outcome statement, baseline, target.</td>
+          <td class="table-cell-muted" data-slot="row-2-col-3">Outcome brief signed by sponsor</td>
+          <td class="table-cell-muted" data-slot="row-2-col-4">1 week</td>
+        </tr>
+        <tr>
+          <td class="table-cell-strong" data-slot="row-3-col-1">Build</td>
+          <td data-slot="row-3-col-2">Ship working artifact to production.</td>
+          <td class="table-cell-muted" data-slot="row-3-col-3">Live in production with users</td>
+          <td class="table-cell-muted" data-slot="row-3-col-4">4 weeks</td>
+        </tr>
+        <tr>
+          <td class="table-cell-strong" data-slot="row-4-col-1">Measure</td>
+          <td data-slot="row-4-col-2">Compare result to baseline.</td>
+          <td class="table-cell-muted" data-slot="row-4-col-3">Measured-result memo</td>
+          <td class="table-cell-muted" data-slot="row-4-col-4">1 week</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">14 / 24</span>
+  </div>
+</div>
+</body>
+</html>

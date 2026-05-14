@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pull Quote</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 12-pull-quote ===
+     Large italic Lora quote. Attribution + role + company.
+     Optional portrait on right. */
+  .quote-layout {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: var(--space-12);
+    height: 100%;
+    padding: var(--pad-y) var(--pad-x);
+    align-items: center;
+  }
+  .quote-layout--no-portrait {
+    grid-template-columns: 1fr;
+    max-width: 1400px;
+  }
+  .quote-block {
+    position: relative;
+  }
+  .quote-mark {
+    position: absolute;
+    top: -60px; left: -12px;
+    font-family: var(--font-display);
+    font-size: 240px;
+    line-height: 0.8;
+    color: var(--color-primary);
+    opacity: 0.18;
+    font-style: italic;
+    z-index: 0;
+  }
+  .quote-text {
+    position: relative; z-index: 1;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.3;
+    letter-spacing: -0.005em;
+    margin: 0 0 var(--space-10);
+    text-wrap: balance;
+    max-width: 22ch;
+  }
+  .quote-attribution {
+    position: relative; z-index: 1;
+    padding-top: var(--space-5);
+    border-top: 3px solid var(--color-primary);
+    max-width: 480px;
+  }
+  .quote-name {
+    font-family: var(--font-sans); font-weight: 700;
+    font-size: 24px; line-height: 1.2;
+    margin: 0 0 var(--space-2);
+  }
+  .quote-role {
+    font-family: var(--font-sans); font-weight: 400;
+    font-size: 18px;
+    color: var(--color-fg-muted);
+    margin: 0;
+  }
+  .quote-portrait {
+    width: 360px; height: 480px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    background: var(--color-bg-soft);
+  }
+  .quote-portrait img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-strip"></div>
+  <div class="quote-layout">
+    <div class="quote-block">
+      <span class="quote-mark" aria-hidden="true">"</span>
+      <blockquote class="quote-text" data-slot="quote-text">With Slalom's infrastructure expertise, we cut image production time by two-thirds. That was the difference between a working experience and a launch nobody used.</blockquote>
+      <div class="quote-attribution">
+        <p class="quote-name" data-slot="quote-name">Ivan Dashkov</p>
+        <p class="quote-role" data-slot="quote-role">Head of Emerging Marketing Tech, PUMA</p>
+      </div>
+    </div>
+    <div class="quote-portrait" data-slot="quote-portrait">
+      <img data-slot="portrait-src" src="https://s7d9.scene7.com/is/image/slalom/slalom_puma_pull%20quote" data-slot-alt="portrait-alt" alt="Ivan Dashkov portrait">
+    </div>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">10 / 24</span>
+  </div>
+</div>
+</body>
+</html>

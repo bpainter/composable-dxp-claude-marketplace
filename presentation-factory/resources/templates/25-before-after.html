@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Before / After</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 25-before-after ===
+     Side-by-side: before state | intervention | after state. */
+  .ba-layout {
+    padding: var(--pad-y) var(--pad-x);
+    height: 100%;
+    display: flex; flex-direction: column;
+  }
+  .ba-header { margin-bottom: var(--space-10); max-width: 1200px; }
+  .ba-header .eyebrow { margin-bottom: var(--space-5); }
+  .ba-header .title { font-size: 56px; }
+  .ba-stages {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: var(--space-8);
+    flex: 1;
+    align-items: stretch;
+  }
+  .ba-stage {
+    padding: var(--space-8);
+    border-radius: var(--radius-lg);
+    display: flex; flex-direction: column;
+  }
+  .ba-stage--before {
+    background: var(--color-bg-soft);
+    border: 1px solid var(--color-border);
+  }
+  .ba-stage--after {
+    background: var(--color-fg);
+    color: var(--color-fg-inverse);
+  }
+  .ba-stage-label {
+    font-family: var(--font-sans); font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    margin: 0 0 var(--space-5);
+    color: var(--color-fg-muted);
+  }
+  .ba-stage--after .ba-stage-label { color: var(--slalom-cyan, var(--color-primary)); }
+  .ba-stage-headline {
+    font-family: var(--font-sans); font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 var(--space-5);
+  }
+  .ba-stage-list {
+    list-style: none; margin: 0; padding: 0;
+    flex: 1;
+  }
+  .ba-stage-list li {
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .ba-stage--after .ba-stage-list li { border-bottom-color: rgba(255,255,255,0.12); }
+  .ba-stage-list li:last-child { border-bottom: none; }
+  .ba-stage-stat {
+    margin-top: var(--space-6);
+    padding-top: var(--space-5);
+    border-top: 3px solid currentColor;
+  }
+  .ba-stage-stat-num {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    margin: 0;
+  }
+  .ba-stage--after .ba-stage-stat-num { color: var(--slalom-cyan, var(--color-primary)); }
+  .ba-stage-stat-label {
+    font-size: 14px;
+    color: var(--color-fg-muted);
+    margin: var(--space-2) 0 0;
+  }
+  .ba-stage--after .ba-stage-stat-label { color: rgba(255,255,255,0.7); }
+  .ba-arrow {
+    display: flex; align-items: center; justify-content: center;
+    color: var(--color-primary);
+    font-size: 60px;
+    width: 80px;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-strip"></div>
+  <div class="ba-layout">
+    <div class="ba-header">
+      <span class="eyebrow" data-slot="eyebrow">RESULT</span>
+      <h1 class="title" data-slot="title">From <em>where you are</em> to where you're going</h1>
+    </div>
+    <div class="ba-stages">
+      <div class="ba-stage ba-stage--before">
+        <p class="ba-stage-label" data-slot="before-label">BEFORE</p>
+        <h2 class="ba-stage-headline" data-slot="before-headline">60-second image generation. 600 GPUs. Limited launch capacity.</h2>
+        <ul class="ba-stage-list" data-slot="before-items">
+          <li data-slot="before-item-1">Single-region deployment</li>
+          <li data-slot="before-item-2">No queue — users dropped under load</li>
+          <li data-slot="before-item-3">GPU utilization unpredictable</li>
+        </ul>
+        <div class="ba-stage-stat">
+          <p class="ba-stage-stat-num" data-slot="before-stat-num">60s</p>
+          <p class="ba-stage-stat-label" data-slot="before-stat-label">per four-image generation</p>
+        </div>
+      </div>
+      <div class="ba-arrow" aria-hidden="true">→</div>
+      <div class="ba-stage ba-stage--after">
+        <p class="ba-stage-label" data-slot="after-label">AFTER</p>
+        <h2 class="ba-stage-headline" data-slot="after-headline">17-second generation. 306 GPUs. Global scale.</h2>
+        <ul class="ba-stage-list" data-slot="after-items">
+          <li data-slot="after-item-1">Multi-region with custom queue layer</li>
+          <li data-slot="after-item-2">Auto-scales 0 → 50,000 concurrent</li>
+          <li data-slot="after-item-3">Cost reduced ~50% per generation</li>
+        </ul>
+        <div class="ba-stage-stat">
+          <p class="ba-stage-stat-num" data-slot="after-stat-num">17s</p>
+          <p class="ba-stage-stat-label" data-slot="after-stat-label">per four-image generation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">23 / 24</span>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Image Led</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 11-image-led ===
+     Full-bleed image. Headline overlaid bottom-left.
+     Subtle gradient for legibility. Use for presentational decks. */
+  .imgled-image {
+    position: absolute; inset: 0; z-index: 0;
+    overflow: hidden;
+  }
+  .imgled-image img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .imgled-overlay {
+    position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      transparent 40%,
+      rgba(0,10,37,0.75) 100%
+    );
+  }
+  .imgled-content {
+    position: absolute; z-index: 2;
+    bottom: 140px;
+    left: var(--pad-x);
+    right: var(--pad-x);
+    max-width: 1400px;
+    color: var(--color-fg-inverse);
+  }
+  .imgled-content .eyebrow {
+    color: rgba(255,255,255,0.92);
+    margin-bottom: var(--space-5);
+  }
+  .imgled-content .title {
+    font-size: 84px;
+    color: var(--color-fg-inverse);
+    text-shadow: 0 2px 12px rgba(0,10,37,0.4);
+  }
+  .imgled-content .body {
+    font-size: 26px;
+    color: rgba(255,255,255,0.9);
+    margin-top: var(--space-5);
+    max-width: 50ch;
+    text-shadow: 0 1px 6px rgba(0,10,37,0.4);
+  }
+  .imgled-footer {
+    position: absolute;
+    bottom: var(--space-8);
+    left: var(--pad-x); right: var(--pad-x);
+    z-index: 3;
+    display: flex; justify-content: space-between; align-items: center;
+    color: rgba(255,255,255,0.78);
+    font-size: var(--fs-footer);
+    letter-spacing: 0.04em;
+  }
+  .imgled-footer-logo {
+    height: 32px;
+    filter: brightness(0) invert(1);
+  }
+</style>
+</head>
+<body>
+<div class="slide slide--dark">
+  <div class="imgled-image">
+    <img data-slot="image-src" src="https://s7d9.scene7.com/is/image/slalom/TP%20ICAP%20-%20Homepage%202500x1400" data-slot-alt="image-alt" alt="Woman in business attire with phone outside modern glass building">
+  </div>
+  <div class="imgled-overlay"></div>
+  <div class="imgled-content">
+    <span class="eyebrow" data-slot="eyebrow">CONTEXT</span>
+    <h1 class="title" data-slot="title">The next chapter belongs to teams who can <em>move with their customers</em></h1>
+    <p class="body" data-slot="body">Customer expectations are set by the best digital service they used yesterday — not by the industry benchmark from last year.</p>
+  </div>
+  <div class="imgled-footer">
+    <img class="imgled-footer-logo" data-slot="logo" src="../assets/slalom-logo-white.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">09 / 24</span>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Agenda</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 03-agenda ===
+     Numbered list of section titles. Left column header, right column items. */
+  .agenda-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: var(--space-16);
+    padding: var(--pad-y) var(--pad-x);
+    height: 100%;
+    align-items: center;
+  }
+  .agenda-header .eyebrow { margin-bottom: var(--space-6); }
+  .agenda-header .title { font-size: 84px; }
+  .agenda-list {
+    list-style: none; margin: 0; padding: 0;
+    counter-reset: agenda;
+  }
+  .agenda-item {
+    counter-increment: agenda;
+    padding: var(--space-6) 0;
+    border-top: 1px solid var(--color-border);
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: var(--space-6);
+    align-items: baseline;
+  }
+  .agenda-item:last-child { border-bottom: 1px solid var(--color-border); }
+  .agenda-item::before {
+    content: counter(agenda, decimal-leading-zero);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 48px;
+    color: var(--color-primary);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .agenda-item-title {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: var(--lh-tight);
+    margin: 0;
+    color: var(--color-fg);
+  }
+  .agenda-item-duration {
+    font-size: var(--fs-body-s);
+    color: var(--color-fg-muted);
+    margin-top: var(--space-2);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-strip"></div>
+  <div class="agenda-layout">
+    <div class="agenda-header">
+      <span class="eyebrow" data-slot="eyebrow">TODAY</span>
+      <h1 class="title" data-slot="title">What we'll <em>cover</em></h1>
+    </div>
+    <ol class="agenda-list" data-slot="agenda-items">
+      <li class="agenda-item">
+        <div>
+          <h2 class="agenda-item-title" data-slot="item-1-title">Where the work stands today</h2>
+          <p class="agenda-item-duration" data-slot="item-1-duration">15 min · current-state walkthrough</p>
+        </div>
+      </li>
+      <li class="agenda-item">
+        <div>
+          <h2 class="agenda-item-title" data-slot="item-2-title">The three constraints we're working against</h2>
+          <p class="agenda-item-duration" data-slot="item-2-duration">20 min · framing</p>
+        </div>
+      </li>
+      <li class="agenda-item">
+        <div>
+          <h2 class="agenda-item-title" data-slot="item-3-title">Our proposed approach</h2>
+          <p class="agenda-item-duration" data-slot="item-3-duration">25 min · with discussion</p>
+        </div>
+      </li>
+      <li class="agenda-item">
+        <div>
+          <h2 class="agenda-item-title" data-slot="item-4-title">What we need to align on next</h2>
+          <p class="agenda-item-duration" data-slot="item-4-duration">20 min · decision and owners</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">03 / 24</span>
+  </div>
+</div>
+</body>
+</html>

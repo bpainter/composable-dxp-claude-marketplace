@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>List With Icons</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 14-list-with-icons ===
+     3-6 items. Each: icon + title + 1-line body. Vertical list, dense informational. */
+  .lwi-layout {
+    padding: var(--pad-y) var(--pad-x);
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: var(--space-16);
+    align-items: center;
+  }
+  .lwi-header .eyebrow { margin-bottom: var(--space-5); }
+  .lwi-header .title { font-size: 72px; }
+  .lwi-header .body {
+    font-size: 24px; line-height: 1.55;
+    margin-top: var(--space-6);
+    max-width: 30ch;
+  }
+  .lwi-list { list-style: none; margin: 0; padding: 0; }
+  .lwi-item {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: var(--space-6);
+    padding: var(--space-5) 0;
+    border-top: 1px solid var(--color-border);
+    align-items: start;
+  }
+  .lwi-item:last-child { border-bottom: 1px solid var(--color-border); }
+  .lwi-icon {
+    width: 48px; height: 48px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--color-primary-soft, var(--neutral-100));
+    border-radius: var(--radius-md);
+    color: var(--color-primary);
+  }
+  .lwi-icon svg { width: 28px; height: 28px; }
+  .lwi-item-title {
+    font-family: var(--font-sans); font-weight: 700;
+    font-size: 24px; line-height: 1.3;
+    margin: 0 0 var(--space-2);
+  }
+  .lwi-item-body {
+    font-size: 18px; line-height: 1.5;
+    color: var(--color-fg-muted);
+    margin: 0;
+    max-width: 50ch;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-strip"></div>
+  <div class="lwi-layout">
+    <div class="lwi-header">
+      <span class="eyebrow" data-slot="eyebrow">WHAT YOU GET</span>
+      <h1 class="title" data-slot="title">Five deliverables, <em>every cycle</em></h1>
+      <p class="body" data-slot="body">Each eight-week cycle produces the same five artifacts. Predictable cadence, traceable outcomes.</p>
+    </div>
+    <ul class="lwi-list" data-slot="list-items">
+      <li class="lwi-item">
+        <div class="lwi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <div>
+          <h3 class="lwi-item-title" data-slot="item-1-title">Outcome statement</h3>
+          <p class="lwi-item-body" data-slot="item-1-body">One sentence the business actually cares about, with a baseline number and a target.</p>
+        </div>
+      </li>
+      <li class="lwi-item">
+        <div class="lwi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <div>
+          <h3 class="lwi-item-title" data-slot="item-2-title">Current-state map</h3>
+          <p class="lwi-item-body" data-slot="item-2-body">The systems, owners, and decisions that have to move. No fiction.</p>
+        </div>
+      </li>
+      <li class="lwi-item">
+        <div class="lwi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+        <div>
+          <h3 class="lwi-item-title" data-slot="item-3-title">Working artifact in production</h3>
+          <p class="lwi-item-body" data-slot="item-3-body">Real users, real data. Not a deck, not a prototype.</p>
+        </div>
+      </li>
+      <li class="lwi-item">
+        <div class="lwi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 17l4-4 4 4 6-6"/></svg></div>
+        <div>
+          <h3 class="lwi-item-title" data-slot="item-4-title">Measured result against baseline</h3>
+          <p class="lwi-item-body" data-slot="item-4-body">Either we hit the number or we don't. No partial credit on the metric.</p>
+        </div>
+      </li>
+      <li class="lwi-item">
+        <div class="lwi-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+        <div>
+          <h3 class="lwi-item-title" data-slot="item-5-title">Operating handoff to your team</h3>
+          <p class="lwi-item-body" data-slot="item-5-body">Documented runbook. Your engineers ran the last sprint end-to-end. Capability stays.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">12 / 24</span>
+  </div>
+</div>
+</body>
+</html>

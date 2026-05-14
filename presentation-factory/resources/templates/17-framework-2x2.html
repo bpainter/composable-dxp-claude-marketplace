@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Framework 2x2</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 17-framework-2x2 ===
+     2x2 matrix. Axis labels + 4 quadrants. Each quadrant: title + 1-2 items. */
+  .matrix-layout {
+    padding: var(--pad-y) var(--pad-x);
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--space-12);
+    align-items: center;
+  }
+  .matrix-header .eyebrow { margin-bottom: var(--space-5); }
+  .matrix-header .title { font-size: 56px; }
+  .matrix-header .body { font-size: 22px; margin-top: var(--space-5); max-width: 32ch; }
+  .matrix {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    max-height: 720px;
+  }
+  .matrix-axis-y, .matrix-axis-x {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-fg-muted);
+  }
+  .matrix-axis-y {
+    position: absolute;
+    left: -60px; top: 50%;
+    transform: rotate(-90deg) translateX(50%);
+    transform-origin: right center;
+    white-space: nowrap;
+  }
+  .matrix-axis-x {
+    position: absolute;
+    bottom: -40px; left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+  .matrix-axis-labels {
+    position: absolute;
+    font-size: 11px;
+    color: var(--color-fg-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .matrix-label-low-y    { left: -28px; bottom: 0; }
+  .matrix-label-high-y   { left: -28px; top: 0; }
+  .matrix-label-low-x    { bottom: -20px; left: 0; }
+  .matrix-label-high-x   { bottom: -20px; right: 0; }
+  .matrix-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%; height: 100%;
+    border: 2px solid var(--color-fg);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: var(--color-bg-soft);
+  }
+  .quadrant {
+    padding: var(--space-6);
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .quadrant:nth-child(2) { border-right: none; }
+  .quadrant:nth-child(3), .quadrant:nth-child(4) { border-bottom: none; }
+  .quadrant:nth-child(4) { border-right: none; }
+  .quadrant-1 { background: rgba(27, 225, 242, 0.10); }   /* hi y, lo x */
+  .quadrant-2 { background: rgba(12, 98, 251, 0.12); }    /* hi y, hi x */
+  .quadrant-3 { background: rgba(255, 255, 255, 0); }     /* lo y, lo x */
+  .quadrant-4 { background: rgba(255, 77, 95, 0.10); }    /* lo y, hi x */
+  .quadrant-title {
+    font-family: var(--font-sans); font-weight: 700;
+    font-size: 22px;
+    margin: 0 0 var(--space-3);
+    color: var(--color-fg);
+  }
+  .quadrant-items {
+    list-style: none; margin: 0; padding: 0;
+    font-size: 16px; line-height: 1.4;
+    color: var(--color-fg-muted);
+  }
+  .quadrant-items li { margin-bottom: var(--space-2); }
+  .quadrant-items li::before { content: '— '; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-strip"></div>
+  <div class="matrix-layout">
+    <div class="matrix-header">
+      <span class="eyebrow" data-slot="eyebrow">DECISION FRAMEWORK</span>
+      <h1 class="title" data-slot="title">Where to <em>invest</em> next</h1>
+      <p class="body" data-slot="body">Plot each candidate initiative against effort and impact. The top-right gets the green light first.</p>
+    </div>
+    <div class="matrix">
+      <div class="matrix-axis-y" data-slot="axis-y">Impact</div>
+      <div class="matrix-axis-x" data-slot="axis-x">Effort</div>
+      <span class="matrix-axis-labels matrix-label-low-y">Low</span>
+      <span class="matrix-axis-labels matrix-label-high-y">High</span>
+      <span class="matrix-axis-labels matrix-label-low-x">Low</span>
+      <span class="matrix-axis-labels matrix-label-high-x">High</span>
+      <div class="matrix-grid">
+        <div class="quadrant quadrant-1">
+          <div>
+            <h3 class="quadrant-title" data-slot="q1-title">Quick wins</h3>
+            <ul class="quadrant-items" data-slot="q1-items">
+              <li>Search relevance tuning</li>
+              <li>FAQ surfacing</li>
+            </ul>
+          </div>
+        </div>
+        <div class="quadrant quadrant-2">
+          <div>
+            <h3 class="quadrant-title" data-slot="q2-title">Strategic bets</h3>
+            <ul class="quadrant-items" data-slot="q2-items">
+              <li>AI assistant on top of catalog</li>
+              <li>Operating-model rework</li>
+            </ul>
+          </div>
+        </div>
+        <div class="quadrant quadrant-3">
+          <div>
+            <h3 class="quadrant-title" data-slot="q3-title">Fill-ins</h3>
+            <ul class="quadrant-items" data-slot="q3-items">
+              <li>Cosmetic UI updates</li>
+              <li>Process cleanup</li>
+            </ul>
+          </div>
+        </div>
+        <div class="quadrant quadrant-4">
+          <div>
+            <h3 class="quadrant-title" data-slot="q4-title">Avoid</h3>
+            <ul class="quadrant-items" data-slot="q4-items">
+              <li>Full platform rewrites</li>
+              <li>Bespoke tooling</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">15 / 24</span>
+  </div>
+</div>
+</body>
+</html>

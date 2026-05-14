@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Title Slide</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 01-title ===
+     Hero opener. Large italic-Lora-emphasis headline. Gradient hero on dark.
+     Logo + presenter/date in footer. */
+  .slide { background: var(--color-bg-dark); color: var(--color-fg-inverse); }
+  .gradient-hero-mask {
+    position: absolute; inset: 0;
+    background: var(--gradient-brand);
+    opacity: 0.92;
+    z-index: 0;
+  }
+  .vignette {
+    position: absolute; inset: 0; z-index: 1;
+    background: radial-gradient(ellipse at center, transparent 30%, rgba(0,10,37,0.65) 100%);
+  }
+  .title-slide-content {
+    position: relative; z-index: 2;
+    padding: 140px var(--pad-x) var(--pad-y);
+    height: 100%;
+    display: flex; flex-direction: column; justify-content: center;
+    max-width: 1500px;
+  }
+  .title-slide-content .eyebrow {
+    color: rgba(255,255,255,0.92);
+    margin-bottom: var(--space-6);
+  }
+  .title-slide-content .title {
+    font-size: var(--fs-title-xl);
+    color: var(--color-fg-inverse);
+    text-shadow: 0 2px 12px rgba(0,10,37,0.25);
+  }
+  .title-slide-content .subtitle {
+    color: rgba(255,255,255,0.85);
+    margin-top: var(--space-6);
+    font-size: 36px;
+    max-width: 38ch;
+  }
+  .title-footer {
+    position: absolute;
+    bottom: var(--space-8);
+    left: var(--pad-x); right: var(--pad-x);
+    display: flex; justify-content: space-between; align-items: center;
+    color: rgba(255,255,255,0.78);
+    font-size: var(--fs-footer);
+    letter-spacing: 0.06em;
+    z-index: 2;
+  }
+  .title-footer-logo {
+    height: 48px;
+    filter: brightness(0) invert(1);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-hero-mask"></div>
+  <div class="vignette"></div>
+  <div class="title-slide-content">
+    <span class="eyebrow" data-slot="eyebrow">SLALOM × CLIENT</span>
+    <h1 class="title" data-slot="title">Build <em>better tomorrows</em> for everyone</h1>
+    <p class="subtitle" data-slot="subtitle">A working session on the next chapter of your customer experience.</p>
+  </div>
+  <div class="title-footer">
+    <img class="title-footer-logo" data-slot="logo" src="../assets/slalom-logo-white.svg" alt="Slalom">
+    <span data-slot="footer-meta">Bermon Painter · May 14, 2026</span>
+  </div>
+</div>
+</body>
+</html>
