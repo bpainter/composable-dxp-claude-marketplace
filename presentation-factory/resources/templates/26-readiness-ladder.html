@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Readiness Ladder</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 26-readiness-ladder ===
+     4-tier maturity ladder. Each tier: colored top-rail + tier label +
+     headline + body + value/impact line. Pattern inspired by the
+     "Agentic Commerce" briefing — tiered capability/maturity model. */
+  .ladder-layout {
+    padding: var(--pad-y) var(--pad-x);
+    height: 100%;
+    display: flex; flex-direction: column;
+  }
+  .ladder-header { margin-bottom: var(--space-10); max-width: 1300px; }
+  .ladder-header .eyebrow { margin-bottom: var(--space-5); }
+  .ladder-header .title { font-size: 56px; }
+  .ladder-header .body {
+    font-size: 22px; margin-top: var(--space-5);
+    max-width: 56ch;
+  }
+  .ladder-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-5);
+    flex: 1;
+  }
+  .tier {
+    background: var(--color-bg-soft);
+    border-radius: var(--radius-md);
+    padding: var(--space-6);
+    border-top: 6px solid var(--neutral-300);
+    display: flex; flex-direction: column;
+  }
+  .tier:nth-child(1) { border-top-color: var(--neutral-400); }
+  .tier:nth-child(2) { border-top-color: var(--slalom-lime); }
+  .tier:nth-child(3) { border-top-color: var(--slalom-cyan); }
+  .tier:nth-child(4) { border-top-color: var(--slalom-blue); }
+
+  .tier-num {
+    font-family: var(--font-subheading);
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--color-fg-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    margin: 0 0 var(--space-4);
+  }
+  .tier-title {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.1;
+    margin: 0 0 var(--space-4);
+    color: var(--color-fg);
+    min-height: 70px;
+  }
+  .tier-body {
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--color-fg-muted);
+    margin: 0;
+    flex: 1;
+  }
+  .tier-body strong { color: var(--color-fg); font-weight: 700; }
+  .tier-value {
+    margin-top: var(--space-5);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border);
+    font-family: var(--font-subheading);
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--color-fg);
+  }
+  .tier-value--risk { color: #B82332; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-strip"></div>
+  <div class="ladder-layout">
+    <div class="ladder-header">
+      <span class="eyebrow" data-slot="eyebrow">READINESS LADDER</span>
+      <h1 class="title" data-slot="title">From <em>agent-visible</em> to <em>agent-executable</em></h1>
+      <p class="body" data-slot="body">Platform-native toggles can create exposure fast, but durable differentiation comes from hardening enterprise data, APIs, identity, and fulfillment.</p>
+    </div>
+    <div class="ladder-grid">
+      <div class="tier">
+        <p class="tier-num" data-slot="tier-1-num">TIER 0 — INVISIBLE</p>
+        <h3 class="tier-title" data-slot="tier-1-title">Not discoverable by agents</h3>
+        <p class="tier-body" data-slot="tier-1-body">No structured product data. Agents can't read or reason about your catalog. Search relies on copy.</p>
+        <p class="tier-value tier-value--risk" data-slot="tier-1-value">Risk: competitors win the first impression.</p>
+      </div>
+      <div class="tier">
+        <p class="tier-num" data-slot="tier-2-num">TIER 1 — VISIBLE</p>
+        <h3 class="tier-title" data-slot="tier-2-title">Listed but not interactive</h3>
+        <p class="tier-body" data-slot="tier-2-body">Product feed published. Agents can see SKUs. <strong>Cannot</strong> verify policy, inventory, or pricing in real time.</p>
+        <p class="tier-value" data-slot="tier-2-value">Outcome: surface area, not session.</p>
+      </div>
+      <div class="tier">
+        <p class="tier-num" data-slot="tier-3-num">TIER 2 — VERIFIABLE</p>
+        <h3 class="tier-title" data-slot="tier-3-title">Trusted by the agent</h3>
+        <p class="tier-body" data-slot="tier-3-body">Real-time inventory, eligibility, and fulfillment APIs. Agent confidence high enough to recommend.</p>
+        <p class="tier-value" data-slot="tier-3-value">Outcome: routed demand share grows.</p>
+      </div>
+      <div class="tier">
+        <p class="tier-num" data-slot="tier-4-num">TIER 3 — EXECUTABLE</p>
+        <h3 class="tier-title" data-slot="tier-4-title">Agent completes the transaction</h3>
+        <p class="tier-body" data-slot="tier-4-body">Cart, checkout, payment, and post-order service available via API. Agent finishes the journey on your stack.</p>
+        <p class="tier-value" data-slot="tier-4-value">Outcome: durable demand share.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">26 / 27</span>
+  </div>
+</div>
+</body>
+</html>

@@ -6,20 +6,17 @@
 <link rel="stylesheet" href="../tokens/slalom.css">
 <style>
   /* === TEMPLATE: 02-section-divider ===
-     Major section opener. Numbered section eyebrow + italic-emphasis title.
-     Smooth gradient field, left-aligned, dark-on-light or light-on-dark. */
+     v0.2 — Same-family navy hero, no multi-color gradient.
+     Section number is large and ghosted in the background. */
   .slide { background: var(--color-bg-dark); color: var(--color-fg-inverse); }
-  .gradient-field {
-    position: absolute; inset: 0;
-    background: var(--gradient-brand);
-    z-index: 0;
-  }
-  .gradient-field::after {
-    content: ''; position: absolute; inset: 0;
-    background: linear-gradient(90deg,
-      rgba(0,10,37,0.55) 0%,
-      rgba(0,10,37,0.25) 50%,
-      rgba(0,10,37,0.05) 100%);
+  .section-bg { position: absolute; inset: 0; z-index: 0; background: var(--gradient-hero-navy); }
+  .section-bg::after {
+    content: ''; position: absolute;
+    bottom: -160px; left: -160px;
+    width: 600px; height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(12, 98, 251, 0.25) 0%, transparent 65%);
+    pointer-events: none;
   }
   .section-content {
     position: relative; z-index: 1;
@@ -29,15 +26,16 @@
     max-width: 1500px;
   }
   .section-number {
-    font-family: var(--font-sans);
-    font-weight: 300;
-    font-size: 240px;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 280px;
     line-height: 0.85;
-    color: rgba(255,255,255,0.18);
-    letter-spacing: -0.04em;
-    margin: 0 0 -80px;
+    color: rgba(255,255,255,0.12);
+    letter-spacing: -0.02em;
+    margin: 0 0 -100px;
   }
-  .section-content .eyebrow {
+  .section-content .section-kicker {
     color: rgba(255,255,255,0.92);
     position: relative; z-index: 1;
     margin: 0 0 var(--space-6);
@@ -46,13 +44,16 @@
     font-size: 110px;
     color: var(--color-fg-inverse);
     position: relative; z-index: 1;
-    text-shadow: 0 2px 12px rgba(0,10,37,0.2);
+  }
+  .section-content .title em {
+    color: var(--slalom-cyan);
   }
   .section-footer {
     position: absolute;
     bottom: var(--space-8);
     left: var(--pad-x); right: var(--pad-x);
     display: flex; justify-content: space-between; align-items: center;
+    font-family: var(--font-subheading);
     color: rgba(255,255,255,0.78);
     font-size: var(--fs-footer);
     letter-spacing: 0.06em;
@@ -62,10 +63,11 @@
 </head>
 <body>
 <div class="slide">
-  <div class="gradient-field"></div>
+  <div class="section-bg"></div>
+  <div class="gradient-strip"></div>
   <div class="section-content">
     <span class="section-number" data-slot="section-number" aria-hidden="true">01</span>
-    <span class="eyebrow" data-slot="eyebrow">SECTION ONE</span>
+    <span class="section-kicker" data-slot="eyebrow">01 / Section</span>
     <h1 class="title" data-slot="title">The <em>problem</em> in three parts</h1>
   </div>
   <div class="section-footer">

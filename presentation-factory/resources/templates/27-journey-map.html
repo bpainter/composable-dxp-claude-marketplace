@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Journey Map</title>
+<link rel="stylesheet" href="../tokens/slalom.css">
+<style>
+  /* === TEMPLATE: 27-journey-map ===
+     Multi-surface horizontal flow. Top row: sequence of named surfaces
+     (e.g. Ask → Compare → Decide → Act). Bottom row: outcome/risk nodes
+     that map to opportunity vs risk. Pattern from agentic-commerce deck. */
+  .journey-layout {
+    padding: var(--pad-y) var(--pad-x);
+    height: 100%;
+    display: flex; flex-direction: column;
+  }
+  .journey-header { margin-bottom: var(--space-10); max-width: 1300px; }
+  .journey-header .eyebrow { margin-bottom: var(--space-5); }
+  .journey-header .title { font-size: 56px; }
+  .journey-header .body {
+    font-size: 22px; margin-top: var(--space-5);
+    max-width: 56ch;
+  }
+  .journey-body {
+    display: flex; flex-direction: column;
+    gap: var(--space-8);
+    flex: 1;
+  }
+
+  /* Top sequence: 4 surfaces */
+  .surface-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-4);
+    position: relative;
+  }
+  .surface {
+    background: var(--color-primary-soft);
+    border-radius: var(--radius-md);
+    padding: var(--space-5) var(--space-5);
+    position: relative;
+  }
+  .surface-name {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 26px;
+    color: var(--color-primary-deep);
+    margin: 0 0 var(--space-2);
+  }
+  .surface-detail {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-fg-muted);
+    margin: 0;
+  }
+
+  /* Connector arrow track between rows */
+  .confidence-lane {
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(90deg,
+      rgba(12, 98, 251, 0.18) 0%,
+      var(--color-primary) 100%);
+    position: relative;
+  }
+  .confidence-lane::before {
+    content: 'AGENT CONFIDENCE INCREASES';
+    position: absolute;
+    top: -22px; left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-subheading);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    color: var(--color-fg-muted);
+  }
+
+  /* Bottom row: outcome / risk nodes */
+  .outcome-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-4);
+  }
+  .outcome-node {
+    background: var(--neutral-50);
+    border-top: 4px solid var(--slalom-cyan);
+    border-radius: var(--radius-md);
+    padding: var(--space-5);
+  }
+  .outcome-node--risk {
+    border-top-color: var(--slalom-coral);
+    background: #FFF7F8;
+  }
+  .outcome-node h3 {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.2;
+    margin: var(--space-2) 0 var(--space-3);
+    color: var(--color-fg);
+  }
+  .outcome-node p {
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--color-fg-muted);
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="gradient-strip"></div>
+  <div class="journey-layout">
+    <div class="journey-header">
+      <span class="eyebrow" data-slot="eyebrow">AGENT JOURNEY</span>
+      <h1 class="title" data-slot="title">Where the <em>agent moves</em> — and where the <em>opportunity lives</em></h1>
+      <p class="body" data-slot="body">Four surfaces the agent passes through. Each one is a decision: be the verified, executable option — or be routed around.</p>
+    </div>
+    <div class="journey-body">
+      <div class="surface-row">
+        <div class="surface">
+          <p class="surface-name" data-slot="surface-1-name">Ask</p>
+          <p class="surface-detail" data-slot="surface-1-detail">Intent captured in natural language.</p>
+        </div>
+        <div class="surface">
+          <p class="surface-name" data-slot="surface-2-name">Compare</p>
+          <p class="surface-detail" data-slot="surface-2-detail">Products ranked by relevance and confidence.</p>
+        </div>
+        <div class="surface">
+          <p class="surface-name" data-slot="surface-3-name">Decide</p>
+          <p class="surface-detail" data-slot="surface-3-detail">Agents shortlist executable offers.</p>
+        </div>
+        <div class="surface">
+          <p class="surface-name" data-slot="surface-4-name">Act</p>
+          <p class="surface-detail" data-slot="surface-4-detail">Cart, payment, and service begin outside your site.</p>
+        </div>
+      </div>
+      <div class="confidence-lane" aria-hidden="true"></div>
+      <div class="outcome-row">
+        <div class="outcome-node">
+          <span class="outcome-prefix" data-slot="node-1-prefix">Opportunity</span>
+          <h3 data-slot="node-1-title">Repeat demand</h3>
+          <p data-slot="node-1-body">Routine and replenishment orders flow to retailers agents can verify.</p>
+        </div>
+        <div class="outcome-node">
+          <span class="outcome-prefix" data-slot="node-2-prefix">Opportunity</span>
+          <h3 data-slot="node-2-title">Get recommended</h3>
+          <p data-slot="node-2-body">Agents recommend products they can verify: facts, policies, inventory.</p>
+        </div>
+        <div class="outcome-node">
+          <span class="outcome-prefix" data-slot="node-3-prefix">Opportunity</span>
+          <h3 data-slot="node-3-title">Win the visit</h3>
+          <p data-slot="node-3-body">Agents send shoppers to your site with cart context ready.</p>
+        </div>
+        <div class="outcome-node outcome-node--risk">
+          <span class="outcome-prefix outcome-prefix--risk" data-slot="node-4-prefix">Risk</span>
+          <h3 data-slot="node-4-title">Bypassed</h3>
+          <p data-slot="node-4-body">Unclear data, terms, inventory, or checkout — the journey routes around you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <img class="footer-logo" data-slot="logo" src="../assets/slalom-logo.svg" alt="Slalom">
+    <span class="slide-number" data-slot="slide-number">27 / 27</span>
+  </div>
+</div>
+</body>
+</html>

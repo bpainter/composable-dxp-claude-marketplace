@@ -43,44 +43,62 @@ Switching brand changes:
 
 Switching brand does **not** change template structure. The 25 canonical templates are brand-agnostic.
 
-## Typography rules
+## Typography rules (v0.2)
 
-| Element | Family | Weight | Treatment |
+| Element | Family | Weight / style | Treatment |
 |---|---|---|---|
-| Title (slide H1) | **Lora** | Regular 400, **italic 400 for emphasis** | Large. Italic-Lora emphasis on key 1-3 words ("Build *better tomorrows for all*") |
-| Section eyebrow | Slalom Sans | Bold 700 | UPPERCASE, letter-spacing 0.12em, small (~12-14px on slide) |
-| Sub-heading / kicker | Slalom Sans | Bold 700 | Sentence case, medium |
-| Body | Slalom Sans | Regular 400 | Generous line-height (1.55) |
-| Pull quote / callout | Lora | Italic 400-500 | Larger than body, no quotation marks needed if visually distinct |
-| Stat number | Slalom Sans or Lora | Light 300 or Regular 400 | Huge (96-180px), tracking-tight |
-| Stat label | Slalom Sans | Regular 400 | Small, below stat |
+| **Title** (slide H1) | **Lora** | **Italic 400** (whole title) | Large. The entire title is Lora italic. `<em>` inside the title bumps weight to italic 600 and recolors to brand-primary (or brand-cyan on dark backgrounds) for phrase emphasis. |
+| **Subtitle** | **Avenir Next** | **Bold 700** | Medium, sentence case. Supporting line under the title. |
+| **Kicker / Sub-heading** | **Avenir Next** | **Bold 700** | Sentence case, medium-large. Section sub-headings. |
+| **Eyebrow** | **Avenir Next** | **Bold 700** | UPPERCASE, letter-spacing 0.16em, small (~16px on slide), brand-primary color. |
+| **Body** | **Slalom Sans** | Regular 400 | Generous line-height (1.55). Inter for Composable DXP brand. |
+| **Pull quote / callout** | **Lora** | Italic 500 | Larger than body. No quotation marks if visually distinct. |
+| **Stat / callout number** | **Lora** | **Italic 600-700 (bold)** | Huge (160-220px on slide). Always bold-italic — never light weight. |
+| **Stat unit suffix** (k, M, %) | **Lora** | Italic 600 | 0.45em of the number. Brand-primary color. |
+| **Stat label** | **Slalom Sans** | Regular 400 | Small, below stat. |
+| **Footer chrome / page numbers** | **Avenir Next** | Regular 400 | Tabular-nums for numerals. |
 
-**The signature Slalom move** — italic Lora for the emphasis words within an otherwise-sans-serif headline. Examples from slalom.com:
-- "AI that drives *real impact*"
-- "Industry *know-how*"
-- "Exponential *impact*"
-- "End-to-end *services*"
-- "Let's solve *together.*"
+### The signature Slalom move (v0.2)
 
-Every title slide and most section dividers SHOULD use this pattern. Templates support it via a `<em>...</em>` inside the title element.
+Whole titles are Lora italic. Within them, a `<em>` wrapper around the key emphasis phrase bumps the weight to semibold and recolors to brand primary (or brand cyan on dark backgrounds). Examples:
 
-## The gradient design element
+- "*Build* better tomorrows for everyone" — whole headline Lora italic; `<em>better tomorrows</em>` in cyan-semibold on the dark title hero
+- "*AI that drives* real impact" — whole headline Lora italic; `<em>real impact</em>` in blue-semibold on white
+- "*Three principles that shape* how we work" — whole headline Lora italic; `<em>how we work</em>` in blue-semibold
 
-The legacy 5-bar of Slalom branded colors stacked on the right edge is **retired** for this plugin. In its place: a **single smooth gradient** that sweeps through the brand accent palette.
+This is the brand's visual signature. Don't break the pattern unless the brand is set to Client and the client doesn't use serif-italic display type.
 
-**Slalom default gradient** (left to right or top to bottom):
+### Why these fonts
+
+- **Lora italic** for display gives the brand warmth without sacrificing authority. It's the calligraphic counterweight to the "fiercely human" voice. Italic at display sizes reads as confident, not decorative.
+- **Avenir Next bold** for sub-heads gives crisp, modern definition — readable at small sizes (eyebrows), feels architectural at medium sizes (subtitles). It's available on every Mac and well-supported on Windows; falls back to Helvetica Neue / Inter cleanly.
+- **Slalom Sans regular** for body keeps the body copy distinctively Slalom. Body text is where the brand's identity sits at length — Slalom Sans there, Avenir Next at structure, Lora at headline.
+
+## The gradient design element (v0.2)
+
+The legacy 5-bar of Slalom branded colors stacked on the right edge is **retired**. In its place: a **single smooth multi-color gradient** that sweeps through the brand accent palette.
+
+**Slalom default gradient stops**:
 ```
 #DEFF4D → #C7B9FF → #FF4D5F → #1BE1F2 → #0C62FB
 (lime  →  lavender →   coral   →  cyan  →  blue)
 ```
 
-Usage patterns:
-1. **Right-edge accent strip** (4-8% of width) — replaces the 5-bar
-2. **Top or bottom band** (6-12% of height) — divider treatment
-3. **Full-bleed background** for marquee section dividers (with light text overlaid)
-4. **Numeric / stat backdrop** — the gradient as a faint backing block for a big stat
+### Where it appears (v0.2: strip-only by default)
 
-Always smooth, never banded. Subtle when supporting text, bold when it IS the slide.
+The multi-color gradient is **ONLY** used as:
+1. **Right-edge accent strip** — 28px wide (50% of v0.1's 56px). This is the primary use.
+2. **Top or bottom band** — 56px tall, used sparingly as a divider treatment between deck sections.
+
+### Where it does NOT appear
+
+**Never** use the multi-color gradient as a hero / full-bleed background. For hero backgrounds (title slide, section divider, thank-you, image-led), use one of:
+
+- **Flat color**: solid Slalom navy `#0F1C41` or Slalom ink `#000A25` for dark heroes; solid white for light heroes.
+- **Same-family subtle gradient**: navy → ink linear, or ink → navy radial. Pre-defined as `--gradient-hero-navy`, `--gradient-hero-ink`, `--gradient-hero-blue`. All single-color-family — no rainbow.
+- **Full-canvas background image**: a photograph or abstract motif as the dominant visual, with an overlay that darkens the corner where text sits — defined as `--image-overlay-bottom` / `--image-overlay-left`. The overlay color is a darker hue of the image (or brand ink) fading to transparent.
+
+The multi-color gradient is a brand-accent element. The hero is supposed to feel grounded; rainbow backgrounds feel busy and consumer-y, not the Slalom register.
 
 **Composable DXP gradient**:
 ```

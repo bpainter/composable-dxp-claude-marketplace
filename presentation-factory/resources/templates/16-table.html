@@ -24,12 +24,18 @@
   .data-table thead th {
     text-align: left;
     padding: var(--space-4) var(--space-5);
-    background: var(--color-fg);
+    background: var(--color-primary);
     color: var(--color-fg-inverse);
+    font-family: var(--font-subheading);
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
+  }
+  /* Alt header style — soft gray. Apply via .data-table--gray-head */
+  .data-table--gray-head thead th {
+    background: var(--neutral-150);
+    color: var(--color-fg);
   }
   .data-table thead th:first-child { border-top-left-radius: var(--radius-md); }
   .data-table thead th:last-child  { border-top-right-radius: var(--radius-md); }

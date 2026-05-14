@@ -23,7 +23,11 @@ Every template uses `data-slot="slot-name"` attributes. The composer substitutes
 | `quote-text`, `quote-attribution`, `quote-role` | pull-quote attribution | pull-quote |
 | `item-N-icon`, `item-N-title`, `item-N-body` | list with icons | list-with-icons |
 
-## The 25 templates
+## The 27 templates (v0.2)
+
+> **v0.2 typography note**: titles are always Lora italic; subtitles, sub-headings, eyebrows, and footer chrome use Avenir Next bold; body text uses Slalom Sans (or Inter for Composable DXP). Stat numbers are Lora italic semibold/bold. See `references/presentation-factory-foundations.md` for the full type contract.
+
+## The templates
 
 ### Openers & closers (5)
 
@@ -69,6 +73,13 @@ Every template uses `data-slot="slot-name"` attributes. The composer substitutes
 | 23 | **Pricing** | `pricing.html` | informational | Pricing table or tiered cards. Brand-aligned. Not the SaaS-cliché 3-tier. |
 | 24 | **Roadmap** | `roadmap.html` | both | Phased roadmap. Quarters or stages with workstream rows. Brand swatches by phase. |
 | 25 | **Before-After** | `before-after.html` | both | Side-by-side. Before state + intervention + after state. |
+
+### Extended (added in v0.2 from agentic-commerce reference deck) (2)
+
+| # | Template | Filename | Style | Notes |
+|---|---|---|---|---|
+| 26 | **Readiness Ladder** | `26-readiness-ladder.html` | both | 4-tier maturity model. Each tier: colored top-rail + tier label + headline + body + outcome/risk value line. Use for capability ladders, maturity assessments, tiered readiness. |
+| 27 | **Journey Map** | `27-journey-map.html` | both | Multi-surface horizontal flow with secondary outcome/risk node grid below. Use for customer journey, agent journey, multi-stage workflows where each stage has both an action and a downstream consequence. |
 
 ## Style alignment notes
 

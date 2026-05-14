@@ -6,19 +6,24 @@
 <link rel="stylesheet" href="../tokens/slalom.css">
 <style>
   /* === TEMPLATE: 01-title ===
-     Hero opener. Large italic-Lora-emphasis headline. Gradient hero on dark.
-     Logo + presenter/date in footer. */
+     v0.2 — Hero is either (a) flat navy with subtle same-family gradient,
+     or (b) a background image with darker-to-transparent overlay.
+     NEVER the multi-color brand gradient — that's strip-only. */
   .slide { background: var(--color-bg-dark); color: var(--color-fg-inverse); }
-  .gradient-hero-mask {
-    position: absolute; inset: 0;
-    background: var(--gradient-brand);
-    opacity: 0.92;
-    z-index: 0;
+
+  /* Default: same-family navy → ink gradient. Subtle, brand-aligned. */
+  .title-bg { position: absolute; inset: 0; z-index: 0; background: var(--gradient-hero-navy); }
+
+  /* Decorative accent — tiny brand-color glow in the top-right */
+  .title-bg::after {
+    content: ''; position: absolute;
+    top: -200px; right: -200px;
+    width: 700px; height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(12, 98, 251, 0.30) 0%, transparent 60%);
+    pointer-events: none;
   }
-  .vignette {
-    position: absolute; inset: 0; z-index: 1;
-    background: radial-gradient(ellipse at center, transparent 30%, rgba(0,10,37,0.65) 100%);
-  }
+
   .title-slide-content {
     position: relative; z-index: 2;
     padding: 140px var(--pad-x) var(--pad-y);
@@ -33,13 +38,15 @@
   .title-slide-content .title {
     font-size: var(--fs-title-xl);
     color: var(--color-fg-inverse);
-    text-shadow: 0 2px 12px rgba(0,10,37,0.25);
+  }
+  .title-slide-content .title em {
+    color: var(--slalom-cyan);
   }
   .title-slide-content .subtitle {
-    color: rgba(255,255,255,0.85);
-    margin-top: var(--space-6);
-    font-size: 36px;
-    max-width: 38ch;
+    color: rgba(255,255,255,0.88);
+    margin-top: var(--space-8);
+    font-size: 32px;
+    max-width: 40ch;
   }
   .title-footer {
     position: absolute;
@@ -47,6 +54,7 @@
     left: var(--pad-x); right: var(--pad-x);
     display: flex; justify-content: space-between; align-items: center;
     color: rgba(255,255,255,0.78);
+    font-family: var(--font-subheading);
     font-size: var(--fs-footer);
     letter-spacing: 0.06em;
     z-index: 2;
@@ -55,12 +63,19 @@
     height: 48px;
     filter: brightness(0) invert(1);
   }
+
+  /* The gradient strip — thin (28px), on the right edge */
+  .title-slide-strip {
+    position: absolute; top: 0; right: 0;
+    width: var(--gradient-strip-w); height: 100%;
+    background: var(--gradient-brand-vertical);
+    z-index: 3;
+  }
 </style>
 </head>
 <body>
 <div class="slide">
-  <div class="gradient-hero-mask"></div>
-  <div class="vignette"></div>
+  <div class="title-bg"></div>
   <div class="title-slide-content">
     <span class="eyebrow" data-slot="eyebrow">SLALOM × CLIENT</span>
     <h1 class="title" data-slot="title">Build <em>better tomorrows</em> for everyone</h1>
@@ -70,6 +85,7 @@
     <img class="title-footer-logo" data-slot="logo" src="../assets/slalom-logo-white.svg" alt="Slalom">
     <span data-slot="footer-meta">Bermon Painter · May 14, 2026</span>
   </div>
+  <div class="title-slide-strip"></div>
 </div>
 </body>
 </html>
